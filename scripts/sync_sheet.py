@@ -16,7 +16,7 @@ from zoneinfo import ZoneInfo
 
 ROOT=Path(__file__).resolve().parents[1]
 PRIVATE=re.compile(r'[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}|예약\s*번호|여권|카드\s*번호|결제|\b(?:USD|KRW|SGD)\s*[\d.,]+|\d{10,}',re.I)
-PLACES=[('클라우드','Cloud Forest Singapore'),('내셔널 갤러리','National Gallery Singapore'),('덕투어','BIG BUS & DUCK Tourist Hub Singapore'),('DUCK','BIG BUS & DUCK Tourist Hub Singapore'),('주빌리','Jubilee Park Fort Canning Singapore'),('캄퐁글람','Kampong Glam Singapore'),('리틀인디아','Little India Singapore'),('마리나베이샌즈','Marina Bay Sands Singapore'),('스펙트라','Marina Bay Sands Event Plaza'),('파라독스','Paradox Singapore'),('홀리데이','Holiday Inn Express Singapore Clarke Quay'),('선텍','Suntec City Singapore'),('클락키','Clarke Quay Central Singapore'),('차이나타운','Chinatown Point Singapore'),('국립박물관','National Museum of Singapore'),('창이','Singapore Changi Airport Terminal 1'),('항구','Marina Bay Cruise Centre Singapore')]
+PLACES=[('클라우드','Cloud Forest Singapore'),('내셔널 갤러리','National Gallery Singapore'),('덕투어','BIG BUS & DUCK Tourist Hub Singapore'),('DUCK','BIG BUS & DUCK Tourist Hub Singapore'),('주빌리','Jubilee Park Fort Canning Singapore'),('캄퐁글람','Kampong Glam Singapore'),('리틀인디아','Little India Singapore'),('마리나베이샌즈','Marina Bay Sands Singapore'),('스펙트라','Marina Bay Sands Event Plaza'),('파라독스','Paradox Singapore'),('홀리데이','Holiday Inn Express Singapore Clarke Quay'),('선텍','Suntec City Singapore'),('클락키','Clarke Quay Central Singapore'),('차이나타운','Chinatown Point Singapore'),('국립박물관','National Museum of Singapore'),('창이','Singapore Changi Airport'),('항구','Marina Bay Cruise Centre Singapore')]
 
 def maps_for(text):
     # Prefer the first activity line rather than a second-line alternative/destination.

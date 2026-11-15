@@ -2,7 +2,7 @@ window.TRIP_DATA = {
   "schemaVersion": 1,
   "title": "싱가포르 여행",
   "timezone": "Asia/Singapore",
-  "updatedAt": "2026-11-16T06:42:12+08:00",
+  "updatedAt": "2026-11-16T06:56:25+08:00",
   "notice": "관광 일정은 제안이며 티켓은 미예약입니다. 승·하선 및 항공 수속 시간은 원본 예약서가 우선입니다.",
   "days": [
     {
@@ -22,7 +22,7 @@ window.TRIP_DATA = {
           ],
           "alternative": [],
           "kind": "move",
-          "map": "https://www.google.com/maps/search/?api=1&query=Singapore%20Changi%20Airport%20Terminal%201"
+          "map": "https://www.google.com/maps/search/?api=1&query=Singapore%20Changi%20Airport"
         },
         {
           "id": "2027-02-17-15",
@@ -429,7 +429,7 @@ window.TRIP_DATA = {
           ],
           "alternative": [],
           "kind": "check",
-          "map": "https://www.google.com/maps/search/?api=1&query=Singapore%20Changi%20Airport%20Terminal%201"
+          "map": "https://www.google.com/maps/search/?api=1&query=Singapore%20Changi%20Airport"
         }
       ]
     },

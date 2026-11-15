@@ -69,10 +69,17 @@
       details.append(body); container.append(details);
     });
   }
+  function revealSelectedTab() {
+    const tabs = $('date-tabs');
+    const button = buttons[data.days.findIndex(d => d.date === selected)];
+    const delta = button.getBoundingClientRect().left - tabs.getBoundingClientRect().left;
+    tabs.scrollLeft += delta - (tabs.clientWidth - button.offsetWidth) / 2;
+  }
   function renderDay() {
     const index = data.days.findIndex(d => d.date === selected);
     const day = data.days[index];
     buttons.forEach((b, i) => { const active = i === index; b.setAttribute('aria-selected', String(active)); b.tabIndex = active ? 0 : -1; });
+    revealSelectedTab();
     $('daily-panel').setAttribute('aria-labelledby', `tab-${day.date}`);
     $('day-label').textContent = `${day.date.replaceAll('-', '. ')} · ${day.label.match(/\((.)\)/)?.[1] || ''}요일`;
     $('day-title').textContent = day.title;
@@ -99,9 +106,7 @@
     selected = date; saveDay(date);
     history.replaceState(null, '', `#${date}`);
     renderDay(); toggleView(false);
-    const button = buttons[data.days.findIndex(d => d.date === date)];
     if (userInitiated) {
-      button.scrollIntoView({block:'nearest', inline:'center'});
       const top = $('main').getBoundingClientRect().top + window.scrollY - document.querySelector('.date-dock').offsetHeight - 8;
       window.scrollTo({top:Math.max(0,top), behavior:matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
     }
@@ -152,6 +157,7 @@
   $('refresh-button').addEventListener('click', () => location.reload());
   $('previous-day').addEventListener('click', () => { const index = data.days.findIndex(d => d.date === selected); if(index>0) selectDay(data.days[index-1].date, true); });
   $('next-day').addEventListener('click', () => { const index = data.days.findIndex(d => d.date === selected); if(index<data.days.length-1) selectDay(data.days[index+1].date, true); });
+  window.addEventListener('resize', revealSelectedTab);
   window.addEventListener('hashchange', () => { if(available(hashDate())) { selected=hashDate(); renderDay(); toggleView(false); } });
   const updated = new Intl.DateTimeFormat('ko-KR', {timeZone:'Asia/Singapore', month:'numeric', day:'numeric', hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date(data.updatedAt));
   $('updated').textContent = `${updated} SGT 반영`;
