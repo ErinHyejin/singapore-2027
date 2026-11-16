@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-16T13:29:15.637599+00:00",
+  "generatedAt": "2026-11-16T13:53:06.553881+00:00",
   "title": "Design System: 싱가포르 여행 일정표",
   "extensions": {
     "colorMeta": {
@@ -202,11 +202,11 @@
       "method": "CSS/HTML/JS static extraction; not a rendered visual or accessibility approval",
       "files": {
         "docs/itinerary.css": "6429345c3b4fce93366d5759e9283564217e25eeacb6c03ffa53893c0a9b6064",
-        "docs/index.html": "4f7bdbe6a17e8b865b47672dca17acc1c8cae1768d32dfd2b7969248c57022dc",
-        "docs/app.js": "2aa8adcc771faa103fe44851e007125bbe8353c4ed642aac583fc4fdea3f83e3",
-        "docs/data.js": "86071bbf5de26d1d250892ecf3fa095294f82ae3edadaa655a8b625b23064951",
+        "docs/index.html": "66ef4f037ae08e6bb0ad2713bf0cecd0b6f06b3cc40bba163e49568a7ff69769",
+        "docs/app.js": "69001f19ef83d1187fb420b825895d3aa8156138c45018717199d3a631fca2f8",
+        "docs/data.js": "0bcbf46d58dde721b7343c40685d7f2c4a6af6be5b2013af671c9d440d05a92b",
         "docs/photos.js": "19e611bca961b4f7c58fb16035837768aea9aef858d9d8865561c25e914f2f01",
-        "docs/actions.js": "7fe18a62d112ee519ecc93c29803cc96dbdab4049caacc5993c59be309748e33"
+        "docs/actions.js": "f35d373192f033455ac52ae9da2e32c507f3dd7567bc206b57fcaed708958df9"
       },
       "customProperties": {
         "--ink": {
@@ -1469,6 +1469,25 @@
         "print hidden"
       ],
       "motion": "No additional motion"
+    },
+    "cruisePlan": {
+      "dates": [
+        "2027-02-18",
+        "2027-02-19",
+        "2027-02-20",
+        "2027-02-21"
+      ],
+      "portDay": "2027-02-20; booking reconfirmation required",
+      "dataSource": "docs/data.js",
+      "evidence": "CRUISE_SOURCES.json",
+      "rules": [
+        "Official offerings are not dated personal show assignments",
+        "PAT label is not the provisional grid clock",
+        "Langkawi tab says 기항일",
+        "Daypart flow is a proposal",
+        "Other dates and alternatives preserved"
+      ],
+      "dataCacheVersion": "0bcbf46d58dd"
     }
   },
   "components": [

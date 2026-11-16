@@ -24,6 +24,12 @@ A further activity pass uses 28 reviewed, existing film scenes across all 30 eve
 
 `python3 scripts/build_actions.py /path/to/reviewed-local-curation.json` rebuilds the action assets after human visual review. `node tests/actions.test.js` verifies complete event coverage, scene diversity and activity bindings; `tests/action_checks.js` verifies decoding, responsive containment, preservation and error recovery in the isolated browser. Local source paths remain in the private curation input, not the public provenance export.
 
+## Cruise plan evidence
+
+The cruise update distinguishes verified ship offerings, the specific itinerary's official search index, dated secondary port-day mapping and our proposed family flow. The DA0137 index names a February 18–22, 2027 Langkawi cruise; dated secondary material places Langkawi on February 20, explicitly pending booking reconfirmation. The site no longer presents all three middle days as sea days. Ashore 11:00 and Aboard 21:00 are indexed port-access/deadline fields, not docking/departure or a family Port Arrival Time. See `CRUISE_SOURCES.json` for evidence levels and limitations.
+
+The daypart plans for February 19–21 are **proposals**, not confirmed show slots. Family dining/theatre assignments, onboard reservations, safety/height conditions and any shore entry requirements remain to be checked in the booking and Navigator. No purchase or reservation was made. Only cruise cells/related notes were changed in the source sheet; unrelated itinerary days, alternatives and reservation records were read-back compared. The exporter now preserves the PAT label rather than inventing a boarding clock time and adds a content-hash cache version to `data.js` in `index.html`.
+
 ## Source and updates
 
 The private Google Sheet remains the source of truth. This site is **not a live Sheet integration**. After changing the sheet, use an already-authorized local `gws` account:
@@ -36,7 +42,7 @@ node --check docs/app.js
 node --check docs/data.js
 git diff -- docs/data.js
 # Review the PUBLIC snapshot for personal details before publishing.
-git add docs/data.js
+git add docs/data.js docs/index.html
 git commit -m 'content: refresh public itinerary'
 git push
 ```

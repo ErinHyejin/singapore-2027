@@ -121,7 +121,7 @@
     const options = data.alternatives.filter(a => a.when.startsWith(when) && !a.excluded);
     const container = $('alternatives-list'); container.replaceChildren();
     if (!options.length) {
-      container.append(el('p', 'no-alts', day.events.some(e => e.kind === 'cruise') ? '선내 프로그램은 별도 일정으로 확인하세요' : '등록한 대안이 없습니다'));
+      container.append(el('p', 'no-alts', day.events.some(e => e.kind === 'cruise') ? '공연·식당의 실제 배정은 선내 Navigator에서 확인하세요' : '등록한 대안이 없습니다'));
       return;
     }
     options.forEach(a => {
@@ -193,7 +193,7 @@
       const b = el('button', 'date-tab'); b.type = 'button'; b.id = `tab-${day.date}`;
       b.setAttribute('role', 'tab'); b.setAttribute('aria-controls', 'daily-panel');
       b.setAttribute('aria-label', `${day.label} 일정`);
-      b.append(el('span', 'weekday', `${day.label.match(/\((.)\)/)?.[1] || ''}요일`), el('span', 'date-number', String(Number(day.date.slice(-2)))), el('span', 'date-mark', index===0?'도착':index===data.days.length-1?'귀국':day.events.some(e=>e.kind==='cruise')?'크루즈':'도시 여행'));
+      b.append(el('span', 'weekday', `${day.label.match(/\((.)\)/)?.[1] || ''}요일`), el('span', 'date-number', String(Number(day.date.slice(-2)))), el('span', 'date-mark', day.title.includes('랑카위')?'기항일':index===0?'도착':index===data.days.length-1?'귀국':day.events.some(e=>e.kind==='cruise')?'크루즈':'도시 여행'));
       b.addEventListener('click', () => selectDay(day.date, true));
       b.addEventListener('keydown', e => {
         let target = index;

@@ -39,4 +39,22 @@ class SnapshotTests(unittest.TestCase):
         self.assertEqual(data['alternatives'][0]['replaces'],'클라우드 포레스트')
         self.assertEqual(data['alternatives'][0]['title'],'호텔 휴식')
 
+    def test_cruise_notes_do_not_become_a_move(self):
+        for text in ['디즈니 어드벤처 · 랑카위 기항\n하선·귀선 안내 확인',
+                     '디즈니 어드벤처 · 해상일 동선 (가안)\n하선 짐 정리']:
+            self.assertEqual(sync.classify(text),'cruise')
+    def test_pat_does_not_become_an_assigned_clock_time(self):
+        meta={'sheets':[{'properties':{'title':'일정표','sheetId':0}}]}
+        grid=[['시간 (SGT)','2/18 (목)'],['14:00','예약 PAT 기준 승선 수속 · 마감 확인 필요']]
+        event=sync.make_public_snapshot(meta,grid,[])['days'][0]['events'][0]
+        self.assertEqual(event['time'],'배정 PAT 기준')
+        self.assertEqual(event['title'],'승선 수속 · 마감 확인 필요')
+    def test_langkawi_theme_and_all_day_cruise(self):
+        meta={'sheets':[{'properties':{'title':'일정표','sheetId':0}}]}
+        grid=[['시간 (SGT)','2/20 (토)'],['07:00','디즈니 어드벤처 · 랑카위 기항\n하선·귀선 확인']]
+        day=sync.make_public_snapshot(meta,grid,[])['days'][0]
+        self.assertIn('랑카위',day['title'])
+        self.assertEqual(day['events'][0]['kind'],'cruise')
+        self.assertEqual(day['events'][0]['time'],'하루 종일')
+
 if __name__=='__main__':unittest.main()

@@ -6,6 +6,7 @@ ITINERARY_SHEET_ID is supplied locally, not stored in this public repository.
 """
 import argparse
 import datetime as dt
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -27,6 +28,9 @@ def maps_for(text):
     return ''
 
 def classify(text):
+    # Identify the ship-day heading before movement words in explanatory notes.
+    # A Langkawi day may mention going ashore; a sea day may mention packing for disembarkation.
+    if '디즈니 어드벤처' in text.split('\n')[0]:return 'cruise'
     if any(x in text for x in ['확인 필요','시간 미정','시각 확인','귀국편']):return 'check'
     if any(x in text for x in ['하선','입국','짐 찾기 →','공항 도착']):return 'move'
     if '크루즈' in text or '선내' in text:return 'cruise'
@@ -52,7 +56,7 @@ def make_public_snapshot(metadata,grid,alt_rows,generated_at=None,year=2027):
     sheet=next((s for s in metadata.get('sheets',[]) if s['properties']['title']=='일정표'),None)
     if not sheet:raise ValueError('Main timetable tab not found')
     merges={(m.get('startRowIndex',0),m.get('startColumnIndex',0)):m for m in sheet.get('merges',[])}
-    themes={17:('도착하는 저녁','클락키에서 가볍게 시작'),18:('바다로 떠나는 날','가까운 산책 후 승선 준비'),19:('바다 위의 하루','선내 일정은 자유롭게'),20:('바다 위의 하루','선내 일정은 자유롭게'),21:('바다 위의 하루','선내 일정은 자유롭게'),22:('정원에서 야경까지','하선 후 휴식, 그리고 마리나베이'),23:('예술과 도시 산책','갤러리 · 덕투어 · 충분한 휴식'),24:('집으로 돌아가는 새벽','정확한 항공 수속 시각 재확인')}
+    themes={17:('도착하는 저녁','클락키에서 가볍게 시작'),18:('바다로 떠나는 날','가까운 산책 후 승선 준비'),19:('물놀이와 디즈니 공연','해상일 · 가족 동선 제안'),20:('랑카위에 닿는 날','기항일 · 날짜 배정은 예약서 재확인'),21:('마블과 디즈니 친구들','해상일 · 실제 회차는 선내 앱에서'),22:('정원에서 야경까지','하선 후 휴식, 그리고 마리나베이'),23:('예술과 도시 산책','갤러리 · 덕투어 · 충분한 휴식'),24:('집으로 돌아가는 새벽','정확한 항공 수속 시각 재확인')}
     days=[]
     for col,heading in enumerate(grid[0][1:],1):
         match=re.fullmatch(r'(\d{1,2})/(\d{1,2})\s*\(([월화수목금토일])\)',heading.strip())
@@ -74,6 +78,8 @@ def make_public_snapshot(metadata,grid,alt_rows,generated_at=None,year=2027):
             event_title=first[explicit.end():] if explicit else first
             kind=classify(text)
             if kind=='cruise':time='선내 일정' if date.day==18 else '하루 종일'
+            if first.startswith('예약 PAT 기준 '):
+                time='배정 PAT 기준';event_title=first.removeprefix('예약 PAT 기준 ')
             if '오전 하선' in first:time='오전 · 미정'
             if start=='00:00':time='새벽 · 확인 필요'
             body=[];alt=[]
@@ -107,6 +113,13 @@ def main():
     snapshot=make_public_snapshot(metadata,ranges[0].get('values',[]),ranges[1].get('values',[]),year=args.year)
     output=ROOT/'docs'/'data.js';output.parent.mkdir(exist_ok=True)
     output.write_text('window.TRIP_DATA = '+json.dumps(snapshot,ensure_ascii=False,indent=2)+';\n',encoding='utf-8')
+    # A fresh HTML URL alone does not invalidate the browser's cached data.js.
+    index=ROOT/'docs'/'index.html'
+    if index.exists():
+        version=hashlib.sha256(output.read_bytes()).hexdigest()[:12]
+        markup=index.read_text(encoding='utf-8')
+        updated=re.sub(r'src="\./data\.js(?:\?v=[^"]*)?"',f'src="./data.js?v={version}"',markup,count=1)
+        if updated!=markup:index.write_text(updated,encoding='utf-8')
     print(json.dumps({'output':str(output),'days':len(snapshot['days']),'events':sum(len(d['events']) for d in snapshot['days']),'alternatives':len(snapshot['alternatives']),'privacy_check':'passed'},ensure_ascii=False))
 
 if __name__=='__main__':main()
