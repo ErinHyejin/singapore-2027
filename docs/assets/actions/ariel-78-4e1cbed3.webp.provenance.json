@@ -1,0 +1,31 @@
+{
+  "id": "ariel-78",
+  "characters": [
+    "아리엘",
+    "플라운더"
+  ],
+  "sourceCharacters": [
+    "아리엘",
+    "플라운더"
+  ],
+  "actionKo": "아리엘과 플라운더의 바닷속 수영",
+  "activityTags": [
+    "물",
+    "수영",
+    "크루즈"
+  ],
+  "sourcePage": "https://princess.disney.com/ariel",
+  "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/gallery_princess_ariel_1_bc7355f9_b75f8a55.jpeg?region=3%2C0%2C2175%2C1223",
+  "sourceSHA256": "4e1cbed3916e89d52a911c1e8b2cd900bc68790f33f18c8cb5183d84bc13d6e1",
+  "originalSize": [
+    2175,
+    1223
+  ],
+  "asset": "docs/assets/actions/ariel-78-4e1cbed3.webp",
+  "width": 512,
+  "height": 288,
+  "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+  "visualNotes": "갤러리 원문은 grotto 위로 수영. 수중 배경, 펼친 팔, 유영 자세와 플라운더 확인. 포스터 아님. | 원문 alt: Flounder and Ariel swimming to the top of her grotto.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

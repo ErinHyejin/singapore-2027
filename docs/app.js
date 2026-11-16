@@ -66,30 +66,53 @@
     a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
     return a;
   }
+  function renderActionScene(event) {
+    const binding = window.TRIP_ACTIONS?.events?.[event.id];
+    const asset = window.TRIP_ACTIONS?.assets?.[binding?.asset];
+    if (!asset || !/^\.\/assets\/actions\/[a-z0-9-]+\.webp$/.test(asset.src)) return null;
+    const figure = el('figure', 'event-scene');
+    figure.dataset.asset = binding.asset;
+    figure.dataset.activity = binding.activity;
+    figure.setAttribute('aria-hidden', 'true');
+    const image = document.createElement('img');
+    image.alt = ''; image.loading = 'lazy'; image.decoding = 'async';
+    image.width = asset.width; image.height = asset.height;
+    image.addEventListener('error', () => {
+      figure.hidden = true;
+      figure.parentElement?.classList.remove('has-scene');
+    }, {once:true});
+    image.src = asset.src;
+    figure.append(image, el('figcaption', '', asset.caption));
+    return figure;
+  }
   function renderCard(event) {
     const kind = safeKind(event.kind);
-    const article = el('article', 'event'); article.dataset.kind = kind;
+    const article = el('article', 'event'); article.dataset.kind = kind; article.dataset.eventId = event.id;
     const time = el('span', 'event-time');
     const range = event.time.match(/^(\d{1,2}:\d{2})[–~](\d{1,2}:\d{2})$/);
     if (range) time.append(el('span', 'time-start', range[1]), el('span', 'time-end', `~${range[2]}`));
     else time.textContent = event.time;
     article.append(time);
     const card = el('div', 'event-card');
+    const copy = el('div', 'event-copy');
     const top = el('div', 'card-top');
     top.append(el('h3', '', event.title));
     if (['check', 'rest', 'cruise'].includes(kind)) top.append(el('span', `badge ${kind}`, labels[kind]));
-    card.append(top);
+    copy.append(top);
     if (event.details.length) {
       const detail = el('div', 'event-details');
       event.details.forEach(text => detail.append(el('p', '', text)));
-      card.append(detail);
+      copy.append(detail);
     }
-    const link = mapLink(event.map); if (link) card.append(link);
+    const link = mapLink(event.map); if (link) copy.append(link);
     if (event.alternative.length) {
       const alt = el('div', 'inline-alt');
       alt.append(el('strong', '', '대안'), document.createTextNode(event.alternative.join(' · ')));
-      card.append(alt);
+      copy.append(alt);
     }
+    card.append(copy);
+    const scene = renderActionScene(event);
+    if (scene) { card.classList.add('has-scene'); card.append(scene); }
     article.append(card); return article;
   }
   function renderAlternatives(day) {

@@ -1,0 +1,28 @@
+{
+  "id": "tfr029",
+  "characters": [
+    "티아나"
+  ],
+  "sourceCharacters": [
+    "티아나"
+  ],
+  "actionKo": "티아나의 전차 이동",
+  "activityTags": [
+    "이동",
+    "대중교통"
+  ],
+  "sourcePage": "https://movies.disney.com/the-princess-and-the-frog",
+  "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-1v5c9u6_b4aaf815.jpeg?region=0%2C0%2C1580%2C880",
+  "sourceSHA256": "6802d8f77b0586acf90b20aa16b02b9e123dce72d994c7ec472506b8a108f769",
+  "originalSize": [
+    1580,
+    880
+  ],
+  "asset": "docs/assets/actions/tfr029-6802d8f7.webp",
+  "width": 512,
+  "height": 285,
+  "rightsNote": "공식 Disney 영화 페이지 / Lumiere CDN. 페이지 권리표시: © 2026 Disney and its related entities. 작품 메타데이터: 2009 Disney Enterprises, Inc.. 비상업 가족용이라도 저작권 자유 또는 사용 허가를 추정하지 않음. 재사용 허가 미확인.",
+  "visualNotes": "통과. 전차와 승차 자세가 뚜렷하다. 항공기 탑승으로 표현하지 말 것.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

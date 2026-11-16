@@ -1,0 +1,31 @@
+{
+  "id": "moana-82",
+  "characters": [
+    "모아나"
+  ],
+  "sourceCharacters": [
+    "모아나"
+  ],
+  "actionKo": "모아나, 힘차게 노를 저어요",
+  "activityTags": [
+    "배",
+    "항해",
+    "물",
+    "DUCKtours",
+    "크루즈"
+  ],
+  "sourcePage": "https://princess.disney.com/moana",
+  "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/g_moana_03_17699_0777fbf2_7e1ca428.jpeg?region=1%2C0%2C1298%2C730",
+  "sourceSHA256": "fe99311a36ab16d7cf08e9b7754840be0eb04bbe568dac31f531cb37dc993b56",
+  "originalSize": [
+    1298,
+    730
+  ],
+  "asset": "docs/assets/actions/moana-82-fe99311a.webp",
+  "width": 512,
+  "height": 288,
+  "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+  "visualNotes": "노, 몸을 틀어 젓는 자세, 바닷물과 물보라 확인. 출항·항해 카드 우선. | 원문 alt: Moana setting sail on a camakau on her journey to return the heart to Te Fiti.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

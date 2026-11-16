@@ -20,6 +20,10 @@ The later Disney-character pass adds six existing character illustrations, a nav
 
 Additional checks: `node tests/countdown.test.js` checks Singapore midnight and trip-end boundaries. `tests/browser_checks.js`, `tests/photo_checks.js` and `tests/character_checks.js` run inside the isolated browser; character checks cover asset decoding, all eight date mappings, route controls, tap targets, decorative accessibility, overlap and reduced motion.
 
+A further activity pass uses 28 reviewed, existing film scenes across all 30 event IDs, with 36 distinct normalized character names (generic unnamed friends and age variants are not counted separately). Flight, food preparation, rowing, underwater travel, painting, plants, clock checks and rest are matched explicitly. Where literal sleeping or suitcase-packing was not found, captions honestly describe bedtime family time, sitting/resting, transport preparation or walking with a bag. `ACTION_SOURCES.json` keeps origins, copyright context, source hashes, visual notes and the relationship to each itinerary event. Public availability is not asserted to be a free license or official permission. Scenes are locally encoded WebP, never generated artwork or hotlinked runtime requests.
+
+`python3 scripts/build_actions.py /path/to/reviewed-local-curation.json` rebuilds the action assets after human visual review. `node tests/actions.test.js` verifies complete event coverage, scene diversity and activity bindings; `tests/action_checks.js` verifies decoding, responsive containment, preservation and error recovery in the isolated browser. Local source paths remain in the private curation input, not the public provenance export.
+
 ## Source and updates
 
 The private Google Sheet remains the source of truth. This site is **not a live Sheet integration**. After changing the sheet, use an already-authorized local `gws` account:

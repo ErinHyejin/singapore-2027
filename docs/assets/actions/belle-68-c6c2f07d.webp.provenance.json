@@ -1,0 +1,32 @@
+{
+  "id": "belle-68",
+  "characters": [
+    "벨",
+    "야수"
+  ],
+  "sourceCharacters": [
+    "벨",
+    "야수"
+  ],
+  "actionKo": "벨과 야수의 반가운 인사",
+  "activityTags": [
+    "인사",
+    "공연",
+    "식사",
+    "MBS식사"
+  ],
+  "sourcePage": "https://princess.disney.com/belle",
+  "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/gallery_princess_belle_3_df0e9c1d_e423919b.jpeg?region=3%2C0%2C2175%2C1223",
+  "sourceSHA256": "c6c2f07d14aacdc99265c949e2451eb0ddc7e4d429639824881a2255966233bb",
+  "originalSize": [
+    2175,
+    1223
+  ],
+  "asset": "docs/assets/actions/belle-68-c6c2f07d.webp",
+  "width": 512,
+  "height": 288,
+  "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+  "visualNotes": "원본 확대 검수 완료. 실제 보이는 행동은 서로 인사하기이며 이 순간을 왈츠나 손잡고 춤추기로 부르지 않음. | 원문 alt: Belle and Beast share their first dance.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "pixar002",
+  "characters": [
+    "레미"
+  ],
+  "sourceCharacters": [
+    "레미"
+  ],
+  "actionKo": "레미의 아침 식사 준비",
+  "activityTags": [
+    "식사준비",
+    "조식"
+  ],
+  "sourcePage": "https://www.pixar.com/ratatouille",
+  "sourceImage": "https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1720811840585-9QDPUQQKQFHPYRG3YJN2/Remy15.jpg",
+  "sourceSHA256": "2ee443eab149ba4f2f0dacf08a03979688a9b4cf2eabf397982826e8ceff25cf",
+  "originalSize": [
+    1500,
+    624
+  ],
+  "asset": "docs/assets/actions/pixar002-2ee443ea.webp",
+  "width": 512,
+  "height": 213,
+  "rightsNote": "공식 Pixar 원출처. 페이지 권리표시: © 1986-2026 Disney-Pixar. 공개 다운로드 가능성과 웹사이트 재사용 허가는 별개이며 사용 허가는 확인되지 않음.",
+  "visualNotes": "통과. 노란 오믈렛처럼 보이는 완성 음식이 있다. 직접 먹는 장면은 아니다.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

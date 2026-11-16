@@ -1,0 +1,28 @@
+{
+  "id": "rabbit003",
+  "characters": [
+    "시계토끼"
+  ],
+  "sourceCharacters": [
+    "시계토끼"
+  ],
+  "actionKo": "시계토끼도 시간을 확인해요",
+  "activityTags": [
+    "시간확인",
+    "준비"
+  ],
+  "sourcePage": "https://www.alice-in-wonderland.net/resources/pictures/white-rabbit/",
+  "sourceImage": "https://www.alice-in-wonderland.net/wp-content/uploads/white-rabbit-with-watch-1.jpg",
+  "sourceSHA256": "c62dae9f591d5785fa38a1b46c65c0a4d7a9c05d3be687e45b5b67768fd01f83",
+  "originalSize": [
+    720,
+    576
+  ],
+  "asset": "docs/assets/actions/rabbit003-c62dae9f.webp",
+  "width": 480,
+  "height": 384,
+  "rightsNote": "비공식 자료실. 원문 권리표시: All colored images above are copyright of Disney. 자료실은 개인·팬 목적 게시 및 Disney 허가 없는 상업/영리 사용 금지를 명시한다. 이 문구는 Disney가 가족여행 사이트 재사용을 허가했다는 증거가 아님. 허가 미확인.",
+  "visualNotes": "통과. 시계 확인 클로즈업. 달리는지는 이 컷에서 확정 불가.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

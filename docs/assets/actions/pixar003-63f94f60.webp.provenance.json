@@ -1,0 +1,27 @@
+{
+  "id": "pixar003",
+  "characters": [
+    "링귀니"
+  ],
+  "sourceCharacters": [
+    "링귀니"
+  ],
+  "actionKo": "링귀니도 잠깐 쉬어 가요",
+  "activityTags": [
+    "휴식"
+  ],
+  "sourcePage": "https://www.pixar.com/ratatouille",
+  "sourceImage": "https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/17dc71ec-797f-4825-9cc6-26820c5ac1ed/Linguini7.jpg",
+  "sourceSHA256": "63f94f607c1fdc5362f3e3fbcf32e6d05bf397dc1699e66af2899b694682b40e",
+  "originalSize": [
+    1500,
+    623
+  ],
+  "asset": "docs/assets/actions/pixar003-63f94f60.webp",
+  "width": 512,
+  "height": 213,
+  "rightsNote": "공식 Pixar 원출처. 페이지 권리표시: © 1986-2026 Disney-Pixar. 공개 다운로드 가능성과 웹사이트 재사용 허가는 별개이며 사용 허가는 확인되지 않음.",
+  "visualNotes": "통과. 눈이 떠 있다. 낮잠·취침으로 표시하지 말 것.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

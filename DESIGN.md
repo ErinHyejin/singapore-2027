@@ -216,6 +216,12 @@ sidecar의 프리뷰는 실제 선언을 추출·ds-접두사로 격리한 HTML/
 
 상단은 620ms의 일회성 등장과 100ms의 두 번째 캐릭터 지연, 날짜 변경은 캐릭터 360ms와 사진 220ms다. 기본 opacity는 0이 아니며 무한 반복은 없다. reduced-motion에서는 해당 애니메이션을 생략한다. 기능 테스트와 정적 렌더 검수는 시행하되 실제 기기 프레임률 측정이나 전체 모션 영상 검수로 표현하지 않는다.
 
+### Activity-matched film scenes
+
+각 일정 카드에 캐릭터의 실제 행동이 보이는 기존 영화 장면을 표시한다. `docs/actions.js`의 `events`는 원본 event ID별 명시적 매핑이며 `assets`는 로컬 WebP·캐릭터·행동·크기를 제공한다. 원출처/권리표시/원본 SHA-256/관련 이유는 `ACTION_SOURCES.json`, 자산 sidecar 및 WebP metadata에 남긴다. 원래 일정 데이터와 이미지 배치를 분리한다.
+
+기본은 본문 아래 `max-width:256px`, 이미지는 `max-height:152px;object-fit:contain`, 캡션은 12px/1.5/secondary다. 1100px 이상에서는 `minmax(0,1fr) 192px`, gap 20px로 본문 옆에 놓는다. 필수 제목·시간·지도는 이미지 밖에 둔다. figure는 장식으로 aria-hidden/pointer-events:none이고 이미지는 빈 alt, lazy loading을 사용한다. 이미지 오류 시 그림만 숨기고 열 배치를 해제한다. 인쇄에서는 그림을 생략한다. 새 반복 애니메이션은 없다.
+
 ## Do's and Don'ts
 
 ### Do:

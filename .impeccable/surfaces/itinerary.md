@@ -46,6 +46,8 @@ Motion thesis: 첫 화면에서 미키와 미니가 짧게 자세를 잡는 620m
 
 Character assets: 기존 디즈니 캐릭터 이미지 6종이며 생성 이미지가 아니다. 원본·변경·저작권 맥락은 `CHARACTER_SOURCES.json`과 자산 메타데이터에 기록한다. 출연/만남 예약 확정의 표현으로 쓰지 않는다.
 
+30개 일정마다 기존 Disney/Pixar 영화의 행동 장면을 붙이는 후속 요청을 반영한다. 장면은 제목·지도·본문과 분리된 작은 figure로 표시하고 1100px 이상에서는 본문 옆, 그보다 좁으면 본문 아래에 둔다. 원본 비율을 유지하는 contain으로 캐릭터 동작을 자르지 않는다. lazy-loading을 사용하고 이미지 오류 시 figure만 숨기며 일정은 그대로 읽을 수 있게 한다. 새로운 애니메이션은 추가하지 않는다. 정면 캐릭터 포즈를 반복하거나 실제 수면·짐싸기가 아닌 컷을 그런 행동으로 부르지 않는다. 공식 사용허가/공식 회차/캐릭터 만남 예약을 의미하지 않는다.
+
 ## Preservation boundary
 
 Keep itinerary JSON, sheet export behavior, privacy boundary, original sheet sharing, existing published URL and all original controls. Do not publish runtime/cache/skill files. Photo provenance stays in source records and image metadata; select CC0 to permit omitting visible credit notices. No image generation or invented Disney ship photos.

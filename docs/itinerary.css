@@ -200,3 +200,13 @@ footer{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
 }
 @media(prefers-reduced-motion:reduce){.hero-character{animation:none;transform:none}.hero-minnie{animation-delay:0ms}}
 @media print{.hero-character,.hero-stars,.day-companion,.stitch-cameo,.goofy-cameo,.voyage-route,.trip-countdown{display:none}.trip-header{background:white;color:var(--ink);width:auto}.trip-header .trip-meta p:first-child{color:var(--ink)}}
+
+.event-copy{min-width:0}
+.event-scene{margin:12px 0 0;max-width:256px;min-width:0;pointer-events:none;align-self:start}
+.event-scene img{display:block;width:100%;height:auto;max-height:152px;object-fit:contain;object-position:left center;border-radius:6px}
+.event-scene figcaption{margin-top:6px;font-size:12px;line-height:1.5;color:var(--secondary);overflow-wrap:anywhere}
+@media(min-width:1100px){
+  .event-card.has-scene{display:grid;grid-template-columns:minmax(0,1fr) 192px;gap:20px;align-items:start}
+  .event-scene{margin:0;max-width:none}
+}
+@media print{.event-scene{display:none}.event-card.has-scene{display:block}}

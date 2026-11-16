@@ -1,0 +1,29 @@
+{
+  "id": "clip049",
+  "characters": [
+    "푸"
+  ],
+  "sourceCharacters": [
+    "푸",
+    "친구들"
+  ],
+  "actionKo": "푸와 친구들의 작은 다리 건너기",
+  "activityTags": [
+    "이동",
+    "산책"
+  ],
+  "sourcePage": "https://movies.disney.com/winnie-the-pooh",
+  "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-12561-bs9ixl_a57a7653.jpeg?region=0,0,629,354",
+  "sourceSHA256": "371ee4c147345851bbe98cbe3303a8649e5d8278fbd7cc0f77877638bfbeb45f",
+  "originalSize": [
+    629,
+    354
+  ],
+  "asset": "docs/assets/actions/clip049-371ee4c1.webp",
+  "width": 512,
+  "height": 288,
+  "rightsNote": "공식 Disney 영화 페이지 / Lumiere CDN. 페이지 권리표시: © 2026 Disney and its related entities. 작품 메타데이터: 2011 Disney Enterprises, Inc.. 비상업 가족용이라도 저작권 자유 또는 사용 허가를 추정하지 않음. 재사용 허가 미확인.",
+  "visualNotes": "통과. 트레일러 대표이미지. 개별 동물 전원을 이 크기에서 확정하지 않고 친구들로 표시.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

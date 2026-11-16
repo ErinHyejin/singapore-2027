@@ -1,0 +1,30 @@
+{
+  "id": "tfr027",
+  "characters": [
+    "티아나",
+    "샬럿"
+  ],
+  "sourceCharacters": [
+    "어린 티아나",
+    "어린 샬럿"
+  ],
+  "actionKo": "티아나와 샬럿, 앉아서 쉬는 시간",
+  "activityTags": [
+    "휴식",
+    "앉아쉬기"
+  ],
+  "sourcePage": "https://movies.disney.com/the-princess-and-the-frog",
+  "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-184z8ro_1759faa1.jpeg?region=0%2C0%2C1580%2C880",
+  "sourceSHA256": "cb6af81bacdeedfb07885f5316fd0f9f62447a1f4c7e78a81e213d49a2f41b8c",
+  "originalSize": [
+    1580,
+    880
+  ],
+  "asset": "docs/assets/actions/tfr027-cb6af81b.webp",
+  "width": 512,
+  "height": 285,
+  "rightsNote": "공식 Disney 영화 페이지 / Lumiere CDN. 페이지 권리표시: © 2026 Disney and its related entities. 작품 메타데이터: 2009 Disney Enterprises, Inc.. 비상업 가족용이라도 저작권 자유 또는 사용 허가를 추정하지 않음. 재사용 허가 미확인.",
+  "visualNotes": "통과. 앉아 쉬는 카드용. 잠자는 장면으로 쓰지 말 것.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

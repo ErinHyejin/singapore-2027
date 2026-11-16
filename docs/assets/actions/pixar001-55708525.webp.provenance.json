@@ -1,0 +1,30 @@
+{
+  "id": "pixar001",
+  "characters": [
+    "레미",
+    "링귀니"
+  ],
+  "sourceCharacters": [
+    "레미",
+    "링귀니"
+  ],
+  "actionKo": "레미와 링귀니의 요리 시간",
+  "activityTags": [
+    "조리",
+    "식사준비"
+  ],
+  "sourcePage": "https://www.pixar.com/ratatouille",
+  "sourceImage": "https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1720811840461-HIZC1B1EDM2NQQRZPMRY/Remy14.jpg",
+  "sourceSHA256": "557085252608164bb8d33b72948e549826799ed58f79d19bb393a575ad2c26a6",
+  "originalSize": [
+    1500,
+    627
+  ],
+  "asset": "docs/assets/actions/pixar001-55708525.webp",
+  "width": 512,
+  "height": 214,
+  "rightsNote": "공식 Pixar 원출처. 페이지 권리표시: © 1986-2026 Disney-Pixar. 공개 다운로드 가능성과 웹사이트 재사용 허가는 별개이며 사용 허가는 확인되지 않음.",
+  "visualNotes": "통과. 완성 3D 영화 스틸. 레미가 어떤 재료를 넣는지까지는 판독하지 않음.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

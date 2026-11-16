@@ -1,0 +1,28 @@
+{
+  "id": "pixar008",
+  "characters": [
+    "안톤 이고"
+  ],
+  "sourceCharacters": [
+    "안톤 이고"
+  ],
+  "actionKo": "안톤 이고의 한 입 시식",
+  "activityTags": [
+    "식사",
+    "시식"
+  ],
+  "sourcePage": "https://www.pixar.com/ratatouille",
+  "sourceImage": "https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1720812244963-66YQXD48P03NT7NU7T0X/AntonEgo10.jpg",
+  "sourceSHA256": "066191611bae5ae494871a4deded5b49ca884ae2a1969c032ce73a51a8777cfa",
+  "originalSize": [
+    1500,
+    629
+  ],
+  "asset": "docs/assets/actions/pixar008-06619161.webp",
+  "width": 512,
+  "height": 215,
+  "rightsNote": "공식 Pixar 원출처. 페이지 권리표시: © 1986-2026 Disney-Pixar. 공개 다운로드 가능성과 웹사이트 재사용 허가는 별개이며 사용 허가는 확인되지 않음.",
+  "visualNotes": "통과. 접시와 와인잔이 보이는 실제 식사 장면. 큰 글자·분할 없음.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

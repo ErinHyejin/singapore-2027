@@ -1,0 +1,32 @@
+{
+  "id": "clip044",
+  "characters": [
+    "레이디",
+    "트램프",
+    "토니"
+  ],
+  "sourceCharacters": [
+    "레이디",
+    "트램프",
+    "토니"
+  ],
+  "actionKo": "토니가 레이디와 트램프를 대접해요",
+  "activityTags": [
+    "식사",
+    "서빙"
+  ],
+  "sourcePage": "https://movies.disney.com/lady-and-the-tramp",
+  "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-12561-1tnsgn5_89b8bdf1.jpeg?region=0,0,400,225",
+  "sourceSHA256": "1f3bb0eeb8df52aef4b012239ff5346273c4ea2f4e013c61118fa86dd68b832b",
+  "originalSize": [
+    400,
+    225
+  ],
+  "asset": "docs/assets/actions/clip044-1f3bb0ee.webp",
+  "width": 400,
+  "height": 225,
+  "rightsNote": "공식 Disney 영화 페이지 / Lumiere CDN. 페이지 권리표시: © 2026 Disney and its related entities. 작품 메타데이터: 1955 Disney Enterprises, Inc.. 비상업 가족용이라도 저작권 자유 또는 사용 허가를 추정하지 않음. 재사용 허가 미확인.",
+  "visualNotes": "통과. 식당과 접시가 보이는 클립 대표이미지. 개들이 스파게티를 먹는 순간이라고 설명하지 말 것.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

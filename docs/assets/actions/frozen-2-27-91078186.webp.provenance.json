@@ -1,0 +1,31 @@
+{
+  "id": "frozen-2-27",
+  "characters": [
+    "엘사"
+  ],
+  "sourceCharacters": [
+    "엘사"
+  ],
+  "actionKo": "엘사의 빛나는 마법",
+  "activityTags": [
+    "마법",
+    "야경",
+    "쇼",
+    "스펙트라",
+    "선내쇼"
+  ],
+  "sourcePage": "https://movies.disney.com/frozen-2",
+  "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/g_frozen2_01_18371_15bd90fc.jpeg?region=0%2C0%2C1300%2C730",
+  "sourceSHA256": "91078186f3de342d646379d8d87d2efa517dd43ebf59868032618dad23f96c32",
+  "originalSize": [
+    1300,
+    730
+  ],
+  "asset": "docs/assets/actions/frozen-2-27-91078186.webp",
+  "width": 512,
+  "height": 288,
+  "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+  "visualNotes": "원본 확대 검수에서 엘사와 주위의 푸른 눈가루 같은 입자·빛의 고리 확인. 얼음성 생성이나 얼음 광선 발사로 부풀리지 않음. | 원문 alt: Elsa, voiced by Idina Menzel, using her powers in Frozen 2",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

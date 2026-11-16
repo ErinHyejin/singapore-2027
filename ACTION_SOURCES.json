@@ -1,0 +1,998 @@
+{
+  "assets": [
+    {
+      "id": "clip037",
+      "characters": [
+        "덤보"
+      ],
+      "sourceCharacters": [
+        "덤보"
+      ],
+      "actionKo": "덤보, 두 귀를 펼치고 비행",
+      "activityTags": [
+        "비행",
+        "이동"
+      ],
+      "sourcePage": "https://movies.disney.com/dumbo",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/image_408c2a88.jpeg?region=0,0,400,225",
+      "sourceSHA256": "e4ec772c7f414a5c64cfe2f6cf988faa6a1069e41c527444f134c34e1dd16012",
+      "originalSize": [
+        400,
+        225
+      ],
+      "asset": "docs/assets/actions/clip037-e4ec772c.webp",
+      "width": 400,
+      "height": 225,
+      "rightsNote": "공식 Disney 영화 페이지 / Lumiere CDN. 페이지 권리표시: © 2026 Disney and its related entities. 작품 메타데이터: 1941 Disney Enterprises, Inc.. 비상업 가족용이라도 저작권 자유 또는 사용 허가를 추정하지 않음. 재사용 허가 미확인.",
+      "visualNotes": "통과. 덤보 트레일러의 실제 공개 대표이미지. 큰 홍보 문구 없음. 630px급 이미지.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "belle-68",
+      "characters": [
+        "벨",
+        "야수"
+      ],
+      "sourceCharacters": [
+        "벨",
+        "야수"
+      ],
+      "actionKo": "벨과 야수의 반가운 인사",
+      "activityTags": [
+        "인사",
+        "공연",
+        "식사",
+        "MBS식사"
+      ],
+      "sourcePage": "https://princess.disney.com/belle",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/gallery_princess_belle_3_df0e9c1d_e423919b.jpeg?region=3%2C0%2C2175%2C1223",
+      "sourceSHA256": "c6c2f07d14aacdc99265c949e2451eb0ddc7e4d429639824881a2255966233bb",
+      "originalSize": [
+        2175,
+        1223
+      ],
+      "asset": "docs/assets/actions/belle-68-c6c2f07d.webp",
+      "width": 512,
+      "height": 288,
+      "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+      "visualNotes": "원본 확대 검수 완료. 실제 보이는 행동은 서로 인사하기이며 이 순간을 왈츠나 손잡고 춤추기로 부르지 않음. | 원문 alt: Belle and Beast share their first dance.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "clip044",
+      "characters": [
+        "레이디",
+        "트램프",
+        "토니"
+      ],
+      "sourceCharacters": [
+        "레이디",
+        "트램프",
+        "토니"
+      ],
+      "actionKo": "토니가 레이디와 트램프를 대접해요",
+      "activityTags": [
+        "식사",
+        "서빙"
+      ],
+      "sourcePage": "https://movies.disney.com/lady-and-the-tramp",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-12561-1tnsgn5_89b8bdf1.jpeg?region=0,0,400,225",
+      "sourceSHA256": "1f3bb0eeb8df52aef4b012239ff5346273c4ea2f4e013c61118fa86dd68b832b",
+      "originalSize": [
+        400,
+        225
+      ],
+      "asset": "docs/assets/actions/clip044-1f3bb0ee.webp",
+      "width": 400,
+      "height": 225,
+      "rightsNote": "공식 Disney 영화 페이지 / Lumiere CDN. 페이지 권리표시: © 2026 Disney and its related entities. 작품 메타데이터: 1955 Disney Enterprises, Inc.. 비상업 가족용이라도 저작권 자유 또는 사용 허가를 추정하지 않음. 재사용 허가 미확인.",
+      "visualNotes": "통과. 식당과 접시가 보이는 클립 대표이미지. 개들이 스파게티를 먹는 순간이라고 설명하지 말 것.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "tfr028",
+      "characters": [
+        "티아나",
+        "유도라",
+        "제임스"
+      ],
+      "sourceCharacters": [
+        "어린 티아나",
+        "유도라",
+        "제임스"
+      ],
+      "actionKo": "티아나 가족의 잠들기 전 시간",
+      "activityTags": [
+        "휴식",
+        "가족시간"
+      ],
+      "sourcePage": "https://movies.disney.com/the-princess-and-the-frog",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-1ki0juk_a2776703.jpeg?region=0%2C0%2C1580%2C880",
+      "sourceSHA256": "d91db05a7438c9cbaaf0e138137153189d1d7f7af67ebc4f96db02652c731e1e",
+      "originalSize": [
+        1580,
+        880
+      ],
+      "asset": "docs/assets/actions/tfr028-d91db05a.webp",
+      "width": 512,
+      "height": 285,
+      "rightsNote": "공식 Disney 영화 페이지 / Lumiere CDN. 페이지 권리표시: © 2026 Disney and its related entities. 작품 메타데이터: 2009 Disney Enterprises, Inc.. 비상업 가족용이라도 저작권 자유 또는 사용 허가를 추정하지 않음. 재사용 허가 미확인.",
+      "visualNotes": "통과. 취침 전 가족시간에 가능. 눈감고 자는 모습은 아니다.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "pixar002",
+      "characters": [
+        "레미"
+      ],
+      "sourceCharacters": [
+        "레미"
+      ],
+      "actionKo": "레미의 아침 식사 준비",
+      "activityTags": [
+        "식사준비",
+        "조식"
+      ],
+      "sourcePage": "https://www.pixar.com/ratatouille",
+      "sourceImage": "https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1720811840585-9QDPUQQKQFHPYRG3YJN2/Remy15.jpg",
+      "sourceSHA256": "2ee443eab149ba4f2f0dacf08a03979688a9b4cf2eabf397982826e8ceff25cf",
+      "originalSize": [
+        1500,
+        624
+      ],
+      "asset": "docs/assets/actions/pixar002-2ee443ea.webp",
+      "width": 512,
+      "height": 213,
+      "rightsNote": "공식 Pixar 원출처. 페이지 권리표시: © 1986-2026 Disney-Pixar. 공개 다운로드 가능성과 웹사이트 재사용 허가는 별개이며 사용 허가는 확인되지 않음.",
+      "visualNotes": "통과. 노란 오믈렛처럼 보이는 완성 음식이 있다. 직접 먹는 장면은 아니다.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "bambi-19",
+      "characters": [
+        "밤비",
+        "플라워"
+      ],
+      "sourceCharacters": [
+        "밤비",
+        "플라워"
+      ],
+      "actionKo": "밤비와 플라워의 꽃밭 만남",
+      "activityTags": [
+        "자연",
+        "꽃",
+        "정원",
+        "공원"
+      ],
+      "sourcePage": "https://movies.disney.com/bambi",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-11rvcrb_a0c82421.jpeg?region=0%2C0%2C1185%2C660",
+      "sourceSHA256": "5094b92f19011397579dae1f96080ed252be3156407ba213a92bdb8a640fd7a9",
+      "originalSize": [
+        1185,
+        660
+      ],
+      "asset": "docs/assets/actions/bambi-19-5094b92f.webp",
+      "width": 512,
+      "height": 285,
+      "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities; 1942 Disney Enterprises, Inc.. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+      "visualNotes": "원본 확대 검수에서 밤비의 낮춘 고개와 꽃 사이 스컹크 확인. 정원 가꾸기·달리기·냄새 맡기로 확대 해석하지 않음. | 원문 alt: Bambi meets Flower from the movie \"Bambi\"",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "tfr090",
+      "characters": [
+        "벨",
+        "칩"
+      ],
+      "sourceCharacters": [
+        "벨",
+        "칩"
+      ],
+      "actionKo": "벨과 칩의 티타임",
+      "activityTags": [
+        "차시간",
+        "음료준비"
+      ],
+      "sourcePage": "https://movies.disney.com/beauty-and-the-beast-1991",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/gallery_beautyandthebeast_34_a9483104.jpeg?region=0%2C0%2C1200%2C560",
+      "sourceSHA256": "97306aae079e6b047e6ac5dbdbe6d488634dbec652da2e282206e841c1245684",
+      "originalSize": [
+        1200,
+        560
+      ],
+      "asset": "docs/assets/actions/tfr090-97306aae.webp",
+      "width": 512,
+      "height": 239,
+      "rightsNote": "공식 Disney 영화 페이지 / Lumiere CDN. 페이지 권리표시: © 2026 Disney and its related entities. 작품 메타데이터: 1991 Disney Enterprises, Inc.\\n. 비상업 가족용이라도 저작권 자유 또는 사용 허가를 추정하지 않음. 재사용 허가 미확인.",
+      "visualNotes": "부모 원본 검수: 벨과 칩이 보이고 찻잔 위로 갈색 액체가 튀어 있다. 벨이 찻잔 받침을 실제 손에 들었는지는 불명확하므로 그런 행동을 주장하지 않음. 티타임 장면으로 사용.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "pixar006",
+      "characters": [
+        "콜레트",
+        "링귀니"
+      ],
+      "sourceCharacters": [
+        "콜레트",
+        "링귀니"
+      ],
+      "actionKo": "콜레트, 오토바이에 앉아 출발 준비",
+      "activityTags": [
+        "이동준비",
+        "교통수단"
+      ],
+      "sourcePage": "https://www.pixar.com/ratatouille",
+      "sourceImage": "https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1720812155377-HEEFV084PYQFMJKVUXJH/Colette7.jpg",
+      "sourceSHA256": "bdf00ab888eaefacc93787712be7de2ef1509979a38ab3e713380d523b1c7237",
+      "originalSize": [
+        1500,
+        617
+      ],
+      "asset": "docs/assets/actions/pixar006-bdf00ab8.webp",
+      "width": 512,
+      "height": 211,
+      "rightsNote": "공식 Pixar 원출처. 페이지 권리표시: © 1986-2026 Disney-Pixar. 공개 다운로드 가능성과 웹사이트 재사용 허가는 별개이며 사용 허가는 확인되지 않음.",
+      "visualNotes": "통과. 오토바이 정차 장면. 실제 주행 중이라고 설명하지 말 것.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "rabbit002",
+      "characters": [
+        "시계토끼"
+      ],
+      "sourceCharacters": [
+        "시계토끼"
+      ],
+      "actionKo": "시계토끼도 시간을 확인해요",
+      "activityTags": [
+        "시간확인",
+        "이동",
+        "준비"
+      ],
+      "sourcePage": "https://www.alice-in-wonderland.net/resources/pictures/white-rabbit/",
+      "sourceImage": "https://www.alice-in-wonderland.net/wp-content/uploads/white-rabbit-with-watch-2.jpg",
+      "sourceSHA256": "c7ed9db5c6f28baa74068ff9de6de99b887ef6c8dd3cc45f9bbec4596b5f4cbd",
+      "originalSize": [
+        720,
+        576
+      ],
+      "asset": "docs/assets/actions/rabbit002-c7ed9db5.webp",
+      "width": 480,
+      "height": 384,
+      "rightsNote": "비공식 자료실. 원문 권리표시: All colored images above are copyright of Disney. 자료실은 개인·팬 목적 게시 및 Disney 허가 없는 상업/영리 사용 금지를 명시한다. 이 문구는 Disney가 가족여행 사이트 재사용을 허가했다는 증거가 아님. 허가 미확인.",
+      "visualNotes": "통과. 작은 크기에서도 달리는 자세와 시계가 보인다. 손가락으로 가리킨다는 설명은 금지.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "moana-82",
+      "characters": [
+        "모아나"
+      ],
+      "sourceCharacters": [
+        "모아나"
+      ],
+      "actionKo": "모아나, 힘차게 노를 저어요",
+      "activityTags": [
+        "배",
+        "항해",
+        "물",
+        "DUCKtours",
+        "크루즈"
+      ],
+      "sourcePage": "https://princess.disney.com/moana",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/g_moana_03_17699_0777fbf2_7e1ca428.jpeg?region=1%2C0%2C1298%2C730",
+      "sourceSHA256": "fe99311a36ab16d7cf08e9b7754840be0eb04bbe568dac31f531cb37dc993b56",
+      "originalSize": [
+        1298,
+        730
+      ],
+      "asset": "docs/assets/actions/moana-82-fe99311a.webp",
+      "width": 512,
+      "height": 288,
+      "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+      "visualNotes": "노, 몸을 틀어 젓는 자세, 바닷물과 물보라 확인. 출항·항해 카드 우선. | 원문 alt: Moana setting sail on a camakau on her journey to return the heart to Te Fiti.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "ariel-78",
+      "characters": [
+        "아리엘",
+        "플라운더"
+      ],
+      "sourceCharacters": [
+        "아리엘",
+        "플라운더"
+      ],
+      "actionKo": "아리엘과 플라운더의 바닷속 수영",
+      "activityTags": [
+        "물",
+        "수영",
+        "크루즈"
+      ],
+      "sourcePage": "https://princess.disney.com/ariel",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/gallery_princess_ariel_1_bc7355f9_b75f8a55.jpeg?region=3%2C0%2C2175%2C1223",
+      "sourceSHA256": "4e1cbed3916e89d52a911c1e8b2cd900bc68790f33f18c8cb5183d84bc13d6e1",
+      "originalSize": [
+        2175,
+        1223
+      ],
+      "asset": "docs/assets/actions/ariel-78-4e1cbed3.webp",
+      "width": 512,
+      "height": 288,
+      "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+      "visualNotes": "갤러리 원문은 grotto 위로 수영. 수중 배경, 펼친 팔, 유영 자세와 플라운더 확인. 포스터 아님. | 원문 alt: Flounder and Ariel swimming to the top of her grotto.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "finding-nemo-63",
+      "characters": [
+        "크러쉬",
+        "스쿼트",
+        "도리",
+        "말린"
+      ],
+      "sourceCharacters": [
+        "크러쉬",
+        "스쿼트",
+        "도리",
+        "말린"
+      ],
+      "actionKo": "크러쉬와 친구들의 해류 여행",
+      "activityTags": [
+        "물",
+        "수영",
+        "항해",
+        "크루즈"
+      ],
+      "sourcePage": "https://movies.disney.com/finding-nemo",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-vpw0tl_86c5047b.jpeg?region=0%2C0%2C1580%2C880",
+      "sourceSHA256": "da662e892d1ae9d6c211c3c0eb6c1ff65ddec608f7c14bc9c0589a2e68daeb25",
+      "originalSize": [
+        1580,
+        880
+      ],
+      "asset": "docs/assets/actions/finding-nemo-63-da662e89.webp",
+      "width": 512,
+      "height": 285,
+      "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities; 2003 Disney/Pixar. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+      "visualNotes": "앞지느러미를 펼친 거북 무리와 물고기 확인. EAC는 공식 alt 근거. 단체 홍보 포스터가 아닌 영화 갤러리 스틸. | 원문 alt: Characters Crush and Squirt in the EAC with other turtles, Dory and and Marlin in the background in \"Finding Nemo\"",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "frozen-2-27",
+      "characters": [
+        "엘사"
+      ],
+      "sourceCharacters": [
+        "엘사"
+      ],
+      "actionKo": "엘사의 빛나는 마법",
+      "activityTags": [
+        "마법",
+        "야경",
+        "쇼",
+        "스펙트라",
+        "선내쇼"
+      ],
+      "sourcePage": "https://movies.disney.com/frozen-2",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/g_frozen2_01_18371_15bd90fc.jpeg?region=0%2C0%2C1300%2C730",
+      "sourceSHA256": "91078186f3de342d646379d8d87d2efa517dd43ebf59868032618dad23f96c32",
+      "originalSize": [
+        1300,
+        730
+      ],
+      "asset": "docs/assets/actions/frozen-2-27-91078186.webp",
+      "width": 512,
+      "height": 288,
+      "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+      "visualNotes": "원본 확대 검수에서 엘사와 주위의 푸른 눈가루 같은 입자·빛의 고리 확인. 얼음성 생성이나 얼음 광선 발사로 부풀리지 않음. | 원문 alt: Elsa, voiced by Idina Menzel, using her powers in Frozen 2",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "tfr029",
+      "characters": [
+        "티아나"
+      ],
+      "sourceCharacters": [
+        "티아나"
+      ],
+      "actionKo": "티아나의 전차 이동",
+      "activityTags": [
+        "이동",
+        "대중교통"
+      ],
+      "sourcePage": "https://movies.disney.com/the-princess-and-the-frog",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-1v5c9u6_b4aaf815.jpeg?region=0%2C0%2C1580%2C880",
+      "sourceSHA256": "6802d8f77b0586acf90b20aa16b02b9e123dce72d994c7ec472506b8a108f769",
+      "originalSize": [
+        1580,
+        880
+      ],
+      "asset": "docs/assets/actions/tfr029-6802d8f7.webp",
+      "width": 512,
+      "height": 285,
+      "rightsNote": "공식 Disney 영화 페이지 / Lumiere CDN. 페이지 권리표시: © 2026 Disney and its related entities. 작품 메타데이터: 2009 Disney Enterprises, Inc.. 비상업 가족용이라도 저작권 자유 또는 사용 허가를 추정하지 않음. 재사용 허가 미확인.",
+      "visualNotes": "통과. 전차와 승차 자세가 뚜렷하다. 항공기 탑승으로 표현하지 말 것.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "pixar001",
+      "characters": [
+        "레미",
+        "링귀니"
+      ],
+      "sourceCharacters": [
+        "레미",
+        "링귀니"
+      ],
+      "actionKo": "레미와 링귀니의 요리 시간",
+      "activityTags": [
+        "조리",
+        "식사준비"
+      ],
+      "sourcePage": "https://www.pixar.com/ratatouille",
+      "sourceImage": "https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1720811840461-HIZC1B1EDM2NQQRZPMRY/Remy14.jpg",
+      "sourceSHA256": "557085252608164bb8d33b72948e549826799ed58f79d19bb393a575ad2c26a6",
+      "originalSize": [
+        1500,
+        627
+      ],
+      "asset": "docs/assets/actions/pixar001-55708525.webp",
+      "width": 512,
+      "height": 214,
+      "rightsNote": "공식 Pixar 원출처. 페이지 권리표시: © 1986-2026 Disney-Pixar. 공개 다운로드 가능성과 웹사이트 재사용 허가는 별개이며 사용 허가는 확인되지 않음.",
+      "visualNotes": "통과. 완성 3D 영화 스틸. 레미가 어떤 재료를 넣는지까지는 판독하지 않음.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "pixar003",
+      "characters": [
+        "링귀니"
+      ],
+      "sourceCharacters": [
+        "링귀니"
+      ],
+      "actionKo": "링귀니도 잠깐 쉬어 가요",
+      "activityTags": [
+        "휴식"
+      ],
+      "sourcePage": "https://www.pixar.com/ratatouille",
+      "sourceImage": "https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/17dc71ec-797f-4825-9cc6-26820c5ac1ed/Linguini7.jpg",
+      "sourceSHA256": "63f94f607c1fdc5362f3e3fbcf32e6d05bf397dc1699e66af2899b694682b40e",
+      "originalSize": [
+        1500,
+        623
+      ],
+      "asset": "docs/assets/actions/pixar003-63f94f60.webp",
+      "width": 512,
+      "height": 213,
+      "rightsNote": "공식 Pixar 원출처. 페이지 권리표시: © 1986-2026 Disney-Pixar. 공개 다운로드 가능성과 웹사이트 재사용 허가는 별개이며 사용 허가는 확인되지 않음.",
+      "visualNotes": "통과. 눈이 떠 있다. 낮잠·취침으로 표시하지 말 것.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "wall-e-56",
+      "characters": [
+        "월-E"
+      ],
+      "sourceCharacters": [
+        "월-E"
+      ],
+      "actionKo": "월-E가 새싹을 살펴봐요",
+      "activityTags": [
+        "식물",
+        "자연",
+        "정원",
+        "Cloud Forest"
+      ],
+      "sourcePage": "https://movies.disney.com/wall-e",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-1p4ug6e_393d1ea4.jpeg?region=0%2C0%2C1580%2C880",
+      "sourceSHA256": "9e2b99f8de73a1192675d8249542bfafd0bd409bb03caf7e7a4554c8204f306e",
+      "originalSize": [
+        1580,
+        880
+      ],
+      "asset": "docs/assets/actions/wall-e-56-9e2b99f8.webp",
+      "width": 512,
+      "height": 285,
+      "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities; 2008 Disney/Pixar. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+      "visualNotes": "부츠 속 식물과 집게손으로 받쳐 드는 행동 확인. 식물 심기·물주기라고 설명하지 않음. | 원문 alt: WALL•E stumbled upon something truly unique to give to EVE. From the movie \"Wall-E\"",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "pixar008",
+      "characters": [
+        "안톤 이고"
+      ],
+      "sourceCharacters": [
+        "안톤 이고"
+      ],
+      "actionKo": "안톤 이고의 한 입 시식",
+      "activityTags": [
+        "식사",
+        "시식"
+      ],
+      "sourcePage": "https://www.pixar.com/ratatouille",
+      "sourceImage": "https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1720812244963-66YQXD48P03NT7NU7T0X/AntonEgo10.jpg",
+      "sourceSHA256": "066191611bae5ae494871a4deded5b49ca884ae2a1969c032ce73a51a8777cfa",
+      "originalSize": [
+        1500,
+        629
+      ],
+      "asset": "docs/assets/actions/pixar008-06619161.webp",
+      "width": 512,
+      "height": 215,
+      "rightsNote": "공식 Pixar 원출처. 페이지 권리표시: © 1986-2026 Disney-Pixar. 공개 다운로드 가능성과 웹사이트 재사용 허가는 별개이며 사용 허가는 확인되지 않음.",
+      "visualNotes": "통과. 접시와 와인잔이 보이는 실제 식사 장면. 큰 글자·분할 없음.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "rapunzel-62",
+      "characters": [
+        "라푼젤",
+        "플린 라이더"
+      ],
+      "sourceCharacters": [
+        "라푼젤",
+        "플린 라이더"
+      ],
+      "actionKo": "라푼젤과 플린의 등불 구경",
+      "activityTags": [
+        "배",
+        "야경",
+        "등불",
+        "스펙트라"
+      ],
+      "sourcePage": "https://princess.disney.com/rapunzel",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/gallery_princess_rapunzel_1_399392b7_8aceae2a.jpeg?region=3%2C0%2C2175%2C1223",
+      "sourceSHA256": "e169867f8ae25b547a631bcf6747f54001f1b4d6d1bb95c3de025fd286e87ecc",
+      "originalSize": [
+        2175,
+        1223
+      ],
+      "asset": "docs/assets/actions/rapunzel-62-e169867f.webp",
+      "width": 512,
+      "height": 288,
+      "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+      "visualNotes": "배, 두 인물, 하늘 가득한 등불, 라푼젤의 뻗은 팔 확인. 등불을 잡거나 직접 놓았다고 단정하지 않음. | 원문 alt: Flynn and Rapunzel taking a boat ride to see the floating lanterns.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "belle-65",
+      "characters": [
+        "벨"
+      ],
+      "sourceCharacters": [
+        "벨"
+      ],
+      "actionKo": "벨의 조용한 독서 시간",
+      "activityTags": [
+        "독서",
+        "예술",
+        "공원"
+      ],
+      "sourcePage": "https://princess.disney.com/belle",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-435bct_3ccba6ac_f61b674e.jpeg?region=8%2C0%2C1564%2C880",
+      "sourceSHA256": "1ffad66fef4f85eb1662baae2da5a10ba77346b1e731bf62e7c6de9ad3ed309a",
+      "originalSize": [
+        1564,
+        880
+      ],
+      "asset": "docs/assets/actions/belle-65-1ffad66f.webp",
+      "width": 512,
+      "height": 288,
+      "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+      "visualNotes": "펼친 책과 주변 양 확인. 소리 내어 읽는지까지 주장하지 않음. | 원문 alt: Belle sharing her love of books.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "tfr004",
+      "characters": [
+        "나나"
+      ],
+      "sourceCharacters": [
+        "나나"
+      ],
+      "actionKo": "나나가 쟁반을 나르고 있어요",
+      "activityTags": [
+        "대접",
+        "물건운반"
+      ],
+      "sourcePage": "https://movies.disney.com/peter-pan",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/g_peterpan_homeentertainment_11_e831a9cd.jpeg?region=0%2C0%2C1200%2C560",
+      "sourceSHA256": "a2513898ca59c7da7b3cb9a62fa908169992bd032fdbcd5230fa10a2e23f1eb0",
+      "originalSize": [
+        1200,
+        560
+      ],
+      "asset": "docs/assets/actions/tfr004-a2513898.webp",
+      "width": 512,
+      "height": 239,
+      "rightsNote": "공식 Disney 영화 페이지 / Lumiere CDN. 페이지 권리표시: © 2026 Disney and its related entities. 작품 메타데이터: 1953 Disney Enterprises, Inc.. 비상업 가족용이라도 저작권 자유 또는 사용 허가를 추정하지 않음. 재사용 허가 미확인.",
+      "visualNotes": "통과. 쟁반이 선명하다. 음식 섭취 장면은 아니며 조식 대접·운반 카드에 적합.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "rapunzel-57",
+      "characters": [
+        "라푼젤",
+        "파스칼"
+      ],
+      "sourceCharacters": [
+        "라푼젤",
+        "파스칼"
+      ],
+      "actionKo": "라푼젤과 파스칼의 벽화 그리기",
+      "activityTags": [
+        "미술",
+        "그림그리기",
+        "내셔널갤러리"
+      ],
+      "sourcePage": "https://princess.disney.com/rapunzel",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/gallery_princess_rapunzel_6_75516206_43c1ba41.jpeg?region=3%2C0%2C2175%2C1223",
+      "sourceSHA256": "29b8bcfd300947fc28ca41a57b00521bccfdd24fa4968df62dcb7806aa2962c1",
+      "originalSize": [
+        2175,
+        1223
+      ],
+      "asset": "docs/assets/actions/rapunzel-57-29b8bcfd.webp",
+      "width": 512,
+      "height": 288,
+      "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+      "visualNotes": "원본 확대 검수에서 벽 쪽 붓과 팔레트 위 파스칼 확인. 작은 썸네일만으로는 붓이 잘 보이지 않음. | 원문 alt: Rapunzel painting her tower with Pascal.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "tfr030",
+      "characters": [
+        "티아나",
+        "나빈"
+      ],
+      "sourceCharacters": [
+        "티아나",
+        "나빈"
+      ],
+      "actionKo": "티아나와 나빈의 뗏목 여행",
+      "activityTags": [
+        "이동",
+        "뗏목",
+        "휴식"
+      ],
+      "sourcePage": "https://movies.disney.com/the-princess-and-the-frog",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-zvpgx7_ab074489.jpeg?region=0%2C0%2C1580%2C880",
+      "sourceSHA256": "30601a3846f1041ad7924dee070e0fbc6e3adb309f5027445e7852247500302b",
+      "originalSize": [
+        1580,
+        880
+      ],
+      "asset": "docs/assets/actions/tfr030-30601a38.webp",
+      "width": 512,
+      "height": 285,
+      "rightsNote": "공식 Disney 영화 페이지 / Lumiere CDN. 페이지 권리표시: © 2026 Disney and its related entities. 작품 메타데이터: 2009 Disney Enterprises, Inc.. 비상업 가족용이라도 저작권 자유 또는 사용 허가를 추정하지 않음. 재사용 허가 미확인.",
+      "visualNotes": "통과. 이동과 휴식이 한 장면에 구분되어 나타난다. 크루즈 선박은 아니다.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "clip049",
+      "characters": [
+        "푸"
+      ],
+      "sourceCharacters": [
+        "푸",
+        "친구들"
+      ],
+      "actionKo": "푸와 친구들의 작은 다리 건너기",
+      "activityTags": [
+        "이동",
+        "산책"
+      ],
+      "sourcePage": "https://movies.disney.com/winnie-the-pooh",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-12561-bs9ixl_a57a7653.jpeg?region=0,0,629,354",
+      "sourceSHA256": "371ee4c147345851bbe98cbe3303a8649e5d8278fbd7cc0f77877638bfbeb45f",
+      "originalSize": [
+        629,
+        354
+      ],
+      "asset": "docs/assets/actions/clip049-371ee4c1.webp",
+      "width": 512,
+      "height": 288,
+      "rightsNote": "공식 Disney 영화 페이지 / Lumiere CDN. 페이지 권리표시: © 2026 Disney and its related entities. 작품 메타데이터: 2011 Disney Enterprises, Inc.. 비상업 가족용이라도 저작권 자유 또는 사용 허가를 추정하지 않음. 재사용 허가 미확인.",
+      "visualNotes": "통과. 트레일러 대표이미지. 개별 동물 전원을 이 크기에서 확정하지 않고 친구들로 표시.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "tfr027",
+      "characters": [
+        "티아나",
+        "샬럿"
+      ],
+      "sourceCharacters": [
+        "어린 티아나",
+        "어린 샬럿"
+      ],
+      "actionKo": "티아나와 샬럿, 앉아서 쉬는 시간",
+      "activityTags": [
+        "휴식",
+        "앉아쉬기"
+      ],
+      "sourcePage": "https://movies.disney.com/the-princess-and-the-frog",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-184z8ro_1759faa1.jpeg?region=0%2C0%2C1580%2C880",
+      "sourceSHA256": "cb6af81bacdeedfb07885f5316fd0f9f62447a1f4c7e78a81e213d49a2f41b8c",
+      "originalSize": [
+        1580,
+        880
+      ],
+      "asset": "docs/assets/actions/tfr027-cb6af81b.webp",
+      "width": 512,
+      "height": 285,
+      "rightsNote": "공식 Disney 영화 페이지 / Lumiere CDN. 페이지 권리표시: © 2026 Disney and its related entities. 작품 메타데이터: 2009 Disney Enterprises, Inc.. 비상업 가족용이라도 저작권 자유 또는 사용 허가를 추정하지 않음. 재사용 허가 미확인.",
+      "visualNotes": "통과. 앉아 쉬는 카드용. 잠자는 장면으로 쓰지 말 것.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "soul-33",
+      "characters": [
+        "조 가드너"
+      ],
+      "sourceCharacters": [
+        "조 가드너"
+      ],
+      "actionKo": "조 가드너, 가방을 들고 걸어요",
+      "activityTags": [
+        "걷기",
+        "도시산책",
+        "이동"
+      ],
+      "sourcePage": "https://movies.disney.com/soul",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/g_soul_productionstills02_18976_3662455c.jpeg?region=1%2C0%2C1298%2C730",
+      "sourceSHA256": "7550cb53f69de2905f1e70a76e776e43727277f565c1bc7e6b36a58fdfff0033",
+      "originalSize": [
+        1298,
+        730
+      ],
+      "asset": "docs/assets/actions/soul-33-7550cb53.webp",
+      "width": 512,
+      "height": 288,
+      "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities; © 2020 Disney/Pixar. All Rights Reserved.. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+      "visualNotes": "넓게 벌린 다리, 횡단보도, 손에 든 가방 확인. 주빌리공원 자체가 아닌 도시 산책 연결용. | 원문 alt: ",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "tfr010",
+      "characters": [
+        "피터 팬",
+        "웬디"
+      ],
+      "sourceCharacters": [
+        "피터 팬",
+        "웬디"
+      ],
+      "actionKo": "피터 팬과 웬디의 하늘 여행",
+      "activityTags": [
+        "비행",
+        "이동"
+      ],
+      "sourcePage": "https://movies.disney.com/peter-pan",
+      "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/g_peterpan_homeentertainment_01_ac5b4341.jpeg?region=0%2C0%2C1200%2C560",
+      "sourceSHA256": "fe1591fa6a2e8a8c70035473f15513e2171ba20d67810ecefdbcc7e742833dd3",
+      "originalSize": [
+        1200,
+        560
+      ],
+      "asset": "docs/assets/actions/tfr010-fe1591fa.webp",
+      "width": 512,
+      "height": 239,
+      "rightsNote": "공식 Disney 영화 페이지 / Lumiere CDN. 페이지 권리표시: © 2026 Disney and its related entities. 작품 메타데이터: 1953 Disney Enterprises, Inc.. 비상업 가족용이라도 저작권 자유 또는 사용 허가를 추정하지 않음. 재사용 허가 미확인.",
+      "visualNotes": "통과. 두 인물의 다리가 바닥에서 떨어져 있다. 글자 없는 실제 영화 장면.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    },
+    {
+      "id": "rabbit003",
+      "characters": [
+        "시계토끼"
+      ],
+      "sourceCharacters": [
+        "시계토끼"
+      ],
+      "actionKo": "시계토끼도 시간을 확인해요",
+      "activityTags": [
+        "시간확인",
+        "준비"
+      ],
+      "sourcePage": "https://www.alice-in-wonderland.net/resources/pictures/white-rabbit/",
+      "sourceImage": "https://www.alice-in-wonderland.net/wp-content/uploads/white-rabbit-with-watch-1.jpg",
+      "sourceSHA256": "c62dae9f591d5785fa38a1b46c65c0a4d7a9c05d3be687e45b5b67768fd01f83",
+      "originalSize": [
+        720,
+        576
+      ],
+      "asset": "docs/assets/actions/rabbit003-c62dae9f.webp",
+      "width": 480,
+      "height": 384,
+      "rightsNote": "비공식 자료실. 원문 권리표시: All colored images above are copyright of Disney. 자료실은 개인·팬 목적 게시 및 Disney 허가 없는 상업/영리 사용 금지를 명시한다. 이 문구는 Disney가 가족여행 사이트 재사용을 허가했다는 증거가 아님. 허가 미확인.",
+      "visualNotes": "통과. 시계 확인 클로즈업. 달리는지는 이 컷에서 확정 불가.",
+      "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+      "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+    }
+  ],
+  "events": {
+    "2027-02-17-13": {
+      "asset": "clip037",
+      "activity": "비행",
+      "reason": "비행기로 도착하는 일정에 맞춘 덤보의 비행"
+    },
+    "2027-02-17-15": {
+      "asset": "belle-68",
+      "activity": "인사",
+      "reason": "숙소에 도착하는 환영의 순간과 인사 장면"
+    },
+    "2027-02-17-16": {
+      "asset": "clip044",
+      "activity": "식사",
+      "reason": "저녁 식사에 맞춘 식당의 대접 장면"
+    },
+    "2027-02-17-17": {
+      "asset": "tfr028",
+      "activity": "휴식",
+      "reason": "취침 전 침대 가장자리에서 가족이 쉬는 장면; 수면으로 표현하지 않음"
+    },
+    "2027-02-18-3": {
+      "asset": "pixar002",
+      "activity": "조식",
+      "reason": "아침 식사에 맞춘 레미의 음식 준비"
+    },
+    "2027-02-18-4": {
+      "asset": "bambi-19",
+      "activity": "공원",
+      "reason": "공원 구경에 어울리는 밤비의 꽃밭 속 만남"
+    },
+    "2027-02-18-6": {
+      "asset": "tfr090",
+      "activity": "차시간",
+      "reason": "점심 후 여유에 어울리는 벨과 칩의 찻잔 장면"
+    },
+    "2027-02-18-7": {
+      "asset": "pixar006",
+      "activity": "이동준비",
+      "reason": "항구로 출발하기 전 교통수단을 준비하는 장면"
+    },
+    "2027-02-18-9": {
+      "asset": "rabbit002",
+      "activity": "시간확인",
+      "reason": "승선 수속 시간을 확인하는 일정과 회중시계 확인"
+    },
+    "2027-02-18-12": {
+      "asset": "moana-82",
+      "activity": "항해",
+      "reason": "바다로 출항하는 날에 맞춘 모아나의 노 젓기"
+    },
+    "2027-02-19-2": {
+      "asset": "ariel-78",
+      "activity": "수영",
+      "reason": "바다 위 하루와 연결한 아리엘과 플라운더의 유영"
+    },
+    "2027-02-20-2": {
+      "asset": "finding-nemo-63",
+      "activity": "크루즈",
+      "reason": "바닷속 친구들이 해류를 타는 바다 모험 장면"
+    },
+    "2027-02-21-2": {
+      "asset": "frozen-2-27",
+      "activity": "선내쇼",
+      "reason": "선내 자유시간의 즐거움을 떠올리는 엘사의 마법; 실제 공연 예약 아님"
+    },
+    "2027-02-22-3": {
+      "asset": "tfr029",
+      "activity": "이동",
+      "reason": "하선 후 호텔 이동에 맞춘 티아나의 전차 탑승"
+    },
+    "2027-02-22-7": {
+      "asset": "pixar001",
+      "activity": "조리",
+      "reason": "점심 시간에 어울리는 레미와 링귀니의 주방 장면"
+    },
+    "2027-02-22-10": {
+      "asset": "pixar003",
+      "activity": "휴식",
+      "reason": "호텔에서 쉬는 일정과 잠깐 기대어 쉬는 링귀니"
+    },
+    "2027-02-22-12": {
+      "asset": "wall-e-56",
+      "activity": "식물",
+      "reason": "온실과 식물 구경에 맞춘 월-E의 새싹 관찰"
+    },
+    "2027-02-22-14": {
+      "asset": "pixar008",
+      "activity": "시식",
+      "reason": "저녁 식사에 맞춘 안톤 이고의 시식"
+    },
+    "2027-02-22-15": {
+      "asset": "rapunzel-62",
+      "activity": "야경",
+      "reason": "빛과 야경 감상에 어울리는 라푼젤의 등불 구경"
+    },
+    "2027-02-22-16": {
+      "asset": "belle-65",
+      "activity": "독서",
+      "reason": "휴식 시간에 어울리는 벨의 조용한 독서; 취침 장면으로 표시하지 않음"
+    },
+    "2027-02-23-3": {
+      "asset": "tfr004",
+      "activity": "대접",
+      "reason": "아침 식사에 맞춘 나나의 쟁반 나르기"
+    },
+    "2027-02-23-5": {
+      "asset": "rapunzel-57",
+      "activity": "미술",
+      "reason": "미술관 관람과 연결한 라푼젤의 벽화 그리기"
+    },
+    "2027-02-23-7": {
+      "asset": "clip044",
+      "activity": "식사",
+      "reason": "점심 식사에 맞춘 토니의 식당 대접"
+    },
+    "2027-02-23-8": {
+      "asset": "tfr030",
+      "activity": "뗏목",
+      "reason": "육지와 물을 오가는 투어에 어울리는 티아나의 뗏목 이동"
+    },
+    "2027-02-23-9": {
+      "asset": "clip049",
+      "activity": "산책",
+      "reason": "가벼운 산책에 어울리는 푸와 친구들의 다리 건너기"
+    },
+    "2027-02-23-11": {
+      "asset": "tfr027",
+      "activity": "휴식",
+      "reason": "아이들과 쉬는 시간에 어울리는 두 아이의 앉아서 쉬기; 자는 장면 아님"
+    },
+    "2027-02-23-14": {
+      "asset": "pixar008",
+      "activity": "식사",
+      "reason": "마지막 저녁 식사에 어울리는 식탁의 시식 장면"
+    },
+    "2027-02-23-15": {
+      "asset": "soul-33",
+      "activity": "이동",
+      "reason": "짐 정리 뒤 출발 준비와 연결한 가방을 들고 걷기; 짐 싸는 모습으로 표시하지 않음"
+    },
+    "2027-02-23-18": {
+      "asset": "tfr010",
+      "activity": "비행",
+      "reason": "귀국편을 타러 이동하는 밤의 하늘 이동 장면"
+    },
+    "2027-02-24-1": {
+      "asset": "rabbit003",
+      "activity": "시간확인",
+      "reason": "공항 대기와 탑승 시간 확인에 맞춘 회중시계 보기"
+    }
+  }
+}

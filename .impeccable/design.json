@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-16T05:10:40.959459+00:00",
+  "generatedAt": "2026-11-16T13:29:15.637599+00:00",
   "title": "Design System: 싱가포르 여행 일정표",
   "extensions": {
     "colorMeta": {
@@ -201,11 +201,12 @@
     "sourceEvidence": {
       "method": "CSS/HTML/JS static extraction; not a rendered visual or accessibility approval",
       "files": {
-        "docs/itinerary.css": "5e37fb707c27aee39156c4ba87921728ab97e17d0c41a2a6bbe9c17fe91f1497",
-        "docs/index.html": "77c0e14f79e2764eae7b7dcb1fab98d99b906225fb1d695d175fda534ec8384d",
-        "docs/app.js": "bc68d9c3fbe3a079db304ac6c7c8db35761e38871f4e63cb8f9b78e2d7f30938",
+        "docs/itinerary.css": "6429345c3b4fce93366d5759e9283564217e25eeacb6c03ffa53893c0a9b6064",
+        "docs/index.html": "4f7bdbe6a17e8b865b47672dca17acc1c8cae1768d32dfd2b7969248c57022dc",
+        "docs/app.js": "2aa8adcc771faa103fe44851e007125bbe8353c4ed642aac583fc4fdea3f83e3",
         "docs/data.js": "86071bbf5de26d1d250892ecf3fa095294f82ae3edadaa655a8b625b23064951",
-        "docs/photos.js": "19e611bca961b4f7c58fb16035837768aea9aef858d9d8865561c25e914f2f01"
+        "docs/photos.js": "19e611bca961b4f7c58fb16035837768aea9aef858d9d8865561c25e914f2f01",
+        "docs/actions.js": "7fe18a62d112ee519ecc93c29803cc96dbdab4049caacc5993c59be309748e33"
       },
       "customProperties": {
         "--ink": {
@@ -1403,10 +1404,71 @@
           "selector": ".trip-header .trip-meta p:first-child",
           "body": "color:var(--ink)",
           "condition": "@media print"
+        },
+        {
+          "selector": ".event-copy",
+          "body": "min-width:0",
+          "condition": null
+        },
+        {
+          "selector": ".event-scene",
+          "body": "margin:12px 0 0;max-width:256px;min-width:0;pointer-events:none;align-self:start",
+          "condition": null
+        },
+        {
+          "selector": ".event-scene img",
+          "body": "display:block;width:100%;height:auto;max-height:152px;object-fit:contain;object-position:left center;border-radius:6px",
+          "condition": null
+        },
+        {
+          "selector": ".event-scene figcaption",
+          "body": "margin-top:6px;font-size:12px;line-height:1.5;color:var(--secondary);overflow-wrap:anywhere",
+          "condition": null
+        },
+        {
+          "selector": ".event-card.has-scene",
+          "body": "display:grid;grid-template-columns:minmax(0,1fr) 192px;gap:20px;align-items:start",
+          "condition": "@media(min-width:1100px)"
+        },
+        {
+          "selector": ".event-scene",
+          "body": "margin:0;max-width:none",
+          "condition": "@media(min-width:1100px)"
+        },
+        {
+          "selector": ".event-scene",
+          "body": "display:none",
+          "condition": "@media print"
+        },
+        {
+          "selector": ".event-card.has-scene",
+          "body": "display:block",
+          "condition": "@media print"
         }
       ],
       "componentTransform": "Read real source rules; prefix classes with ds- and scope to .ds-sample; retain source custom properties with exact fallback values. Source rules (including responsive overrides) are recorded above. Sample text is documentary, not replacement trip data. No synthetic tonal ramps or invented UI states.",
       "sourcePriority": "Source CSS/HTML/JS > this snapshot; regenerate both documentation files after source changes."
+    },
+    "actionScenes": {
+      "source": "docs/actions.js",
+      "provenance": "ACTION_SOURCES.json",
+      "events": 30,
+      "scenes": 28,
+      "normalizedCharacters": 36,
+      "layout": {
+        "default": "below event copy; max-width 256px",
+        "min1100": "minmax(0,1fr) 192px; gap 20px",
+        "image": "contain; max-height 152px",
+        "caption": "12px / 1.5 / secondary"
+      },
+      "states": [
+        "lazy-load",
+        "image-error hides scene only",
+        "decorative aria-hidden",
+        "pointer-events none",
+        "print hidden"
+      ],
+      "motion": "No additional motion"
     }
   },
   "components": [

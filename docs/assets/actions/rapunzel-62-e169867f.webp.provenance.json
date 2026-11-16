@@ -1,0 +1,32 @@
+{
+  "id": "rapunzel-62",
+  "characters": [
+    "라푼젤",
+    "플린 라이더"
+  ],
+  "sourceCharacters": [
+    "라푼젤",
+    "플린 라이더"
+  ],
+  "actionKo": "라푼젤과 플린의 등불 구경",
+  "activityTags": [
+    "배",
+    "야경",
+    "등불",
+    "스펙트라"
+  ],
+  "sourcePage": "https://princess.disney.com/rapunzel",
+  "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/gallery_princess_rapunzel_1_399392b7_8aceae2a.jpeg?region=3%2C0%2C2175%2C1223",
+  "sourceSHA256": "e169867f8ae25b547a631bcf6747f54001f1b4d6d1bb95c3de025fd286e87ecc",
+  "originalSize": [
+    2175,
+    1223
+  ],
+  "asset": "docs/assets/actions/rapunzel-62-e169867f.webp",
+  "width": 512,
+  "height": 288,
+  "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+  "visualNotes": "배, 두 인물, 하늘 가득한 등불, 라푼젤의 뻗은 팔 확인. 등불을 잡거나 직접 놓았다고 단정하지 않음. | 원문 alt: Flynn and Rapunzel taking a boat ride to see the floating lanterns.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

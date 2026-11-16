@@ -1,0 +1,29 @@
+{
+  "id": "belle-65",
+  "characters": [
+    "벨"
+  ],
+  "sourceCharacters": [
+    "벨"
+  ],
+  "actionKo": "벨의 조용한 독서 시간",
+  "activityTags": [
+    "독서",
+    "예술",
+    "공원"
+  ],
+  "sourcePage": "https://princess.disney.com/belle",
+  "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-435bct_3ccba6ac_f61b674e.jpeg?region=8%2C0%2C1564%2C880",
+  "sourceSHA256": "1ffad66fef4f85eb1662baae2da5a10ba77346b1e731bf62e7c6de9ad3ed309a",
+  "originalSize": [
+    1564,
+    880
+  ],
+  "asset": "docs/assets/actions/belle-65-1ffad66f.webp",
+  "width": 512,
+  "height": 288,
+  "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+  "visualNotes": "펼친 책과 주변 양 확인. 소리 내어 읽는지까지 주장하지 않음. | 원문 alt: Belle sharing her love of books.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

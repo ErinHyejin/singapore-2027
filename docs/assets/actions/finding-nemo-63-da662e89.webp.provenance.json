@@ -1,0 +1,36 @@
+{
+  "id": "finding-nemo-63",
+  "characters": [
+    "크러쉬",
+    "스쿼트",
+    "도리",
+    "말린"
+  ],
+  "sourceCharacters": [
+    "크러쉬",
+    "스쿼트",
+    "도리",
+    "말린"
+  ],
+  "actionKo": "크러쉬와 친구들의 해류 여행",
+  "activityTags": [
+    "물",
+    "수영",
+    "항해",
+    "크루즈"
+  ],
+  "sourcePage": "https://movies.disney.com/finding-nemo",
+  "sourceImage": "https://lumiere-a.akamaihd.net/v1/images/open-uri20150608-27674-vpw0tl_86c5047b.jpeg?region=0%2C0%2C1580%2C880",
+  "sourceSHA256": "da662e892d1ae9d6c211c3c0eb6c1ff65ddec608f7c14bc9c0589a2e68daeb25",
+  "originalSize": [
+    1580,
+    880
+  ],
+  "asset": "docs/assets/actions/finding-nemo-63-da662e89.webp",
+  "width": 512,
+  "height": 285,
+  "rightsNote": "원본 공식 페이지 권리표시: © 2026 Disney and its related entities; 2003 Disney/Pixar. Disney/Pixar 캐릭터·영화 이미지의 저작권은 해당 권리자에게 있으며, 공개 열람/CDN 다운로드는 자유 이용이나 사용 허가를 뜻하지 않음. 별도 사용 허가는 확인하지 않음. 원본 다운로드 파일 무편집 보존.",
+  "visualNotes": "앞지느러미를 펼친 거북 무리와 물고기 확인. EAC는 공식 alt 근거. 단체 홍보 포스터가 아닌 영화 갤러리 스틸. | 원문 alt: Characters Crush and Squirt in the EAC with other turtles, Dory and and Marlin in the background in \"Finding Nemo\"",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}

@@ -1,0 +1,30 @@
+{
+  "id": "pixar006",
+  "characters": [
+    "콜레트",
+    "링귀니"
+  ],
+  "sourceCharacters": [
+    "콜레트",
+    "링귀니"
+  ],
+  "actionKo": "콜레트, 오토바이에 앉아 출발 준비",
+  "activityTags": [
+    "이동준비",
+    "교통수단"
+  ],
+  "sourcePage": "https://www.pixar.com/ratatouille",
+  "sourceImage": "https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1720812155377-HEEFV084PYQFMJKVUXJH/Colette7.jpg",
+  "sourceSHA256": "bdf00ab888eaefacc93787712be7de2ef1509979a38ab3e713380d523b1c7237",
+  "originalSize": [
+    1500,
+    617
+  ],
+  "asset": "docs/assets/actions/pixar006-bdf00ab8.webp",
+  "width": 512,
+  "height": 211,
+  "rightsNote": "공식 Pixar 원출처. 페이지 권리표시: © 1986-2026 Disney-Pixar. 공개 다운로드 가능성과 웹사이트 재사용 허가는 별개이며 사용 허가는 확인되지 않음.",
+  "visualNotes": "통과. 오토바이 정차 장면. 실제 주행 중이라고 설명하지 말 것.",
+  "changes": "Existing original image resized proportionally, without cropping or drawing, and encoded as WebP. Source metadata retained.",
+  "purpose": "Decorative activity-matched film scene; not a travel booking or character-appearance claim."
+}
