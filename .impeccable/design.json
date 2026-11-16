@@ -1,0 +1,1117 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-16T00:31:59.885877+00:00",
+  "title": "Design System: 싱가포르 여행 일정표",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "ink",
+        "purpose": "현재 CSS에서 추출"
+      },
+      "secondary": {
+        "role": "neutral",
+        "displayName": "secondary",
+        "purpose": "현재 CSS에서 추출"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "muted",
+        "purpose": "현재 CSS에서 추출"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "paper",
+        "purpose": "현재 CSS에서 추출"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "surface",
+        "purpose": "현재 CSS에서 추출"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "line",
+        "purpose": "현재 CSS에서 추출"
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "accent",
+        "purpose": "현재 CSS에서 추출"
+      },
+      "warning": {
+        "role": "neutral",
+        "displayName": "warning",
+        "purpose": "기능 상태색"
+      },
+      "warning-wash": {
+        "role": "neutral",
+        "displayName": "warning-wash",
+        "purpose": "기능 상태색"
+      },
+      "selection": {
+        "role": "neutral",
+        "displayName": "selection",
+        "purpose": "현재 CSS에서 추출"
+      },
+      "disabled": {
+        "role": "neutral",
+        "displayName": "disabled",
+        "purpose": "기능 상태색"
+      },
+      "rest-text": {
+        "role": "neutral",
+        "displayName": "rest-text",
+        "purpose": "기능 상태색"
+      },
+      "rest-wash": {
+        "role": "neutral",
+        "displayName": "rest-wash",
+        "purpose": "기능 상태색"
+      },
+      "cruise-wash": {
+        "role": "neutral",
+        "displayName": "cruise-wash",
+        "purpose": "기능 상태색"
+      },
+      "meal-wash": {
+        "role": "neutral",
+        "displayName": "meal-wash",
+        "purpose": "기능 상태색"
+      },
+      "scrollbar-thumb": {
+        "role": "neutral",
+        "displayName": "scrollbar-thumb",
+        "purpose": "현재 CSS에서 추출"
+      },
+      "image-fallback": {
+        "role": "neutral",
+        "displayName": "image-fallback",
+        "purpose": "현재 CSS에서 추출"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "display",
+        "source": "docs/itinerary.css",
+        "purpose": "여행 제목"
+      },
+      "day-number": {
+        "displayName": "day-number",
+        "source": "docs/itinerary.css",
+        "purpose": "선택한 날짜 숫자"
+      },
+      "headline": {
+        "displayName": "headline",
+        "source": "docs/itinerary.css",
+        "purpose": "하루 제목"
+      },
+      "event-title": {
+        "displayName": "event-title",
+        "source": "docs/itinerary.css",
+        "purpose": "일정 제목"
+      },
+      "body": {
+        "displayName": "body",
+        "source": "docs/itinerary.css",
+        "purpose": "일정 상세 설명"
+      },
+      "label": {
+        "displayName": "label",
+        "source": "docs/itinerary.css",
+        "purpose": "작은 탐색·상태 문구"
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.22,1,.36,1)",
+        "purpose": "CSS --ease: 탭·사진·이동 버튼·펼침 전환"
+      },
+      {
+        "name": "state-transition",
+        "value": "160ms",
+        "purpose": "관찰된 color/background-color/opacity/transform 전환"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "767px",
+        "query": "(max-width:767px)"
+      },
+      {
+        "name": "narrow-mobile",
+        "value": "359px",
+        "query": "(max-width:359px)"
+      }
+    ],
+    "focus": {
+      "selector": "button:focus-visible,a:focus-visible,summary:focus-visible,.table-scroll:focus-visible",
+      "outline": "2px solid var(--accent)",
+      "outlineOffset": "4px"
+    },
+    "responsive": {
+      "reducedMotion": "(prefers-reduced-motion:reduce)",
+      "reducedMotionDeclarations": "scroll-behavior:auto!important;transition:none!important",
+      "print": "date-dock/day-pager/trip-caption/refresh hidden; cover max-height 180px; day overview static; day layout gap 32px; event break-inside avoid"
+    },
+    "sourceEvidence": {
+      "method": "CSS/HTML/JS static extraction; not a rendered visual or accessibility approval",
+      "files": {
+        "docs/itinerary.css": "697f11724afdea877bf426b1caaef73d9e43e8dbcc28908716bb4b0b971b7b42",
+        "docs/index.html": "570cd7207442659293f5a56cfce73e466f79f3142dd91d064c474de2c135d8ed",
+        "docs/app.js": "109f18a23f5bd4de1d39ea770a665279781725dc9b3c745067e1e3f4114a3144",
+        "docs/data.js": "86071bbf5de26d1d250892ecf3fa095294f82ae3edadaa655a8b625b23064951",
+        "docs/photos.js": "19e611bca961b4f7c58fb16035837768aea9aef858d9d8865561c25e914f2f01"
+      },
+      "customProperties": {
+        "--ink": {
+          "source": "docs/itinerary.css",
+          "selector": ":root",
+          "value": "#1b2940",
+          "mapsTo": "colors.ink"
+        },
+        "--secondary": {
+          "source": "docs/itinerary.css",
+          "selector": ":root",
+          "value": "#536174",
+          "mapsTo": "colors.secondary"
+        },
+        "--muted": {
+          "source": "docs/itinerary.css",
+          "selector": ":root",
+          "value": "#657184",
+          "mapsTo": "colors.muted"
+        },
+        "--paper": {
+          "source": "docs/itinerary.css",
+          "selector": ":root",
+          "value": "#fff",
+          "mapsTo": "colors.paper"
+        },
+        "--surface": {
+          "source": "docs/itinerary.css",
+          "selector": ":root",
+          "value": "#f4f6f8",
+          "mapsTo": "colors.surface"
+        },
+        "--line": {
+          "source": "docs/itinerary.css",
+          "selector": ":root",
+          "value": "#e0e5eb",
+          "mapsTo": "colors.line"
+        },
+        "--accent": {
+          "source": "docs/itinerary.css",
+          "selector": ":root",
+          "value": "#b82e3e",
+          "mapsTo": "colors.accent"
+        },
+        "--warning": {
+          "source": "docs/itinerary.css",
+          "selector": ":root",
+          "value": "#875327",
+          "mapsTo": "colors.warning"
+        },
+        "--warning-wash": {
+          "source": "docs/itinerary.css",
+          "selector": ":root",
+          "value": "#fcf5ed",
+          "mapsTo": "colors.warning-wash"
+        },
+        "--radius": {
+          "source": "docs/itinerary.css",
+          "selector": ":root",
+          "value": "8px",
+          "mapsTo": "rounded.default"
+        },
+        "--ease": {
+          "source": "docs/itinerary.css",
+          "selector": ":root",
+          "value": "cubic-bezier(.22,1,.36,1)",
+          "mapsTo": "extensions.motion.ease"
+        }
+      },
+      "rules": [
+        {
+          "selector": ":root",
+          "body": "--ink:#1b2940;--secondary:#536174;--muted:#657184;--paper:#fff;--surface:#f4f6f8;\n  --line:#e0e5eb;--accent:#b82e3e;--warning:#875327;--warning-wash:#fcf5ed;\n  --radius:8px;--ease:cubic-bezier(.22,1,.36,1);\n  font-family:SUIT,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;\n  font-synthesis:none;font-variant-numeric:tabular-nums;color:var(--ink);background:var(--paper);color-scheme:light",
+          "condition": null
+        },
+        {
+          "selector": "*",
+          "body": "box-sizing:border-box",
+          "condition": null
+        },
+        {
+          "selector": "body",
+          "body": "margin:0;line-height:1.6",
+          "condition": null
+        },
+        {
+          "selector": "::selection",
+          "body": "background:#f6d9dd;color:var(--ink)",
+          "condition": null
+        },
+        {
+          "selector": "button,a",
+          "body": "-webkit-tap-highlight-color:transparent",
+          "condition": null
+        },
+        {
+          "selector": "button",
+          "body": "font:inherit;color:inherit;cursor:pointer",
+          "condition": null
+        },
+        {
+          "selector": "a",
+          "body": "color:inherit;text-underline-offset:4px",
+          "condition": null
+        },
+        {
+          "selector": "button:focus-visible,a:focus-visible,summary:focus-visible,.table-scroll:focus-visible",
+          "body": "outline:2px solid var(--accent);outline-offset:4px",
+          "condition": null
+        },
+        {
+          "selector": "button:disabled",
+          "body": "color:#a0a8b3;cursor:default",
+          "condition": null
+        },
+        {
+          "selector": "[hidden]",
+          "body": "display:none!important",
+          "condition": null
+        },
+        {
+          "selector": "svg",
+          "body": "width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0",
+          "condition": null
+        },
+        {
+          "selector": ".skip",
+          "body": "position:fixed;inset:-80px auto auto 16px;z-index:100;padding:12px 16px;background:white",
+          "condition": null
+        },
+        {
+          "selector": ".skip:focus",
+          "body": "top:8px",
+          "condition": null
+        },
+        {
+          "selector": ".trip-header",
+          "body": "max-width:1184px;padding:24px 32px 0;margin:auto",
+          "condition": null
+        },
+        {
+          "selector": ".masthead",
+          "body": "display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:20px",
+          "condition": null
+        },
+        {
+          "selector": "h1",
+          "body": "font-size:40px;font-weight:600;line-height:1.15;letter-spacing:-.02em;margin:0",
+          "condition": null
+        },
+        {
+          "selector": ".trip-meta",
+          "body": "text-align:right;font-size:14px;color:var(--secondary)",
+          "condition": null
+        },
+        {
+          "selector": ".trip-meta p",
+          "body": "margin:0",
+          "condition": null
+        },
+        {
+          "selector": ".trip-meta p:first-child",
+          "body": "color:var(--ink);font-weight:500",
+          "condition": null
+        },
+        {
+          "selector": ".cover-photo",
+          "body": "overflow:hidden;background:var(--surface);aspect-ratio:3.15",
+          "condition": null
+        },
+        {
+          "selector": ".cover-photo img",
+          "body": "display:block;width:100%;height:100%;object-fit:cover;object-position:50% 53%",
+          "condition": null
+        },
+        {
+          "selector": ".trip-caption",
+          "body": "display:flex;justify-content:space-between;gap:16px;padding:12px 0 16px;font-size:12px;color:var(--secondary)",
+          "condition": null
+        },
+        {
+          "selector": ".trip-caption span:last-child",
+          "body": "text-align:right",
+          "condition": null
+        },
+        {
+          "selector": ".date-dock",
+          "body": "position:sticky;top:0;z-index:20;background:white;border-bottom:1px solid var(--line)",
+          "condition": null
+        },
+        {
+          "selector": ".dock-inner",
+          "body": "max-width:1184px;margin:auto;padding:8px 32px 4px",
+          "condition": null
+        },
+        {
+          "selector": ".date-strip",
+          "body": "display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:0 0 8px;overscroll-behavior-x:contain",
+          "condition": null
+        },
+        {
+          "selector": ".date-strip::-webkit-scrollbar",
+          "body": "display:none",
+          "condition": null
+        },
+        {
+          "selector": ".date-tab",
+          "body": "flex:1 0 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:76px;padding:8px 12px;border:0;border-radius:var(--radius);background:transparent;transition:color 160ms var(--ease),background-color 160ms var(--ease)",
+          "condition": null
+        },
+        {
+          "selector": ".date-tab:hover",
+          "body": "background:var(--surface)",
+          "condition": null
+        },
+        {
+          "selector": ".weekday",
+          "body": "font-size:12px;color:var(--secondary)",
+          "condition": null
+        },
+        {
+          "selector": ".date-number",
+          "body": "font-size:24px;line-height:1.4;font-weight:500",
+          "condition": null
+        },
+        {
+          "selector": ".date-mark",
+          "body": "font-size:12px;color:var(--secondary)",
+          "condition": null
+        },
+        {
+          "selector": ".date-tab[aria-selected=true]",
+          "body": "background:var(--accent);color:white",
+          "condition": null
+        },
+        {
+          "selector": ".date-tab[aria-selected=true] .weekday,.date-tab[aria-selected=true] .date-mark",
+          "body": "color:white",
+          "condition": null
+        },
+        {
+          "selector": ".view-toolbar",
+          "body": "display:flex;justify-content:space-between;gap:16px;align-items:center;min-height:52px",
+          "condition": null
+        },
+        {
+          "selector": ".view-toggle",
+          "body": "display:flex;gap:20px;height:52px",
+          "condition": null
+        },
+        {
+          "selector": ".view-toggle button",
+          "body": "position:relative;border:0;background:transparent;padding:0;min-height:44px;font-size:14px;color:var(--secondary)",
+          "condition": null
+        },
+        {
+          "selector": ".view-toggle button[aria-pressed=true]",
+          "body": "color:var(--ink);font-weight:600",
+          "condition": null
+        },
+        {
+          "selector": ".view-toggle button[aria-pressed=true]:after",
+          "body": "content:'';position:absolute;bottom:-1px;left:0;right:0;height:2px;background:var(--ink)",
+          "condition": null
+        },
+        {
+          "selector": ".refresh",
+          "body": "display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:8px 0 8px 12px;border:0;background:transparent;color:var(--secondary);font-size:12px",
+          "condition": null
+        },
+        {
+          "selector": ".refresh:hover",
+          "body": "color:var(--ink)",
+          "condition": null
+        },
+        {
+          "selector": "main",
+          "body": "max-width:1184px;margin:auto;padding:0 32px 40px;outline:none",
+          "condition": null
+        },
+        {
+          "selector": ".intro-bar",
+          "body": "display:flex;align-items:center;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;padding:20px 0 32px;font-size:12px;color:var(--secondary)",
+          "condition": null
+        },
+        {
+          "selector": ".intro-bar p",
+          "body": "margin:0",
+          "condition": null
+        },
+        {
+          "selector": ".updated",
+          "body": "color:var(--muted)",
+          "condition": null
+        },
+        {
+          "selector": ".day-layout",
+          "body": "display:grid;grid-template-columns:minmax(260px,360px) minmax(0,1fr);gap:64px;align-items:start",
+          "condition": null
+        },
+        {
+          "selector": ".day-overview",
+          "body": "position:sticky;top:172px;min-width:0",
+          "condition": null
+        },
+        {
+          "selector": ".day-heading",
+          "body": "display:flex;align-items:center;gap:16px",
+          "condition": null
+        },
+        {
+          "selector": ".day-date",
+          "body": "flex-shrink:0;font-size:48px;font-weight:500;line-height:1;letter-spacing:-.02em;color:var(--accent)",
+          "condition": null
+        },
+        {
+          "selector": "h2",
+          "body": "font-size:24px;font-weight:500;line-height:1.4;margin:0",
+          "condition": null
+        },
+        {
+          "selector": ".day-label",
+          "body": "font-size:13px;color:var(--secondary);margin:4px 0 0",
+          "condition": null
+        },
+        {
+          "selector": ".day-subtitle",
+          "body": "font-size:14px;color:var(--secondary);margin:16px 0",
+          "condition": null
+        },
+        {
+          "selector": ".day-scene",
+          "body": "margin:0;overflow:hidden;background:var(--surface);aspect-ratio:1.4;border-radius:var(--radius)",
+          "condition": null
+        },
+        {
+          "selector": ".day-scene img",
+          "body": "display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:opacity 160ms var(--ease)",
+          "condition": null
+        },
+        {
+          "selector": ".day-summary",
+          "body": "display:flex;flex-wrap:wrap;gap:4px 12px;margin:16px 0 0;font-size:12px;color:var(--secondary)",
+          "condition": null
+        },
+        {
+          "selector": ".summary-chip",
+          "body": "display:inline",
+          "condition": null
+        },
+        {
+          "selector": ".day-schedule",
+          "body": "min-width:0",
+          "condition": null
+        },
+        {
+          "selector": ".timeline",
+          "body": "border-top:1px solid var(--line)",
+          "condition": null
+        },
+        {
+          "selector": ".event",
+          "body": "display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;padding:24px 0;border-bottom:1px solid var(--line)",
+          "condition": null
+        },
+        {
+          "selector": ".event-time",
+          "body": "color:var(--ink);font-size:14px;font-weight:500;line-height:1.6;padding-top:2px;overflow-wrap:anywhere",
+          "condition": null
+        },
+        {
+          "selector": ".time-start,.time-end",
+          "body": "display:block;white-space:nowrap",
+          "condition": null
+        },
+        {
+          "selector": ".time-end",
+          "body": "color:var(--secondary)",
+          "condition": null
+        },
+        {
+          "selector": ".event-card",
+          "body": "min-width:0",
+          "condition": null
+        },
+        {
+          "selector": ".card-top",
+          "body": "display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px",
+          "condition": null
+        },
+        {
+          "selector": ".event h3",
+          "body": "font-size:17px;line-height:1.6;font-weight:500;margin:0;overflow-wrap:anywhere",
+          "condition": null
+        },
+        {
+          "selector": ".badge",
+          "body": "font-size:12px;color:var(--muted);white-space:nowrap",
+          "condition": null
+        },
+        {
+          "selector": ".badge.check",
+          "body": "color:var(--warning);background:var(--warning-wash);padding:0 6px;border-radius:4px",
+          "condition": null
+        },
+        {
+          "selector": ".badge.rest",
+          "body": "color:#405a7b",
+          "condition": null
+        },
+        {
+          "selector": ".event-details",
+          "body": "font-size:14px;line-height:1.7;color:var(--secondary);margin-top:4px",
+          "condition": null
+        },
+        {
+          "selector": ".event-details p",
+          "body": "margin:0",
+          "condition": null
+        },
+        {
+          "selector": ".map-link",
+          "body": "display:inline-flex;align-items:center;gap:4px;min-height:44px;font-size:13px;color:var(--ink);text-decoration:none",
+          "condition": null
+        },
+        {
+          "selector": ".map-link:hover",
+          "body": "text-decoration:underline",
+          "condition": null
+        },
+        {
+          "selector": ".map-link svg",
+          "body": "width:16px;height:16px",
+          "condition": null
+        },
+        {
+          "selector": ".inline-alt",
+          "body": "color:var(--secondary);margin-top:8px;font-size:13px;line-height:1.7",
+          "condition": null
+        },
+        {
+          "selector": ".inline-alt strong",
+          "body": "font-size:12px;font-weight:500;margin-right:8px;color:var(--ink)",
+          "condition": null
+        },
+        {
+          "selector": ".day-pager",
+          "body": "display:flex;justify-content:space-between;gap:16px;margin-top:24px",
+          "condition": null
+        },
+        {
+          "selector": ".day-pager button",
+          "body": "display:inline-flex;align-items:center;gap:8px;min-height:44px;border:1px solid var(--line);border-radius:var(--radius);background:white;padding:8px 16px;font-size:14px;transition:background-color 160ms var(--ease)",
+          "condition": null
+        },
+        {
+          "selector": ".day-pager button:not(:disabled):hover",
+          "body": "background:var(--surface)",
+          "condition": null
+        },
+        {
+          "selector": ".alternatives",
+          "body": "margin-top:40px;padding-top:24px;border-top:1px solid var(--line)",
+          "condition": null
+        },
+        {
+          "selector": ".alternatives h2",
+          "body": "font-size:20px",
+          "condition": null
+        },
+        {
+          "selector": ".section-copy",
+          "body": "font-size:13px;color:var(--secondary);margin:8px 0 16px",
+          "condition": null
+        },
+        {
+          "selector": ".alternative-card",
+          "body": "border-bottom:1px solid var(--line)",
+          "condition": null
+        },
+        {
+          "selector": ".alternative-card summary",
+          "body": "display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;list-style:none;min-height:64px;padding:16px 0;font-size:14px;font-weight:500",
+          "condition": null
+        },
+        {
+          "selector": ".alternative-card summary::-webkit-details-marker",
+          "body": "display:none",
+          "condition": null
+        },
+        {
+          "selector": ".disclosure-icon",
+          "body": "transition:transform 160ms var(--ease)",
+          "condition": null
+        },
+        {
+          "selector": ".alternative-card[open] .disclosure-icon",
+          "body": "transform:rotate(180deg)",
+          "condition": null
+        },
+        {
+          "selector": ".alt-body",
+          "body": "padding:0 0 16px;font-size:14px;color:var(--secondary);line-height:1.8",
+          "condition": null
+        },
+        {
+          "selector": ".alt-body p",
+          "body": "margin:0 0 8px",
+          "condition": null
+        },
+        {
+          "selector": ".alt-body strong",
+          "body": "color:var(--ink);font-weight:500",
+          "condition": null
+        },
+        {
+          "selector": ".no-alts",
+          "body": "margin:16px 0;font-size:14px;color:var(--secondary)",
+          "condition": null
+        },
+        {
+          "selector": ".travel-note",
+          "body": "margin-top:48px;border-top:1px solid var(--line);padding-top:24px;display:grid;grid-template-columns:minmax(260px,360px) minmax(0,1fr);gap:64px",
+          "condition": null
+        },
+        {
+          "selector": ".travel-note h2",
+          "body": "font-size:16px",
+          "condition": null
+        },
+        {
+          "selector": ".travel-note p",
+          "body": "color:var(--secondary);font-size:13px;line-height:1.8;margin:0",
+          "condition": null
+        },
+        {
+          "selector": "footer",
+          "body": "max-width:1184px;margin:auto;padding:24px 32px 40px;border-top:1px solid var(--line);font-size:13px;color:var(--secondary)",
+          "condition": null
+        },
+        {
+          "selector": "footer p",
+          "body": "margin:0",
+          "condition": null
+        },
+        {
+          "selector": "footer .fine",
+          "body": "font-size:12px;margin-top:8px",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll",
+          "body": "overflow:auto;max-width:100%;max-height:72vh;border:1px solid var(--line);border-radius:var(--radius);scrollbar-color:#b4bdc9 #f4f6f8",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll table",
+          "body": "border-collapse:separate;border-spacing:0;width:max-content;min-width:100%;font-size:13px",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll caption",
+          "body": "text-align:left;font-size:13px;padding:16px",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll th,.table-scroll td",
+          "body": "width:224px;min-width:224px;max-width:224px;vertical-align:top;padding:16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);white-space:pre-line",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll th",
+          "body": "font-weight:500",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll td strong",
+          "body": "font-weight:500",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll td div",
+          "body": "margin-top:4px;color:var(--secondary)",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll td small",
+          "body": "display:block;margin-top:8px;color:var(--secondary);font-size:12px",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll th:first-child",
+          "body": "width:80px;min-width:80px;max-width:80px;position:sticky;left:0;background:#f4f6f8;z-index:2",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll thead th",
+          "body": "position:sticky;top:0;z-index:3;background:var(--ink);color:white",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll thead th:first-child",
+          "body": "z-index:4;background:var(--ink)",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll td[data-kind=rest]",
+          "body": "background:#f0f4f8",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll td[data-kind=check]",
+          "body": "background:var(--warning-wash)",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll td[data-kind=cruise]",
+          "body": "background:#f6f4f9",
+          "condition": null
+        },
+        {
+          "selector": ".table-scroll td[data-kind=meal]",
+          "body": "background:#fbf8f2",
+          "condition": null
+        },
+        {
+          "selector": ".trip-header",
+          "body": "padding:24px 20px 0",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".masthead",
+          "body": "margin-bottom:16px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": "h1",
+          "body": "font-size:36px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".trip-meta",
+          "body": "font-size:12px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".cover-photo",
+          "body": "aspect-ratio:1.9;margin-inline:-20px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".cover-photo img",
+          "body": "object-fit:cover;background:#e8edf0",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".trip-caption",
+          "body": "font-size:12px;flex-wrap:wrap;gap:4px;padding:12px 0",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".trip-caption span:last-child",
+          "body": "text-align:left",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".dock-inner",
+          "body": "padding:8px 20px 4px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".date-strip",
+          "body": "gap:4px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".date-tab",
+          "body": "flex:0 0 60px;padding:8px 4px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".view-toggle",
+          "body": "gap:24px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": "main",
+          "body": "padding:0 20px 32px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".intro-bar",
+          "body": "padding:16px 0 24px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".day-layout",
+          "body": "display:block",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".day-overview",
+          "body": "position:static",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".day-heading",
+          "body": "gap:16px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".day-date",
+          "body": "font-size:44px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": "h2",
+          "body": "font-size:23px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".day-label",
+          "body": "font-size:12px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".day-subtitle",
+          "body": "margin:12px 0",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".day-scene",
+          "body": "aspect-ratio:2.2",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".day-summary",
+          "body": "margin:12px 0 20px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".event",
+          "body": "grid-template-columns:68px minmax(0,1fr);gap:12px;padding:20px 0",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".event-time",
+          "body": "font-size:13px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".event h3",
+          "body": "font-size:16px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".travel-note",
+          "body": "display:block;margin-top:40px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".travel-note p",
+          "body": "margin-top:8px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": "footer",
+          "body": "padding:24px 20px 32px",
+          "condition": "(max-width:767px)"
+        },
+        {
+          "selector": ".trip-header",
+          "body": "padding-inline:16px",
+          "condition": "(max-width:359px)"
+        },
+        {
+          "selector": ".cover-photo",
+          "body": "margin-inline:-16px",
+          "condition": "(max-width:359px)"
+        },
+        {
+          "selector": ".dock-inner",
+          "body": "padding-inline:16px",
+          "condition": "(max-width:359px)"
+        },
+        {
+          "selector": "main",
+          "body": "padding-inline:16px",
+          "condition": "(max-width:359px)"
+        },
+        {
+          "selector": ".event",
+          "body": "grid-template-columns:60px minmax(0,1fr)",
+          "condition": "(max-width:359px)"
+        },
+        {
+          "selector": ".day-date",
+          "body": "font-size:40px",
+          "condition": "(max-width:359px)"
+        },
+        {
+          "selector": "h2",
+          "body": "font-size:21px",
+          "condition": "(max-width:359px)"
+        },
+        {
+          "selector": ".refresh span",
+          "body": "display:none",
+          "condition": "(max-width:359px)"
+        },
+        {
+          "selector": ".refresh",
+          "body": "width:44px;padding:8px",
+          "condition": "(max-width:359px)"
+        },
+        {
+          "selector": "footer",
+          "body": "padding-inline:16px",
+          "condition": "(max-width:359px)"
+        },
+        {
+          "selector": "*",
+          "body": "scroll-behavior:auto!important;transition:none!important",
+          "condition": "(prefers-reduced-motion:reduce)"
+        },
+        {
+          "selector": ".date-dock,.day-pager,.trip-caption,.refresh",
+          "body": "display:none",
+          "condition": "print"
+        },
+        {
+          "selector": ".cover-photo",
+          "body": "max-height:180px",
+          "condition": "print"
+        },
+        {
+          "selector": ".day-overview",
+          "body": "position:static",
+          "condition": "print"
+        },
+        {
+          "selector": ".day-layout",
+          "body": "gap:32px",
+          "condition": "print"
+        },
+        {
+          "selector": ".event",
+          "body": "break-inside:avoid",
+          "condition": "print"
+        }
+      ],
+      "componentTransform": "Read real source rules; prefix classes with ds- and scope to .ds-sample; retain source custom properties with exact fallback values. Source rules (including responsive overrides) are recorded above. Sample text is documentary, not replacement trip data. No synthetic tonal ramps or invented UI states.",
+      "sourcePriority": "Source CSS/HTML/JS > this snapshot; regenerate both documentation files after source changes."
+    }
+  },
+  "components": [
+    {
+      "name": "날짜 탐색",
+      "kind": "nav",
+      "refersTo": "date-tab",
+      "description": "요일·날짜·테마와 선택/비선택 상태. 샘플은 상태를 보여주며 날짜 전환 JS는 포함하지 않는다.",
+      "html": "<div class=\"ds-sample\"><div class=\"ds-date-strip\" role=\"tablist\" aria-label=\"날짜 상태 예시\"><button class=\"ds-date-tab\" role=\"tab\" aria-selected=\"true\"><span class=\"ds-weekday\">수요일</span><span class=\"ds-date-number\">17</span><span class=\"ds-date-mark\">도착</span></button><button class=\"ds-date-tab\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\"><span class=\"ds-weekday\">목요일</span><span class=\"ds-date-number\">18</span><span class=\"ds-date-mark\">도시 여행</span></button></div></div>",
+      "css": ".ds-sample{font-family:SUIT,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;color:var(--ink,#1b2940);font-size:16px;line-height:1.6}\n.ds-sample button,.ds-sample a{-webkit-tap-highlight-color:transparent}\n.ds-sample button{font:inherit;color:inherit;cursor:pointer}\n.ds-sample button:focus-visible,.ds-sample a:focus-visible,.ds-sample summary:focus-visible,.ds-sample .ds-table-scroll:focus-visible{outline:2px solid var(--accent,#b82e3e);outline-offset:4px}\n.ds-sample button:disabled{color:#a0a8b3;cursor:default}\n.ds-sample svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}\n.ds-sample .ds-date-strip{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:0 0 8px;overscroll-behavior-x:contain}\n.ds-sample .ds-date-strip::-webkit-scrollbar{display:none}\n.ds-sample .ds-date-tab{flex:1 0 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:76px;padding:8px 12px;border:0;border-radius:var(--radius,8px);background:transparent;transition:color 160ms var(--ease,cubic-bezier(.22,1,.36,1)),background-color 160ms var(--ease,cubic-bezier(.22,1,.36,1))}\n.ds-sample .ds-date-tab:hover{background:var(--surface,#f4f6f8)}\n.ds-sample .ds-weekday{font-size:12px;color:var(--secondary,#536174)}\n.ds-sample .ds-date-number{font-size:24px;line-height:1.4;font-weight:500}\n.ds-sample .ds-date-mark{font-size:12px;color:var(--secondary,#536174)}\n.ds-sample .ds-date-tab[aria-selected=true]{background:var(--accent,#b82e3e);color:white}\n.ds-sample .ds-date-tab[aria-selected=true] .ds-weekday,.ds-sample .ds-date-tab[aria-selected=true] .ds-date-mark{color:white}\n@media (max-width:767px){.ds-sample .ds-date-strip{gap:4px}}\n@media (max-width:767px){.ds-sample .ds-date-tab{flex:0 0 60px;padding:8px 4px}}\n@media(prefers-reduced-motion:reduce){.ds-sample *{scroll-behavior:auto!important;transition:none!important}}"
+    },
+    {
+      "name": "보기 선택",
+      "kind": "button",
+      "refersTo": "view-toggle",
+      "description": "텍스트와 하단선으로 pressed 상태를 표현한다.",
+      "html": "<div class=\"ds-sample\"><div class=\"ds-view-toggle\" role=\"group\" aria-label=\"보기 상태 예시\"><button type=\"button\" aria-pressed=\"true\">하루씩 보기</button><button type=\"button\" aria-pressed=\"false\">전체 시간표</button></div></div>",
+      "css": ".ds-sample{font-family:SUIT,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;color:var(--ink,#1b2940);font-size:16px;line-height:1.6}\n.ds-sample button,.ds-sample a{-webkit-tap-highlight-color:transparent}\n.ds-sample button{font:inherit;color:inherit;cursor:pointer}\n.ds-sample button:focus-visible,.ds-sample a:focus-visible,.ds-sample summary:focus-visible,.ds-sample .ds-table-scroll:focus-visible{outline:2px solid var(--accent,#b82e3e);outline-offset:4px}\n.ds-sample button:disabled{color:#a0a8b3;cursor:default}\n.ds-sample svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}\n.ds-sample .ds-view-toggle{display:flex;gap:20px;height:52px}\n.ds-sample .ds-view-toggle button{position:relative;border:0;background:transparent;padding:0;min-height:44px;font-size:14px;color:var(--secondary,#536174)}\n.ds-sample .ds-view-toggle button[aria-pressed=true]{color:var(--ink,#1b2940);font-weight:600}\n.ds-sample .ds-view-toggle button[aria-pressed=true]:after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:2px;background:var(--ink,#1b2940)}\n@media (max-width:767px){.ds-sample .ds-view-toggle{gap:24px}}\n@media(prefers-reduced-motion:reduce){.ds-sample *{scroll-behavior:auto!important;transition:none!important}}"
+    },
+    {
+      "name": "날짜 이동",
+      "kind": "button",
+      "refersTo": "pager-button",
+      "description": "경계 날짜의 disabled와 이동 가능한 버튼의 hover/focus.",
+      "html": "<div class=\"ds-sample\"><nav class=\"ds-day-pager\" aria-label=\"날짜 이동 상태 예시\"><button type=\"button\" disabled>이전 날</button><button type=\"button\">다음 날</button></nav></div>",
+      "css": ".ds-sample{font-family:SUIT,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;color:var(--ink,#1b2940);font-size:16px;line-height:1.6}\n.ds-sample button,.ds-sample a{-webkit-tap-highlight-color:transparent}\n.ds-sample button{font:inherit;color:inherit;cursor:pointer}\n.ds-sample button:focus-visible,.ds-sample a:focus-visible,.ds-sample summary:focus-visible,.ds-sample .ds-table-scroll:focus-visible{outline:2px solid var(--accent,#b82e3e);outline-offset:4px}\n.ds-sample button:disabled{color:#a0a8b3;cursor:default}\n.ds-sample svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}\n.ds-sample .ds-day-pager{display:flex;justify-content:space-between;gap:16px;margin-top:24px}\n.ds-sample .ds-day-pager button{display:inline-flex;align-items:center;gap:8px;min-height:44px;border:1px solid var(--line,#e0e5eb);border-radius:var(--radius,8px);background:white;padding:8px 16px;font-size:14px;transition:background-color 160ms var(--ease,cubic-bezier(.22,1,.36,1))}\n.ds-sample .ds-day-pager button:not(:disabled):hover{background:var(--surface,#f4f6f8)}\n@media print{.ds-sample .ds-day-pager{display:none}}\n@media(prefers-reduced-motion:reduce){.ds-sample *{scroll-behavior:auto!important;transition:none!important}}"
+    },
+    {
+      "name": "시간행",
+      "kind": "custom",
+      "refersTo": "timeline-row",
+      "description": "일정 데이터가 아닌 구조 예시. 시간열·제목·보조설명을 정렬한다.",
+      "html": "<div class=\"ds-sample\"><div class=\"ds-timeline\"><article class=\"ds-event\"><span class=\"ds-event-time\">시간</span><div class=\"ds-event-card\"><div class=\"ds-card-top\"><h3>일정 제목</h3><span class=\"ds-badge ds-check\">확인 필요</span></div><div class=\"ds-event-details\"><p>일정 설명</p></div><a class=\"ds-map-link\" href=\"#\">지도</a></div></article></div></div>",
+      "css": ".ds-sample{font-family:SUIT,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;color:var(--ink,#1b2940);font-size:16px;line-height:1.6}\n.ds-sample button,.ds-sample a{-webkit-tap-highlight-color:transparent}\n.ds-sample button{font:inherit;color:inherit;cursor:pointer}\n.ds-sample button:focus-visible,.ds-sample a:focus-visible,.ds-sample summary:focus-visible,.ds-sample .ds-table-scroll:focus-visible{outline:2px solid var(--accent,#b82e3e);outline-offset:4px}\n.ds-sample button:disabled{color:#a0a8b3;cursor:default}\n.ds-sample svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}\n.ds-sample .ds-timeline{border-top:1px solid var(--line,#e0e5eb)}\n.ds-sample .ds-event{display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;padding:24px 0;border-bottom:1px solid var(--line,#e0e5eb)}\n.ds-sample .ds-event-time{color:var(--ink,#1b2940);font-size:14px;font-weight:500;line-height:1.6;padding-top:2px;overflow-wrap:anywhere}\n.ds-sample .ds-time-start,.ds-sample .ds-time-end{display:block;white-space:nowrap}\n.ds-sample .ds-time-end{color:var(--secondary,#536174)}\n.ds-sample .ds-event-card{min-width:0}\n.ds-sample .ds-card-top{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}\n.ds-sample .ds-event h3{font-size:17px;line-height:1.6;font-weight:500;margin:0;overflow-wrap:anywhere}\n.ds-sample .ds-badge{font-size:12px;color:var(--muted,#657184);white-space:nowrap}\n.ds-sample .ds-badge.ds-check{color:var(--warning,#875327);background:var(--warning-wash,#fcf5ed);padding:0 6px;border-radius:4px}\n.ds-sample .ds-badge.ds-rest{color:#405a7b}\n.ds-sample .ds-event-details{font-size:14px;line-height:1.7;color:var(--secondary,#536174);margin-top:4px}\n.ds-sample .ds-event-details p{margin:0}\n.ds-sample .ds-map-link{display:inline-flex;align-items:center;gap:4px;min-height:44px;font-size:13px;color:var(--ink,#1b2940);text-decoration:none}\n.ds-sample .ds-map-link:hover{text-decoration:underline}\n.ds-sample .ds-map-link svg{width:16px;height:16px}\n@media (max-width:767px){.ds-sample .ds-event{grid-template-columns:68px minmax(0,1fr);gap:12px;padding:20px 0}}\n@media (max-width:767px){.ds-sample .ds-event-time{font-size:13px}}\n@media (max-width:767px){.ds-sample .ds-event h3{font-size:16px}}\n@media (max-width:359px){.ds-sample .ds-event{grid-template-columns:60px minmax(0,1fr)}}\n@media print{.ds-sample .ds-event{break-inside:avoid}}\n@media(prefers-reduced-motion:reduce){.ds-sample *{scroll-behavior:auto!important;transition:none!important}}"
+    },
+    {
+      "name": "확인 상태 배지",
+      "kind": "chip",
+      "refersTo": "badge-check",
+      "description": "확인 필요 배지만 옅은 갈색 바탕을 갖는다. 상호작용 없는 상태 레이블.",
+      "html": "<div class=\"ds-sample\"><span class=\"ds-badge ds-check\">확인 필요</span></div>",
+      "css": ".ds-sample{font-family:SUIT,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;color:var(--ink,#1b2940);font-size:16px;line-height:1.6}\n.ds-sample button,.ds-sample a{-webkit-tap-highlight-color:transparent}\n.ds-sample button{font:inherit;color:inherit;cursor:pointer}\n.ds-sample button:focus-visible,.ds-sample a:focus-visible,.ds-sample summary:focus-visible,.ds-sample .ds-table-scroll:focus-visible{outline:2px solid var(--accent,#b82e3e);outline-offset:4px}\n.ds-sample button:disabled{color:#a0a8b3;cursor:default}\n.ds-sample svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}\n.ds-sample .ds-badge{font-size:12px;color:var(--muted,#657184);white-space:nowrap}\n.ds-sample .ds-badge.ds-check{color:var(--warning,#875327);background:var(--warning-wash,#fcf5ed);padding:0 6px;border-radius:4px}\n.ds-sample .ds-badge.ds-rest{color:#405a7b}\n@media(prefers-reduced-motion:reduce){.ds-sample *{scroll-behavior:auto!important;transition:none!important}}"
+    },
+    {
+      "name": "대안 펼치기",
+      "kind": "custom",
+      "refersTo": "alternative-disclosure",
+      "description": "네이티브 details 토글과 열린 화살표 상태. 예시 문구는 일정 데이터가 아니다.",
+      "html": "<div class=\"ds-sample\"><details class=\"ds-alternative-card\"><summary>일정 대신 대안<svg class=\"ds-disclosure-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m6 9 6 6 6-6\"/></svg></summary><div class=\"ds-alt-body\"><p><strong>이럴 때  </strong>대안 선택 조건</p><p>대안 설명</p></div></details></div>",
+      "css": ".ds-sample{font-family:SUIT,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;color:var(--ink,#1b2940);font-size:16px;line-height:1.6}\n.ds-sample button,.ds-sample a{-webkit-tap-highlight-color:transparent}\n.ds-sample button{font:inherit;color:inherit;cursor:pointer}\n.ds-sample button:focus-visible,.ds-sample a:focus-visible,.ds-sample summary:focus-visible,.ds-sample .ds-table-scroll:focus-visible{outline:2px solid var(--accent,#b82e3e);outline-offset:4px}\n.ds-sample button:disabled{color:#a0a8b3;cursor:default}\n.ds-sample svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}\n.ds-sample .ds-map-link{display:inline-flex;align-items:center;gap:4px;min-height:44px;font-size:13px;color:var(--ink,#1b2940);text-decoration:none}\n.ds-sample .ds-map-link:hover{text-decoration:underline}\n.ds-sample .ds-map-link svg{width:16px;height:16px}\n.ds-sample .ds-alternative-card{border-bottom:1px solid var(--line,#e0e5eb)}\n.ds-sample .ds-alternative-card summary{display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;list-style:none;min-height:64px;padding:16px 0;font-size:14px;font-weight:500}\n.ds-sample .ds-alternative-card summary::-webkit-details-marker{display:none}\n.ds-sample .ds-disclosure-icon{transition:transform 160ms var(--ease,cubic-bezier(.22,1,.36,1))}\n.ds-sample .ds-alternative-card[open] .ds-disclosure-icon{transform:rotate(180deg)}\n.ds-sample .ds-alt-body{padding:0 0 16px;font-size:14px;color:var(--secondary,#536174);line-height:1.8}\n.ds-sample .ds-alt-body p{margin:0 0 8px}\n.ds-sample .ds-alt-body strong{color:var(--ink,#1b2940);font-weight:500}\n@media(prefers-reduced-motion:reduce){.ds-sample *{scroll-behavior:auto!important;transition:none!important}}"
+    },
+    {
+      "name": "전체 시간표",
+      "kind": "custom",
+      "refersTo": "timetable",
+      "description": "고정 헤더·시간열·종류별 셀 바탕. 샘플 문구는 일정 데이터가 아니다.",
+      "html": "<div class=\"ds-sample\"><div class=\"ds-table-scroll\" tabindex=\"0\" aria-label=\"전체 표 구조 예시\"><table><caption>전체 일정 · 현지 시간</caption><thead><tr><th>시간</th><th scope=\"col\">날짜</th><th scope=\"col\">날짜</th></tr></thead><tbody><tr><th scope=\"row\">시간</th><td data-kind=\"rest\"><strong>쉬는 시간</strong></td><td data-kind=\"check\"><strong>확인 필요</strong></td></tr><tr><th scope=\"row\">시간</th><td data-kind=\"cruise\"><strong>크루즈</strong></td><td data-kind=\"meal\"><strong>식사</strong></td></tr></tbody></table></div></div>",
+      "css": ".ds-sample{font-family:SUIT,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;color:var(--ink,#1b2940);font-size:16px;line-height:1.6}\n.ds-sample button,.ds-sample a{-webkit-tap-highlight-color:transparent}\n.ds-sample button{font:inherit;color:inherit;cursor:pointer}\n.ds-sample button:focus-visible,.ds-sample a:focus-visible,.ds-sample summary:focus-visible,.ds-sample .ds-table-scroll:focus-visible{outline:2px solid var(--accent,#b82e3e);outline-offset:4px}\n.ds-sample button:disabled{color:#a0a8b3;cursor:default}\n.ds-sample svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}\n.ds-sample .ds-table-scroll{overflow:auto;max-width:100%;max-height:72vh;border:1px solid var(--line,#e0e5eb);border-radius:var(--radius,8px);scrollbar-color:#b4bdc9 #f4f6f8}\n.ds-sample .ds-table-scroll table{border-collapse:separate;border-spacing:0;width:max-content;min-width:100%;font-size:13px}\n.ds-sample .ds-table-scroll caption{text-align:left;font-size:13px;padding:16px}\n.ds-sample .ds-table-scroll th,.ds-sample .ds-table-scroll td{width:224px;min-width:224px;max-width:224px;vertical-align:top;padding:16px;border-right:1px solid var(--line,#e0e5eb);border-bottom:1px solid var(--line,#e0e5eb);white-space:pre-line}\n.ds-sample .ds-table-scroll th{font-weight:500}\n.ds-sample .ds-table-scroll td strong{font-weight:500}\n.ds-sample .ds-table-scroll td div{margin-top:4px;color:var(--secondary,#536174)}\n.ds-sample .ds-table-scroll td small{display:block;margin-top:8px;color:var(--secondary,#536174);font-size:12px}\n.ds-sample .ds-table-scroll th:first-child{width:80px;min-width:80px;max-width:80px;position:sticky;left:0;background:#f4f6f8;z-index:2}\n.ds-sample .ds-table-scroll thead th{position:sticky;top:0;z-index:3;background:var(--ink,#1b2940);color:white}\n.ds-sample .ds-table-scroll thead th:first-child{z-index:4;background:var(--ink,#1b2940)}\n.ds-sample .ds-table-scroll td[data-kind=rest]{background:#f0f4f8}\n.ds-sample .ds-table-scroll td[data-kind=check]{background:var(--warning-wash,#fcf5ed)}\n.ds-sample .ds-table-scroll td[data-kind=cruise]{background:#f6f4f9}\n.ds-sample .ds-table-scroll td[data-kind=meal]{background:#fbf8f2}\n@media(prefers-reduced-motion:reduce){.ds-sample *{scroll-behavior:auto!important;transition:none!important}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "흰 종이 여행 사진첩",
+    "overview": "흰 종이 위의 실제 여행 사진과 시간 정렬을 중심으로 한 일정 인터페이스다. 네이비 잉크로 내용을 읽고, 붉은색으로 선택 날짜와 날짜 숫자를 찾는다. 표면의 깊이는 그림자가 아니라 여백과 얇은 구분선으로 만든다.\n\n이 문서는 승인된 방향을 새로 제안하는 문서가 아니라 docs/index.html, docs/itinerary.css, docs/app.js의 현재 구현을 기록한 버전관리용 자료다. UI에서 로드하지 않는다. 세부 화면 의도는 .impeccable/surfaces/itinerary.md에 둔다. 원본 CSS가 우선이며 변경 시 이 문서와 sidecar를 함께 갱신한다.",
+    "keyCharacteristics": [
+      "실제 사진과 기능적 날짜 탐색",
+      "시간 정렬된 무박스 행",
+      "SUIT 단일 서체와 고정폭 숫자",
+      "선택 상태에 한정된 붉은 강조"
+    ],
+    "rules": [
+      {
+        "name": "The Selection Rule",
+        "body": "붉은 선택 배경과 흰 글자는 날짜 탭의 선택 상태를 나타낸다. 일정 종류 전체를 붉게 칠하지 않는다.",
+        "section": "colors"
+      },
+      {
+        "name": "The Flat Rows Rule",
+        "body": "일정은 경계선으로 나뉜 시간행으로 유지한다. 행을 개별 그림자 카드로 바꾸지 않는다.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do 흰 바탕, 네이비 본문, 붉은 날짜 선택의 역할을 유지한다.",
+      "Do 시간·제목·보조 설명의 위계를 보존하고 긴 내용을 줄바꿈한다.",
+      "Do 날짜 선택을 사진·일정·접근성 상태와 함께 갱신한다.",
+      "Do 모션 감소 설정, 키보드 포커스, 경계 날짜의 비활성 상태를 유지한다.",
+      "Do 사진 출처·사용 조건은 PHOTOS.md와 자산 메타데이터에 보관한다."
+    ],
+    "donts": [
+      "Don't 초록·청록 중심의 기본 테마로 되돌리지 않는다.",
+      "Don't 시간행마다 둥근 색상 카드를 추가하지 않는다.",
+      "Don't 화면에 사진 출처·사용 조건 문구를 추가하지 않는다.",
+      "Don't 사진을 예약·방문 확정의 근거로 표현하지 않는다.",
+      "Don't 관찰되지 않은 오류·로딩·입력 필드 스타일을 기존 시스템인 것처럼 만들지 않는다."
+    ]
+  }
+}
