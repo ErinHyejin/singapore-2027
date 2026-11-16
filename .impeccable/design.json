@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-16T00:31:59.885877+00:00",
+  "generatedAt": "2026-11-16T05:10:40.959459+00:00",
   "title": "Design System: 싱가포르 여행 일정표",
   "extensions": {
     "colorMeta": {
@@ -88,6 +88,21 @@
         "role": "neutral",
         "displayName": "image-fallback",
         "purpose": "현재 CSS에서 추출"
+      },
+      "magic-navy": {
+        "role": "neutral",
+        "displayName": "magic-navy",
+        "purpose": "디즈니 여행 헤더 배경"
+      },
+      "magic-gold": {
+        "role": "secondary",
+        "displayName": "magic-gold",
+        "purpose": "헤더 날짜와 단계 강조"
+      },
+      "magic-light": {
+        "role": "neutral",
+        "displayName": "magic-light",
+        "purpose": "헤더 보조 텍스트"
       }
     },
     "typographyMeta": {
@@ -122,7 +137,13 @@
         "purpose": "작은 탐색·상태 문구"
       }
     },
-    "shadows": [],
+    "shadows": [
+      {
+        "name": "date-selection",
+        "value": "0 3px 8px #1b294014",
+        "purpose": "선택 날짜에만 사용하는 약한 중성 그림자; 일정 행은 그림자 없음"
+      }
+    ],
     "motion": [
       {
         "name": "ease",
@@ -133,6 +154,21 @@
         "name": "state-transition",
         "value": "160ms",
         "purpose": "관찰된 color/background-color/opacity/transform 전환"
+      },
+      {
+        "name": "crew-welcome",
+        "value": "620ms; second character delay 100ms",
+        "purpose": "미키·미니의 1회 등장; default opacity .65; no loop"
+      },
+      {
+        "name": "companion-change",
+        "value": "360ms; cubic-bezier(.22,1,.36,1)",
+        "purpose": "날짜 캐릭터의 짧은 기울기/투명도 전환"
+      },
+      {
+        "name": "photo-change",
+        "value": "220ms; ease-out",
+        "purpose": "날짜 사진 전환 확인"
       }
     ],
     "breakpoints": [
@@ -154,15 +190,20 @@
     },
     "responsive": {
       "reducedMotion": "(prefers-reduced-motion:reduce)",
-      "reducedMotionDeclarations": "scroll-behavior:auto!important;transition:none!important",
-      "print": "date-dock/day-pager/trip-caption/refresh hidden; cover max-height 180px; day overview static; day layout gap 32px; event break-inside avoid"
+      "reducedMotionDeclarations": "scroll-behavior:auto!important;transition:none!important; .hero-character animation:none; JS skips companion/photo animations",
+      "print": "date-dock/day-pager/trip-caption/refresh hidden; cover max-height 180px; day overview static; day layout gap 32px; event break-inside avoid",
+      "heroType": {
+        "desktop": "46px / 1.18",
+        "max767": "36px / 1.2",
+        "max359": "30px / 1.2"
+      }
     },
     "sourceEvidence": {
       "method": "CSS/HTML/JS static extraction; not a rendered visual or accessibility approval",
       "files": {
-        "docs/itinerary.css": "697f11724afdea877bf426b1caaef73d9e43e8dbcc28908716bb4b0b971b7b42",
-        "docs/index.html": "570cd7207442659293f5a56cfce73e466f79f3142dd91d064c474de2c135d8ed",
-        "docs/app.js": "109f18a23f5bd4de1d39ea770a665279781725dc9b3c745067e1e3f4114a3144",
+        "docs/itinerary.css": "5e37fb707c27aee39156c4ba87921728ab97e17d0c41a2a6bbe9c17fe91f1497",
+        "docs/index.html": "77c0e14f79e2764eae7b7dcb1fab98d99b906225fb1d695d175fda534ec8384d",
+        "docs/app.js": "bc68d9c3fbe3a079db304ac6c7c8db35761e38871f4e63cb8f9b78e2d7f30938",
         "docs/data.js": "86071bbf5de26d1d250892ecf3fa095294f82ae3edadaa655a8b625b23064951",
         "docs/photos.js": "19e611bca961b4f7c58fb16035837768aea9aef858d9d8865561c25e914f2f01"
       },
@@ -232,6 +273,24 @@
           "selector": ":root",
           "value": "cubic-bezier(.22,1,.36,1)",
           "mapsTo": "extensions.motion.ease"
+        },
+        "--magic-navy": {
+          "source": "docs/itinerary.css",
+          "selector": ":root",
+          "value": "#142b55",
+          "mapsTo": "colors.magic-navy"
+        },
+        "--magic-gold": {
+          "source": "docs/itinerary.css",
+          "selector": ":root",
+          "value": "#ffd46c",
+          "mapsTo": "colors.magic-gold"
+        },
+        "--magic-light": {
+          "source": "docs/itinerary.css",
+          "selector": ":root",
+          "value": "#e4edff",
+          "mapsTo": "colors.magic-light"
         }
       },
       "rules": [
@@ -793,227 +852,557 @@
         {
           "selector": ".trip-header",
           "body": "padding:24px 20px 0",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".masthead",
           "body": "margin-bottom:16px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": "h1",
           "body": "font-size:36px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".trip-meta",
           "body": "font-size:12px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".cover-photo",
           "body": "aspect-ratio:1.9;margin-inline:-20px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".cover-photo img",
           "body": "object-fit:cover;background:#e8edf0",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".trip-caption",
           "body": "font-size:12px;flex-wrap:wrap;gap:4px;padding:12px 0",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".trip-caption span:last-child",
           "body": "text-align:left",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".dock-inner",
           "body": "padding:8px 20px 4px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".date-strip",
           "body": "gap:4px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".date-tab",
           "body": "flex:0 0 60px;padding:8px 4px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".view-toggle",
           "body": "gap:24px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": "main",
           "body": "padding:0 20px 32px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".intro-bar",
           "body": "padding:16px 0 24px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".day-layout",
           "body": "display:block",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".day-overview",
           "body": "position:static",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".day-heading",
           "body": "gap:16px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".day-date",
           "body": "font-size:44px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": "h2",
           "body": "font-size:23px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".day-label",
           "body": "font-size:12px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".day-subtitle",
           "body": "margin:12px 0",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".day-scene",
           "body": "aspect-ratio:2.2",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".day-summary",
           "body": "margin:12px 0 20px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".event",
           "body": "grid-template-columns:68px minmax(0,1fr);gap:12px;padding:20px 0",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".event-time",
           "body": "font-size:13px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".event h3",
           "body": "font-size:16px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".travel-note",
           "body": "display:block;margin-top:40px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".travel-note p",
           "body": "margin-top:8px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": "footer",
           "body": "padding:24px 20px 32px",
-          "condition": "(max-width:767px)"
+          "condition": "@media(max-width:767px)"
         },
         {
           "selector": ".trip-header",
           "body": "padding-inline:16px",
-          "condition": "(max-width:359px)"
+          "condition": "@media(max-width:359px)"
         },
         {
           "selector": ".cover-photo",
           "body": "margin-inline:-16px",
-          "condition": "(max-width:359px)"
+          "condition": "@media(max-width:359px)"
         },
         {
           "selector": ".dock-inner",
           "body": "padding-inline:16px",
-          "condition": "(max-width:359px)"
+          "condition": "@media(max-width:359px)"
         },
         {
           "selector": "main",
           "body": "padding-inline:16px",
-          "condition": "(max-width:359px)"
+          "condition": "@media(max-width:359px)"
         },
         {
           "selector": ".event",
           "body": "grid-template-columns:60px minmax(0,1fr)",
-          "condition": "(max-width:359px)"
+          "condition": "@media(max-width:359px)"
         },
         {
           "selector": ".day-date",
           "body": "font-size:40px",
-          "condition": "(max-width:359px)"
+          "condition": "@media(max-width:359px)"
         },
         {
           "selector": "h2",
           "body": "font-size:21px",
-          "condition": "(max-width:359px)"
+          "condition": "@media(max-width:359px)"
         },
         {
           "selector": ".refresh span",
           "body": "display:none",
-          "condition": "(max-width:359px)"
+          "condition": "@media(max-width:359px)"
         },
         {
           "selector": ".refresh",
           "body": "width:44px;padding:8px",
-          "condition": "(max-width:359px)"
+          "condition": "@media(max-width:359px)"
         },
         {
           "selector": "footer",
           "body": "padding-inline:16px",
-          "condition": "(max-width:359px)"
+          "condition": "@media(max-width:359px)"
         },
         {
           "selector": "*",
           "body": "scroll-behavior:auto!important;transition:none!important",
-          "condition": "(prefers-reduced-motion:reduce)"
+          "condition": "@media(prefers-reduced-motion:reduce)"
         },
         {
           "selector": ".date-dock,.day-pager,.trip-caption,.refresh",
           "body": "display:none",
-          "condition": "print"
+          "condition": "@media print"
         },
         {
           "selector": ".cover-photo",
           "body": "max-height:180px",
-          "condition": "print"
+          "condition": "@media print"
         },
         {
           "selector": ".day-overview",
           "body": "position:static",
-          "condition": "print"
+          "condition": "@media print"
         },
         {
           "selector": ".day-layout",
           "body": "gap:32px",
-          "condition": "print"
+          "condition": "@media print"
         },
         {
           "selector": ".event",
           "body": "break-inside:avoid",
-          "condition": "print"
+          "condition": "@media print"
+        },
+        {
+          "selector": ":root",
+          "body": "--magic-navy:#142b55;--magic-gold:#ffd46c;--magic-light:#e4edff",
+          "condition": null
+        },
+        {
+          "selector": ".trip-header",
+          "body": "position:relative;width:calc(100% - 48px);margin:24px auto 16px;padding:32px 32px 0;border-radius:24px;background:var(--magic-navy);color:white;overflow:hidden",
+          "condition": null
+        },
+        {
+          "selector": ".trip-header h1",
+          "body": "font-size:46px;line-height:1.18;letter-spacing:-.025em",
+          "condition": null
+        },
+        {
+          "selector": ".trip-header .masthead",
+          "body": "align-items:center;margin-bottom:24px",
+          "condition": null
+        },
+        {
+          "selector": ".trip-header .trip-meta",
+          "body": "font-size:14px;color:var(--magic-light);flex-shrink:0",
+          "condition": null
+        },
+        {
+          "selector": ".trip-header .trip-meta p:first-child",
+          "body": "color:white",
+          "condition": null
+        },
+        {
+          "selector": ".trip-countdown",
+          "body": "display:inline-block;margin-top:8px!important;padding:6px 12px;border:1px solid #6980a7;border-radius:20px;color:var(--magic-gold);font-weight:500;white-space:nowrap",
+          "condition": null
+        },
+        {
+          "selector": ".cover-scene",
+          "body": "position:relative;padding-bottom:24px",
+          "condition": null
+        },
+        {
+          "selector": ".trip-header .cover-photo",
+          "body": "aspect-ratio:2.9;border-radius:16px;outline:1px solid #7183a0",
+          "condition": null
+        },
+        {
+          "selector": ".hero-character",
+          "body": "position:absolute;bottom:16px;z-index:2;display:block;width:156px;height:188px;object-fit:contain;pointer-events:none;animation:crew-welcome 620ms var(--ease) both",
+          "condition": null
+        },
+        {
+          "selector": ".hero-mickey",
+          "body": "left:8px;transform-origin:50% 100%",
+          "condition": null
+        },
+        {
+          "selector": ".hero-minnie",
+          "body": "right:8px;transform-origin:50% 100%;animation-delay:100ms",
+          "condition": null
+        },
+        {
+          "selector": ".hero-stars",
+          "body": "position:absolute;right:20px;top:12px;width:156px;height:70px;fill:var(--magic-gold);stroke:none;pointer-events:none",
+          "condition": null
+        },
+        {
+          "selector": ".trip-header .trip-caption",
+          "body": "padding:8px 0 20px;color:var(--magic-light)",
+          "condition": null
+        },
+        {
+          "selector": ".voyage-route",
+          "body": "display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;border-top:1px solid #587099;padding:16px 0 24px",
+          "condition": null
+        },
+        {
+          "selector": ".voyage-route button",
+          "body": "position:relative;min-height:64px;border:1px solid transparent;border-radius:10px;background:transparent;color:white;padding:8px;text-align:center;transition:background-color 160ms var(--ease),border-color 160ms var(--ease)",
+          "condition": null
+        },
+        {
+          "selector": ".voyage-route button:hover",
+          "body": "background:#233f6c",
+          "condition": null
+        },
+        {
+          "selector": ".voyage-route button[aria-current=step]",
+          "body": "background:#233f6c;border-color:var(--magic-gold)",
+          "condition": null
+        },
+        {
+          "selector": ".voyage-route button span",
+          "body": "display:block;color:var(--magic-gold);font-size:14px;line-height:1.5;font-weight:500",
+          "condition": null
+        },
+        {
+          "selector": ".voyage-route button strong",
+          "body": "display:block;font-size:13px;line-height:1.7;font-weight:500",
+          "condition": null
+        },
+        {
+          "selector": ".trip-header button:focus-visible",
+          "body": "outline-color:var(--magic-gold)",
+          "condition": null
+        },
+        {
+          "selector": ".date-tab",
+          "body": "border-radius:12px",
+          "condition": null
+        },
+        {
+          "selector": ".date-tab[aria-selected=true]",
+          "body": "box-shadow:0 3px 8px #1b294014",
+          "condition": null
+        },
+        {
+          "selector": ".day-scene-wrap",
+          "body": "position:relative",
+          "condition": null
+        },
+        {
+          "selector": ".day-companion",
+          "body": "position:absolute;right:0;bottom:-12px;width:108px;height:144px;object-fit:contain;pointer-events:none;transform-origin:50% 100%;z-index:2",
+          "condition": null
+        },
+        {
+          "selector": ".day-summary",
+          "body": "margin-top:24px",
+          "condition": null
+        },
+        {
+          "selector": ".alternative-heading",
+          "body": "display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:104px",
+          "condition": null
+        },
+        {
+          "selector": ".alternative-heading .section-copy",
+          "body": "margin-bottom:0",
+          "condition": null
+        },
+        {
+          "selector": ".stitch-cameo",
+          "body": "width:86px;height:96px;object-fit:contain;flex-shrink:0;pointer-events:none",
+          "condition": null
+        },
+        {
+          "selector": "footer",
+          "body": "display:flex;align-items:flex-end;justify-content:space-between;gap:24px",
+          "condition": null
+        },
+        {
+          "selector": ".footer-copy",
+          "body": "min-width:0",
+          "condition": null
+        },
+        {
+          "selector": ".goofy-cameo",
+          "body": "width:72px;height:100px;object-fit:contain;flex-shrink:0;pointer-events:none",
+          "condition": null
+        },
+        {
+          "selector": ".trip-header",
+          "body": "width:calc(100% - 24px);margin:12px auto 8px;padding:24px 20px 0;border-radius:20px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".trip-header .masthead",
+          "body": "display:block;margin-bottom:20px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".trip-header h1",
+          "body": "font-size:36px;line-height:1.2",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".trip-header .trip-meta",
+          "body": "display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px;text-align:left;font-size:12px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".trip-countdown",
+          "body": "margin-top:0!important;padding:5px 9px;font-size:12px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".trip-header .cover-photo",
+          "body": "aspect-ratio:1.9;margin-inline:0;border-radius:12px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".cover-scene",
+          "body": "padding-bottom:20px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".hero-character",
+          "body": "width:86px;height:110px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".hero-mickey",
+          "body": "left:-4px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".hero-minnie",
+          "body": "right:-4px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".hero-stars",
+          "body": "right:10px;top:8px;width:100px;height:44px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".trip-header .trip-caption",
+          "body": "padding:4px 0 16px;display:block",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".trip-header .trip-caption span",
+          "body": "display:block",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".voyage-route",
+          "body": "padding:12px 0 20px;gap:4px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".voyage-route button",
+          "body": "min-height:64px;padding:6px 4px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".voyage-route button span",
+          "body": "font-size:13px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".voyage-route button strong",
+          "body": "font-size:12px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".day-companion",
+          "body": "width:84px;height:116px;bottom:-8px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".day-summary",
+          "body": "margin-top:20px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".alternative-heading",
+          "body": "min-height:96px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".stitch-cameo",
+          "body": "width:76px;height:88px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": "footer",
+          "body": "gap:16px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".goofy-cameo",
+          "body": "width:56px;height:84px",
+          "condition": "@media(max-width:767px)"
+        },
+        {
+          "selector": ".trip-header",
+          "body": "padding-inline:16px",
+          "condition": "@media(max-width:359px)"
+        },
+        {
+          "selector": ".trip-header h1",
+          "body": "font-size:30px",
+          "condition": "@media(max-width:359px)"
+        },
+        {
+          "selector": ".trip-header .trip-meta",
+          "body": "gap:8px",
+          "condition": "@media(max-width:359px)"
+        },
+        {
+          "selector": ".trip-countdown",
+          "body": "padding:4px 6px",
+          "condition": "@media(max-width:359px)"
+        },
+        {
+          "selector": ".hero-character",
+          "body": "width:72px;height:96px",
+          "condition": "@media(max-width:359px)"
+        },
+        {
+          "selector": ".day-companion",
+          "body": "width:72px;height:108px",
+          "condition": "@media(max-width:359px)"
+        },
+        {
+          "selector": ".hero-character",
+          "body": "animation:none;transform:none",
+          "condition": "@media(prefers-reduced-motion:reduce)"
+        },
+        {
+          "selector": ".hero-minnie",
+          "body": "animation-delay:0ms",
+          "condition": "@media(prefers-reduced-motion:reduce)"
+        },
+        {
+          "selector": ".hero-character,.hero-stars,.day-companion,.stitch-cameo,.goofy-cameo,.voyage-route,.trip-countdown",
+          "body": "display:none",
+          "condition": "@media print"
+        },
+        {
+          "selector": ".trip-header",
+          "body": "background:white;color:var(--ink);width:auto",
+          "condition": "@media print"
+        },
+        {
+          "selector": ".trip-header .trip-meta p:first-child",
+          "body": "color:var(--ink)",
+          "condition": "@media print"
         }
       ],
       "componentTransform": "Read real source rules; prefix classes with ds- and scope to .ds-sample; retain source custom properties with exact fallback values. Source rules (including responsive overrides) are recorded above. Sample text is documentary, not replacement trip data. No synthetic tonal ramps or invented UI states.",
@@ -1027,7 +1416,7 @@
       "refersTo": "date-tab",
       "description": "요일·날짜·테마와 선택/비선택 상태. 샘플은 상태를 보여주며 날짜 전환 JS는 포함하지 않는다.",
       "html": "<div class=\"ds-sample\"><div class=\"ds-date-strip\" role=\"tablist\" aria-label=\"날짜 상태 예시\"><button class=\"ds-date-tab\" role=\"tab\" aria-selected=\"true\"><span class=\"ds-weekday\">수요일</span><span class=\"ds-date-number\">17</span><span class=\"ds-date-mark\">도착</span></button><button class=\"ds-date-tab\" role=\"tab\" aria-selected=\"false\" tabindex=\"-1\"><span class=\"ds-weekday\">목요일</span><span class=\"ds-date-number\">18</span><span class=\"ds-date-mark\">도시 여행</span></button></div></div>",
-      "css": ".ds-sample{font-family:SUIT,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;color:var(--ink,#1b2940);font-size:16px;line-height:1.6}\n.ds-sample button,.ds-sample a{-webkit-tap-highlight-color:transparent}\n.ds-sample button{font:inherit;color:inherit;cursor:pointer}\n.ds-sample button:focus-visible,.ds-sample a:focus-visible,.ds-sample summary:focus-visible,.ds-sample .ds-table-scroll:focus-visible{outline:2px solid var(--accent,#b82e3e);outline-offset:4px}\n.ds-sample button:disabled{color:#a0a8b3;cursor:default}\n.ds-sample svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}\n.ds-sample .ds-date-strip{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:0 0 8px;overscroll-behavior-x:contain}\n.ds-sample .ds-date-strip::-webkit-scrollbar{display:none}\n.ds-sample .ds-date-tab{flex:1 0 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:76px;padding:8px 12px;border:0;border-radius:var(--radius,8px);background:transparent;transition:color 160ms var(--ease,cubic-bezier(.22,1,.36,1)),background-color 160ms var(--ease,cubic-bezier(.22,1,.36,1))}\n.ds-sample .ds-date-tab:hover{background:var(--surface,#f4f6f8)}\n.ds-sample .ds-weekday{font-size:12px;color:var(--secondary,#536174)}\n.ds-sample .ds-date-number{font-size:24px;line-height:1.4;font-weight:500}\n.ds-sample .ds-date-mark{font-size:12px;color:var(--secondary,#536174)}\n.ds-sample .ds-date-tab[aria-selected=true]{background:var(--accent,#b82e3e);color:white}\n.ds-sample .ds-date-tab[aria-selected=true] .ds-weekday,.ds-sample .ds-date-tab[aria-selected=true] .ds-date-mark{color:white}\n@media (max-width:767px){.ds-sample .ds-date-strip{gap:4px}}\n@media (max-width:767px){.ds-sample .ds-date-tab{flex:0 0 60px;padding:8px 4px}}\n@media(prefers-reduced-motion:reduce){.ds-sample *{scroll-behavior:auto!important;transition:none!important}}"
+      "css": ".ds-sample{font-family:SUIT,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif;color:var(--ink,#1b2940);font-size:16px;line-height:1.6}\n.ds-sample button,.ds-sample a{-webkit-tap-highlight-color:transparent}\n.ds-sample button{font:inherit;color:inherit;cursor:pointer}\n.ds-sample button:focus-visible,.ds-sample a:focus-visible,.ds-sample summary:focus-visible,.ds-sample .ds-table-scroll:focus-visible{outline:2px solid var(--accent,#b82e3e);outline-offset:4px}\n.ds-sample button:disabled{color:#a0a8b3;cursor:default}\n.ds-sample svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}\n.ds-sample .ds-date-strip{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:0 0 8px;overscroll-behavior-x:contain}\n.ds-sample .ds-date-strip::-webkit-scrollbar{display:none}\n.ds-sample .ds-date-tab{flex:1 0 72px;display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:76px;padding:8px 12px;border:0;border-radius:var(--radius,8px);background:transparent;transition:color 160ms var(--ease,cubic-bezier(.22,1,.36,1)),background-color 160ms var(--ease,cubic-bezier(.22,1,.36,1))}\n.ds-sample .ds-date-tab:hover{background:var(--surface,#f4f6f8)}\n.ds-sample .ds-weekday{font-size:12px;color:var(--secondary,#536174)}\n.ds-sample .ds-date-number{font-size:24px;line-height:1.4;font-weight:500}\n.ds-sample .ds-date-mark{font-size:12px;color:var(--secondary,#536174)}\n.ds-sample .ds-date-tab[aria-selected=true]{background:var(--accent,#b82e3e);color:white}\n.ds-sample .ds-date-tab[aria-selected=true] .ds-weekday,.ds-sample .ds-date-tab[aria-selected=true] .ds-date-mark{color:white}\n@media (max-width:767px){.ds-sample .ds-date-strip{gap:4px}}\n@media (max-width:767px){.ds-sample .ds-date-tab{flex:0 0 60px;padding:8px 4px}}\n@media(prefers-reduced-motion:reduce){.ds-sample *{scroll-behavior:auto!important;transition:none!important}}\n.ds-sample .ds-date-tab{border-radius:12px}.ds-sample .ds-date-tab[aria-selected=true]{box-shadow:0 3px 8px #1b294014}"
     },
     {
       "name": "보기 선택",
@@ -1080,7 +1469,7 @@
   ],
   "narrative": {
     "northStar": "흰 종이 여행 사진첩",
-    "overview": "흰 종이 위의 실제 여행 사진과 시간 정렬을 중심으로 한 일정 인터페이스다. 네이비 잉크로 내용을 읽고, 붉은색으로 선택 날짜와 날짜 숫자를 찾는다. 표면의 깊이는 그림자가 아니라 여백과 얇은 구분선으로 만든다.\n\n이 문서는 승인된 방향을 새로 제안하는 문서가 아니라 docs/index.html, docs/itinerary.css, docs/app.js의 현재 구현을 기록한 버전관리용 자료다. UI에서 로드하지 않는다. 세부 화면 의도는 .impeccable/surfaces/itinerary.md에 둔다. 원본 CSS가 우선이며 변경 시 이 문서와 sidecar를 함께 갱신한다.",
+    "overview": "흰 종이 위의 실제 여행 사진과 시간 정렬을 중심으로 한 일정 인터페이스다. 네이비 잉크로 내용을 읽고, 붉은색으로 선택 날짜와 날짜 숫자를 찾는다. 일정 본문은 여백과 얇은 구분선으로 구분하고 선택 날짜에만 약한 중성 그림자를 쓴다.\n\n이 문서는 승인된 방향을 새로 제안하는 문서가 아니라 docs/index.html, docs/itinerary.css, docs/app.js의 현재 구현을 기록한 버전관리용 자료다. UI에서 로드하지 않는다. 세부 화면 의도는 .impeccable/surfaces/itinerary.md에 둔다. 원본 CSS가 우선이며 변경 시 이 문서와 sidecar를 함께 갱신한다.\n\n후속 요청에 따라 상단에 네이비·골드의 디즈니 크루즈 장면과 미키/미니를 추가했다. 일별 사진 모서리는 6종 캐릭터로 교체되며 대안에 스티치, 하단에 구피가 배치된다. 일정·실사 사진·탐색 기능과 붉은 선택 상태는 유지한다. 장식은 실제 캐릭터 만남 예약을 뜻하지 않는다.",
     "keyCharacteristics": [
       "실제 사진과 기능적 날짜 탐색",
       "시간 정렬된 무박스 행",

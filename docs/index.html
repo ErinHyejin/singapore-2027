@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#142b55">
   <meta name="robots" content="noindex,nofollow,noarchive">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
@@ -11,17 +11,28 @@
   <title>싱가포르 여행 · 2027. 2. 17~24</title>
   <link rel="icon" type="image/svg+xml" href="./icon.svg">
   <link rel="preload" href="./assets/SUIT-Variable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="./itinerary.css?v=photo-2">
+  <link rel="stylesheet" href="./itinerary.css?v=magic-3">
   <script defer src="./data.js"></script>
   <script defer src="./photos.js?v=photo-2"></script>
-  <script defer src="./app.js?v=photo-2"></script>
+  <script defer src="./app.js?v=magic-3"></script>
 </head>
 <body>
   <a class="skip" href="#main">일정으로 바로가기</a>
   <header class="trip-header">
-    <div class="masthead"><h1>싱가포르</h1><div class="trip-meta"><p>2027. 2. 17~24</p><p>디즈니 어드벤처</p></div></div>
-    <div class="cover-photo"><img id="cruise-photo" src="./assets/hero-disney.webp" alt="붉은 굴뚝과 검은 선체의 디즈니 어드벤처" width="1440" height="560" fetchpriority="high"></div>
+    <div class="masthead"><h1>싱가포르에서,<br>디즈니 어드벤처</h1><div class="trip-meta"><p>2027. 2. 17~24</p><p id="trip-countdown" class="trip-countdown"></p></div></div>
+    <div class="cover-scene">
+      <div class="cover-photo"><img id="cruise-photo" src="./assets/hero-disney.webp" alt="붉은 굴뚝과 검은 선체의 디즈니 어드벤처" width="1440" height="560" fetchpriority="high"></div>
+      <img class="hero-character hero-mickey" src="./assets/characters/mickey.svg" alt="" aria-hidden="true" width="160" height="190">
+      <img class="hero-character hero-minnie" src="./assets/characters/minnie.svg" alt="" aria-hidden="true" width="160" height="190">
+      <svg class="hero-stars" viewBox="0 0 160 70" aria-hidden="true"><path d="m24 12 4 10 10 4-10 4-4 10-4-10-10-4 10-4Zm70 15 3 8 8 3-8 3-3 8-3-8-8-3 8-3Zm42-18 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z"/></svg>
+    </div>
     <div class="trip-caption"><span>도시에서 바다로, 다시 싱가포르로</span><span>현지 시간 기준 · 한국보다 1시간 느림</span></div>
+    <nav class="voyage-route" aria-label="여행의 큰 흐름">
+      <button type="button" data-voyage-date="2027-02-17"><span>2.17</span><strong>싱가포르 도착</strong></button>
+      <button type="button" data-voyage-date="2027-02-18"><span>2.18</span><strong>크루즈 승선</strong></button>
+      <button type="button" data-voyage-date="2027-02-22"><span>2.22</span><strong>시내 여행</strong></button>
+      <button type="button" data-voyage-date="2027-02-24"><span>2.24</span><strong>집으로</strong></button>
+    </nav>
   </header>
   <section class="date-dock" aria-label="날짜 및 보기 선택">
     <div class="dock-inner">
@@ -39,20 +50,20 @@
         <div class="day-overview">
           <div class="day-heading"><span class="day-date" id="day-index" aria-hidden="true"></span><div><h2 id="day-title"></h2><p id="day-label" class="day-label"></p></div></div>
           <p class="day-subtitle" id="day-subtitle"></p>
-          <figure class="day-scene"><img id="day-photo" src="./assets/day-17.webp" alt="싱가포르 마리나베이 야경" width="960" height="640"></figure>
+          <div class="day-scene-wrap"><figure class="day-scene"><img id="day-photo" src="./assets/day-17.webp" alt="싱가포르 마리나베이 야경" width="960" height="640"></figure><img id="day-companion" class="day-companion" src="./assets/characters/mickey.svg" alt="" aria-hidden="true" width="110" height="140"></div>
           <div class="day-summary" id="day-summary"></div>
         </div>
         <div class="day-schedule">
           <div id="timeline" class="timeline"></div>
           <nav class="day-pager" aria-label="이전 또는 다음 날짜"><button id="previous-day" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg>이전 날</button><button id="next-day" type="button">다음 날<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button></nav>
-          <section class="alternatives" aria-labelledby="alternatives-heading"><h2 id="alternatives-heading">다른 선택</h2><p class="section-copy">기존 일정과 바꿔서 선택하세요</p><div id="alternatives-list"></div></section>
+          <section class="alternatives" aria-labelledby="alternatives-heading"><div class="alternative-heading"><div><h2 id="alternatives-heading">다른 모험도 있어요</h2><p class="section-copy">기존 일정과 바꿔서 선택하세요</p></div><img class="stitch-cameo" src="./assets/characters/stitch.webp" alt="" aria-hidden="true" width="86" height="96" loading="lazy"></div><div id="alternatives-list"></div></section>
         </div>
       </div>
     </section>
     <section id="grid-panel" hidden aria-labelledby="grid-heading"><h2 id="grid-heading">전체 시간표</h2><p class="section-copy">가로로 밀면 다른 날짜를 볼 수 있어요</p><div class="table-scroll" tabindex="0" aria-label="가로로 스크롤하는 전체 일정표"><table id="schedule-table"></table></div></section>
     <aside class="travel-note"><h2>출발 전 확인</h2><p>클라우드 포레스트는 2/23 정기 휴관 예정입니다. 승·하선과 항공 수속 시간은 예약서로 다시 확인하세요.</p></aside>
   </main>
-  <footer><p>싱가포르 여행 · 2027년 2월</p><p class="fine">일정 변경 후 웹에도 따로 반영합니다. 구글 시트와 실시간으로 연동되지는 않습니다.</p></footer>
+  <footer><div class="footer-copy"><p>우리의 싱가포르 모험 · 2027년 2월</p><p class="fine">일정 변경 후 웹에도 따로 반영합니다. 구글 시트와 실시간으로 연동되지는 않습니다.</p></div><img class="goofy-cameo" src="./assets/characters/goofy.webp" alt="" aria-hidden="true" width="72" height="100" loading="lazy"></footer>
   <noscript>일정표를 보려면 JavaScript를 켜주세요.</noscript>
 </body>
 </html>

@@ -19,13 +19,16 @@ colors:
   meal-wash: '#fbf8f2'
   scrollbar-thumb: '#b4bdc9'
   image-fallback: '#e8edf0'
+  magic-navy: '#142b55'
+  magic-gold: '#ffd46c'
+  magic-light: '#e4edff'
 typography:
   display:
     fontFamily: SUIT,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif
-    fontSize: 40px
+    fontSize: 46px
     fontWeight: 600
-    lineHeight: 1.15
-    letterSpacing: -.02em
+    lineHeight: 1.18
+    letterSpacing: -.025em
   day-number:
     fontFamily: SUIT,-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',sans-serif
     fontSize: 48px
@@ -68,12 +71,12 @@ components:
   date-tab:
     backgroundColor: transparent
     textColor: '{colors.ink}'
-    rounded: '{rounded.default}'
+    rounded: 12px
     padding: 8px 12px
   date-tab-selected:
     backgroundColor: '{colors.accent}'
     textColor: '{colors.paper}'
-    rounded: '{rounded.default}'
+    rounded: 12px
     padding: 8px 12px
   view-toggle:
     backgroundColor: transparent
@@ -153,8 +156,8 @@ components:
 
 | 조건 | 실제 변화 |
 | --- | --- |
-| 기본 / 768px 이상 | 좌우 32px, 2열, 커버 aspect-ratio 3.15, 하루 사진 1.4 |
-| max-width:767px | 좌우 20px, 일별·메모 1열, 소개 고정 해제, 커버 1.9와 음수 바깥 여백으로 전폭, 하루 사진 2.2, 시간열 68px/간격 12px/행 상하 20px |
+| 기본 / 768px 이상 | 좌우 32px, 2열, 헤더 커버 aspect-ratio 2.9, 하루 사진 1.4, 헤더 제목 46px/1.18 |
+| max-width:767px | 좌우 20px, 일별·메모 1열, 소개 고정 해제, 헤더 커버 1.9와 바깥 여백 0, 하루 사진 2.2, 시간열 68px/간격 12px/행 상하 20px, 헤더 제목 36px/1.2 |
 | max-width:359px | 좌우 16px, 시간열 60px, 새로고침 글자 숨김·아이콘 버튼 폭 44px |
 | prefers-reduced-motion:reduce | 모든 transition 제거, scroll-behavior:auto 강제, JS 날짜 이동도 즉시 스크롤 |
 | print | 날짜 바·이전/다음·커버 캡션·새로고침 숨김, 커버 max-height 180px, 소개 고정 해제, 일별 열 간격 32px, 행 분할 방지 |
@@ -165,13 +168,13 @@ components:
 
 ## Elevation & Depth
 
-box-shadow와 backdrop-filter는 없다. 흰 바탕, 얇은 경계선, 조용한 상태 바탕, 사진 크롭으로 위계를 구분한다. sticky와 z-index는 기능적 겹침이며 카드 고도의 토큰이 아니다.
+일정 행과 카드에는 그림자가 없다. 선택 날짜에만 `0 3px 8px #1b294014`의 약한 중성 그림자를 쓴다. backdrop-filter는 없다. 흰 바탕, 얇은 경계선, 조용한 상태 바탕, 사진 크롭으로 위계를 구분한다. sticky와 z-index는 기능적 겹침이며 카드 고도의 토큰이 아니다.
 
 **The Flat Rows Rule.** 일정은 경계선으로 나뉜 시간행으로 유지한다. 행을 개별 그림자 카드로 바꾸지 않는다.
 
 ## Shapes
 
-기본 모서리 `rounded.default`는 날짜 탭, 하루 사진, 이전/다음 버튼과 전체 표 바깥에 적용한다. 확인 배지만 `rounded.status`를 쓴다. 커버 사진은 둥글게 만들지 않고 overflow:hidden으로 자른다. 요약의 chip은 실제로 inline 텍스트이며 pill이 아니다. 경계선은 1px solid `line`이다. 아이콘은 기본 18px, stroke-width 1.5의 SVG이며 지도만 16px이다.
+기본 모서리 `rounded.default`는 하루 사진, 이전/다음 버튼과 전체 표 바깥에 적용한다. 날짜 탭은 12px, 확인 배지는 `rounded.status`다. 디즈니 헤더는 24px/모바일 20px, 내부 커버 사진은 16px/모바일 12px로 잘라낸다. 요약의 chip은 실제로 inline 텍스트이며 pill이 아니다. 경계선은 1px solid `line`이다. 아이콘은 기본 18px, stroke-width 1.5의 SVG이며 지도만 16px이다.
 
 ## Components
 
@@ -204,6 +207,14 @@ native details/summary다. summary 최소 높이 64px, 상하 패딩 16px이며 
 버튼·링크·summary·표 스크롤 영역의 focus-visible은 `2px solid var(--accent)`와 outline-offset 4px이다. skip link는 평소 화면 위에 있다가 포커스 시 top:8px로 나타난다. `[hidden]`은 display:none!important이다. hover/사진 opacity/펼침 화살표의 transition은 160ms와 `--ease`다. 날짜 이동 스크롤은 smooth이며 지속시간을 직접 지정하지 않는다. 폼 입력·모달·스켈레톤·커스텀 :active 스타일은 구현되어 있지 않다. 데이터 누락 오류는 기존 no-alts 본문 스타일을 재사용한다.
 
 sidecar의 프리뷰는 실제 선언을 추출·ds-접두사로 격리한 HTML/CSS다. 루트 custom property는 fallback과 함께 live-bound로 참조한다. 선택/pressed 샘플은 시각 상태 예시이며 앱의 JS 동작 전체를 복제하지 않는다. details의 기본 토글은 자체 동작한다.
+
+### Disney voyage layer
+
+헤더 배경은 `magic-navy`, 보조 텍스트는 `magic-light`, D-day와 이동 단계 날짜는 `magic-gold`다. 본문은 흰 바탕·네이비 글자·붉은 날짜 선택을 보존한다. 싱가포르 달력 날짜로 D-day를 계산하며 여행 중/종료 후 문구도 분리한다. 4개 단계 버튼은 실제 날짜 선택으로 연결하고 해당 구간에 `aria-current=step`을 쓴다.
+
+사진 양쪽 미키·미니, 날짜 사진의 6종 캐릭터, 대안의 스티치와 하단 구피는 모두 빈 alt·aria-hidden·pointer-events:none인 장식이다. 그림은 contain으로 표시한다. 캐릭터 영역이 제목·날짜·버튼·안내 문구를 침범하지 않도록 시작/종료 자세를 확인한다. 실제 프로그램/만남 예약의 확정 표현으로 사용하지 않는다.
+
+상단은 620ms의 일회성 등장과 100ms의 두 번째 캐릭터 지연, 날짜 변경은 캐릭터 360ms와 사진 220ms다. 기본 opacity는 0이 아니며 무한 반복은 없다. reduced-motion에서는 해당 애니메이션을 생략한다. 기능 테스트와 정적 렌더 검수는 시행하되 실제 기기 프레임률 측정이나 전체 모션 영상 검수로 표현하지 않는다.
 
 ## Do's and Don'ts
 

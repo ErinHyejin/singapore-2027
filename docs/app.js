@@ -21,6 +21,34 @@
   const hashDate = () => location.hash.slice(1);
   let selected = available(hashDate()) ? hashDate() : (available(getSaved()) ? getSaved() : data.days[0].date);
   let buttons = [];
+  const companions = {
+    mickey:'./assets/characters/mickey.svg', minnie:'./assets/characters/minnie.svg',
+    stitch:'./assets/characters/stitch.webp', donald:'./assets/characters/donald.webp',
+    goofy:'./assets/characters/goofy.webp', olaf:'./assets/characters/olaf.webp'
+  };
+  const companionByDay = ['mickey','donald','minnie','stitch','goofy','olaf','minnie','stitch'];
+
+  function updateCountdown(now = new Date()) {
+    const parts = Object.fromEntries(new Intl.DateTimeFormat('en-US', {timeZone:'Asia/Singapore',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now).map(p => [p.type,p.value]));
+    const today = Date.UTC(Number(parts.year),Number(parts.month)-1,Number(parts.day));
+    const first = Date.parse(data.days[0].date+'T00:00:00Z');
+    const last = Date.parse(data.days[data.days.length-1].date+'T00:00:00Z');
+    const days = Math.round((first-today)/86400000);
+    $('trip-countdown').textContent = days>0 ? `여행까지 D-${days}` : today<=last ? '지금은 우리의 여행 중' : '다시 꺼내 보는 우리의 모험';
+    $('trip-countdown').dataset.days = String(days);
+  }
+
+  function animateDayChange() {
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const friend = $('day-companion');
+    friend.getAnimations().forEach(a => a.cancel());
+    friend.animate([
+      {opacity:.6,transform:'translateY(0) rotate(-4deg) scale(.96)'},
+      {opacity:1,transform:'translateY(0) rotate(0) scale(1)'}
+    ], {duration:360,easing:'cubic-bezier(.22,1,.36,1)'});
+    $('day-photo').getAnimations().forEach(a => a.cancel());
+    $('day-photo').animate([{opacity:.7},{opacity:1}],{duration:220,easing:'ease-out'});
+  }
 
   function icon(path, className = '') {
     const node = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
@@ -104,6 +132,12 @@
     const photo = window.TRIP_PHOTOS?.days?.[day.date];
     const image = $('day-photo');
     if (photo) { image.src = photo.src; image.alt = photo.alt; }
+    const companion = companionByDay[index % companionByDay.length];
+    $('day-companion').src = companions[companion];
+    $('day-companion').dataset.character = companion;
+    const routes = [...document.querySelectorAll('[data-voyage-date]')];
+    const leg = routes.filter(b => b.dataset.voyageDate<=day.date).at(-1);
+    routes.forEach(b => { if(b===leg)b.setAttribute('aria-current','step');else b.removeAttribute('aria-current'); });
     $('timeline').replaceChildren(...day.events.map(renderCard));
     const summary = $('day-summary'); summary.replaceChildren();
     summary.append(el('span', 'summary-chip', `일정 ${day.events.length}개`));
@@ -125,6 +159,7 @@
     history.replaceState(null, '', `#${date}`);
     renderDay(); toggleView(false);
     if (userInitiated) {
+      animateDayChange();
       const top = $('main').getBoundingClientRect().top + window.scrollY - document.querySelector('.date-dock').offsetHeight - 8;
       window.scrollTo({top:Math.max(0,top), behavior:matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
     }
@@ -170,6 +205,8 @@
     table.replaceChildren(caption, head, body);
   }
   createTabs(); renderDay(); renderGrid();
+  updateCountdown();
+  document.querySelectorAll('[data-voyage-date]').forEach(b => b.addEventListener('click', () => selectDay(b.dataset.voyageDate, true)));
   $('daily-view').addEventListener('click', () => toggleView(false));
   $('grid-view').addEventListener('click', () => toggleView(true));
   $('refresh-button').addEventListener('click', () => location.reload());

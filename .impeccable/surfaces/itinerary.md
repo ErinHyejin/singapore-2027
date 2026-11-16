@@ -34,6 +34,18 @@ FORM: grounded candidate 3, photo-album orientation on standard web controls; se
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
 
+## Requested Disney-character follow-up
+
+Product: 동행 가족이 여행을 기대하면서 같은 날짜별 일정을 조회한다.
+Character: 반가운, 선명한, 장난스러운.
+World: 실제 디즈니 어드벤처 사진과 흰 일정 종이; 상단만 선박의 네이비·골드 색감으로 확장한다.
+Moments: 실제 배 사진 양쪽의 미키·미니, 날짜 사진 모서리에서 교체되는 캐릭터.
+Signature: 날짜를 고르면 장소 사진·캐릭터·시간표가 함께 바뀐다. 대안과 하단에도 작은 스티치/구피를 넣되 일정과 버튼은 덮지 않는다.
+
+Motion thesis: 첫 화면에서 미키와 미니가 짧게 자세를 잡는 620ms 일회성 등장만 주인공이다. 날짜 변경의 360ms 캐릭터 기울기와 220ms 사진 투명도는 바뀐 날을 확인하는 보조 피드백이며 클릭을 지연시키지 않는다. 반복 루프·소리·불꽃·파티클·추가 모션 라이브러리는 없다. 기본 화면은 이미 보이고 reduced-motion에서는 캐릭터/사진 애니메이션을 생략하되 선택 상태와 내용 전환은 유지한다. 실제 하드웨어 프레임률이나 smoothness를 검증했다는 주장은 하지 않는다.
+
+Character assets: 기존 디즈니 캐릭터 이미지 6종이며 생성 이미지가 아니다. 원본·변경·저작권 맥락은 `CHARACTER_SOURCES.json`과 자산 메타데이터에 기록한다. 출연/만남 예약 확정의 표현으로 쓰지 않는다.
+
 ## Preservation boundary
 
 Keep itinerary JSON, sheet export behavior, privacy boundary, original sheet sharing, existing published URL and all original controls. Do not publish runtime/cache/skill files. Photo provenance stays in source records and image metadata; select CC0 to permit omitting visible credit notices. No image generation or invented Disney ship photos.

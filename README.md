@@ -16,6 +16,10 @@ The interface was rebuilt with Humanizer for concise copy, Unslop for visual cle
 
 The header uses a real Disney Adventure photograph. `docs/photos.js` selects eight date-specific photographs, served locally as WebP. Image origins, authors, licenses and changes are recorded in `PHOTOS.md`, `PHOTO_SOURCES.json`, embedded image metadata and provenance sidecars. Those records are not shown as captions in the itinerary. Photographs illustrate the day's theme; they are not evidence of future attendance or bookings. SUIT is self-hosted under its SIL Open Font License, bundled in `docs/assets/SUIT-LICENSE.txt`.
 
+The later Disney-character pass adds six existing character illustrations, a navy/gold voyage header, Singapore-date countdown and clickable journey stages. Dates switch the companion together with the real daily photograph. Stitch appears by alternatives and Goofy in the footer. `CHARACTER_SOURCES.json` and per-asset sidecars retain provenance; WebP files also contain source metadata. These decorations do not confirm a character appearance or meeting. Character generation was attempted but blocked, so no generated character artwork is claimed or shipped. No runtime image hotlinks are used.
+
+Additional checks: `node tests/countdown.test.js` checks Singapore midnight and trip-end boundaries. `tests/browser_checks.js`, `tests/photo_checks.js` and `tests/character_checks.js` run inside the isolated browser; character checks cover asset decoding, all eight date mappings, route controls, tap targets, decorative accessibility, overlap and reduced motion.
+
 ## Source and updates
 
 The private Google Sheet remains the source of truth. This site is **not a live Sheet integration**. After changing the sheet, use an already-authorized local `gws` account:

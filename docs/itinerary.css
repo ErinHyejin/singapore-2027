@@ -137,3 +137,66 @@ footer .fine{font-size:12px;margin-top:8px}
   .date-dock,.day-pager,.trip-caption,.refresh{display:none}.cover-photo{max-height:180px}
   .day-overview{position:static}.day-layout{gap:32px}.event{break-inside:avoid}
 }
+
+:root{--magic-navy:#142b55;--magic-gold:#ffd46c;--magic-light:#e4edff}
+.trip-header{position:relative;width:calc(100% - 48px);margin:24px auto 16px;padding:32px 32px 0;border-radius:24px;background:var(--magic-navy);color:white;overflow:hidden}
+.trip-header h1{font-size:46px;line-height:1.18;letter-spacing:-.025em}
+.trip-header .masthead{align-items:center;margin-bottom:24px}
+.trip-header .trip-meta{font-size:14px;color:var(--magic-light);flex-shrink:0}
+.trip-header .trip-meta p:first-child{color:white}
+.trip-countdown{display:inline-block;margin-top:8px!important;padding:6px 12px;border:1px solid #6980a7;border-radius:20px;color:var(--magic-gold);font-weight:500;white-space:nowrap}
+.cover-scene{position:relative;padding-bottom:24px}
+.trip-header .cover-photo{aspect-ratio:2.9;border-radius:16px;outline:1px solid #7183a0}
+.hero-character{position:absolute;bottom:16px;z-index:2;display:block;width:156px;height:188px;object-fit:contain;pointer-events:none;animation:crew-welcome 620ms var(--ease) both}
+.hero-mickey{left:8px;transform-origin:50% 100%}
+.hero-minnie{right:8px;transform-origin:50% 100%;animation-delay:100ms}
+.hero-stars{position:absolute;right:20px;top:12px;width:156px;height:70px;fill:var(--magic-gold);stroke:none;pointer-events:none}
+.trip-header .trip-caption{padding:8px 0 20px;color:var(--magic-light)}
+.voyage-route{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;border-top:1px solid #587099;padding:16px 0 24px}
+.voyage-route button{position:relative;min-height:64px;border:1px solid transparent;border-radius:10px;background:transparent;color:white;padding:8px;text-align:center;transition:background-color 160ms var(--ease),border-color 160ms var(--ease)}
+.voyage-route button:hover{background:#233f6c}
+.voyage-route button[aria-current=step]{background:#233f6c;border-color:var(--magic-gold)}
+.voyage-route button span{display:block;color:var(--magic-gold);font-size:14px;line-height:1.5;font-weight:500}
+.voyage-route button strong{display:block;font-size:13px;line-height:1.7;font-weight:500}
+.trip-header button:focus-visible{outline-color:var(--magic-gold)}
+.date-tab{border-radius:12px}
+.date-tab[aria-selected=true]{box-shadow:0 3px 8px #1b294014}
+.day-scene-wrap{position:relative}
+.day-companion{position:absolute;right:0;bottom:-12px;width:108px;height:144px;object-fit:contain;pointer-events:none;transform-origin:50% 100%;z-index:2}
+.day-summary{margin-top:24px}
+.alternative-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:104px}
+.alternative-heading .section-copy{margin-bottom:0}
+.stitch-cameo{width:86px;height:96px;object-fit:contain;flex-shrink:0;pointer-events:none}
+footer{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
+.footer-copy{min-width:0}
+.goofy-cameo{width:72px;height:100px;object-fit:contain;flex-shrink:0;pointer-events:none}
+@keyframes crew-welcome{from{opacity:.65;transform:translateY(6px) rotate(-5deg)}to{opacity:1;transform:translateY(0) rotate(0)}}
+@media(max-width:767px){
+  .trip-header{width:calc(100% - 24px);margin:12px auto 8px;padding:24px 20px 0;border-radius:20px}
+  .trip-header .masthead{display:block;margin-bottom:20px}
+  .trip-header h1{font-size:36px;line-height:1.2}
+  .trip-header .trip-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px;text-align:left;font-size:12px}
+  .trip-countdown{margin-top:0!important;padding:5px 9px;font-size:12px}
+  .trip-header .cover-photo{aspect-ratio:1.9;margin-inline:0;border-radius:12px}
+  .cover-scene{padding-bottom:20px}
+  .hero-character{width:86px;height:110px}
+  .hero-mickey{left:-4px}.hero-minnie{right:-4px}
+  .hero-stars{right:10px;top:8px;width:100px;height:44px}
+  .trip-header .trip-caption{padding:4px 0 16px;display:block}
+  .trip-header .trip-caption span{display:block}
+  .voyage-route{padding:12px 0 20px;gap:4px}
+  .voyage-route button{min-height:64px;padding:6px 4px}
+  .voyage-route button span{font-size:13px}.voyage-route button strong{font-size:12px}
+  .day-companion{width:84px;height:116px;bottom:-8px}
+  .day-summary{margin-top:20px}
+  .alternative-heading{min-height:96px}.stitch-cameo{width:76px;height:88px}
+  footer{gap:16px}.goofy-cameo{width:56px;height:84px}
+}
+@media(max-width:359px){
+  .trip-header{padding-inline:16px}.trip-header h1{font-size:30px}
+  .trip-header .trip-meta{gap:8px}.trip-countdown{padding:4px 6px}
+  .hero-character{width:72px;height:96px}
+  .day-companion{width:72px;height:108px}
+}
+@media(prefers-reduced-motion:reduce){.hero-character{animation:none;transform:none}.hero-minnie{animation-delay:0ms}}
+@media print{.hero-character,.hero-stars,.day-companion,.stitch-cameo,.goofy-cameo,.voyage-route,.trip-countdown{display:none}.trip-header{background:white;color:var(--ink);width:auto}.trip-header .trip-meta p:first-child{color:var(--ink)}}

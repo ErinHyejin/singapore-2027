@@ -1,0 +1,56 @@
+[
+  {
+    "character": "미키 마우스",
+    "asset": "docs/assets/characters/mickey.svg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Mickey_Mouse_%28poster_version%29.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/Mickey_Mouse",
+    "copyright": "Disney character artwork; not generated artwork and not a claim of public-domain status or Disney endorsement.",
+    "changes": "Original SVG retained after active-content validation; PNGs resized and losslessly encoded as WebP.",
+    "purpose": "Decorative character illustration for a non-commercial family travel itinerary; not a confirmed onboard appearance."
+  },
+  {
+    "character": "미니 마우스",
+    "asset": "docs/assets/characters/minnie.svg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Minnie_Mouse.svg",
+    "sourcePage": "https://en.wikipedia.org/wiki/Minnie_Mouse",
+    "copyright": "Disney character artwork; not generated artwork and not a claim of public-domain status or Disney endorsement.",
+    "changes": "Original SVG retained after active-content validation; PNGs resized and losslessly encoded as WebP.",
+    "purpose": "Decorative character illustration for a non-commercial family travel itinerary; not a confirmed onboard appearance."
+  },
+  {
+    "character": "스티치",
+    "asset": "docs/assets/characters/stitch.webp",
+    "source": "https://lumiere-a.akamaihd.net/v1/images/744px-stitch_lilo_stitch_9372ef97.png",
+    "sourcePage": "https://video.disney.com/stitch",
+    "copyright": "Disney character artwork; not generated artwork and not a claim of public-domain status or Disney endorsement.",
+    "changes": "Original SVG retained after active-content validation; PNGs resized and losslessly encoded as WebP.",
+    "purpose": "Decorative character illustration for a non-commercial family travel itinerary; not a confirmed onboard appearance."
+  },
+  {
+    "character": "도널드 덕",
+    "asset": "docs/assets/characters/donald.webp",
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/a5/Donald_Duck_angry_transparent_background.png",
+    "sourcePage": "https://en.wikipedia.org/wiki/Donald_Duck",
+    "copyright": "Disney character artwork; not generated artwork and not a claim of public-domain status or Disney endorsement.",
+    "changes": "Original SVG retained after active-content validation; PNGs resized and losslessly encoded as WebP.",
+    "purpose": "Decorative character illustration for a non-commercial family travel itinerary; not a confirmed onboard appearance."
+  },
+  {
+    "character": "구피",
+    "asset": "docs/assets/characters/goofy.webp",
+    "source": "https://upload.wikimedia.org/wikipedia/en/5/50/Goofy_Duckipedia.png",
+    "sourcePage": "https://en.wikipedia.org/wiki/Goofy",
+    "copyright": "Disney character artwork; not generated artwork and not a claim of public-domain status or Disney endorsement.",
+    "changes": "Original SVG retained after active-content validation; PNGs resized and losslessly encoded as WebP.",
+    "purpose": "Decorative character illustration for a non-commercial family travel itinerary; not a confirmed onboard appearance."
+  },
+  {
+    "character": "올라프",
+    "asset": "docs/assets/characters/olaf.webp",
+    "source": "https://upload.wikimedia.org/wikipedia/en/6/6d/Olaf_from_Disney%27s_Frozen.png",
+    "sourcePage": "https://en.wikipedia.org/wiki/Olaf_(Frozen)",
+    "copyright": "Disney character artwork; not generated artwork and not a claim of public-domain status or Disney endorsement.",
+    "changes": "Original SVG retained after active-content validation; PNGs resized and losslessly encoded as WebP.",
+    "purpose": "Decorative character illustration for a non-commercial family travel itinerary; not a confirmed onboard appearance."
+  }
+]

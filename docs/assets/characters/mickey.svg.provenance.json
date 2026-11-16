@@ -1,0 +1,9 @@
+{
+  "character": "미키 마우스",
+  "asset": "docs/assets/characters/mickey.svg",
+  "source": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Mickey_Mouse_%28poster_version%29.svg",
+  "sourcePage": "https://en.wikipedia.org/wiki/Mickey_Mouse",
+  "copyright": "Disney character artwork; not generated artwork and not a claim of public-domain status or Disney endorsement.",
+  "changes": "Original SVG retained after active-content validation; PNGs resized and losslessly encoded as WebP.",
+  "purpose": "Decorative character illustration for a non-commercial family travel itinerary; not a confirmed onboard appearance."
+}
