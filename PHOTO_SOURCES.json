@@ -1,0 +1,101 @@
+[
+  {
+    "asset": "docs/assets/hero-disney.webp",
+    "origin": "https://commons.wikimedia.org/wiki/File:Disney_Adventure_Disney_Cruise_Line_(55113251772).jpg",
+    "author": "nagi usano from Tokyo, Japan",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "changes": "Resized, encoded as WebP; responsive display crop.",
+    "width": 1440,
+    "height": 960,
+    "bytes": 223318
+  },
+  {
+    "asset": "docs/assets/day-17.webp",
+    "origin": "https://commons.wikimedia.org/wiki/File:Singapore_Night_Time_Skyline_Panorama_(54212129482).jpg",
+    "author": "Mustang Joe",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "changes": "Resized, encoded as WebP; responsive display crop.",
+    "width": 960,
+    "height": 307,
+    "bytes": 52702
+  },
+  {
+    "asset": "docs/assets/day-18.webp",
+    "origin": "https://commons.wikimedia.org/wiki/File:Disney_Adventure_(54735682746).jpg",
+    "author": "Steffen Zahn from Berlin, Germany",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "changes": "Resized, encoded as WebP; responsive display crop.",
+    "width": 960,
+    "height": 638,
+    "bytes": 68098
+  },
+  {
+    "asset": "docs/assets/day-19.webp",
+    "origin": "https://commons.wikimedia.org/wiki/File:Disney_Adventure_Disney_Cruise_Line_(55113252617).jpg",
+    "author": "nagi usano from Tokyo, Japan",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "changes": "Resized, encoded as WebP; responsive display crop.",
+    "width": 960,
+    "height": 640,
+    "bytes": 68926
+  },
+  {
+    "asset": "docs/assets/day-20.webp",
+    "origin": "https://commons.wikimedia.org/wiki/File:Endless_Blue_Waters_(Unsplash).jpg",
+    "author": "Kupono Kuwamura kuponokuwamura",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "changes": "Resized, encoded as WebP; responsive display crop.",
+    "width": 960,
+    "height": 640,
+    "bytes": 14374
+  },
+  {
+    "asset": "docs/assets/day-21.webp",
+    "origin": "https://commons.wikimedia.org/wiki/File:Ocean_sunset_(Unsplash).jpg",
+    "author": "Cody Weiher kofi",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "changes": "Resized, encoded as WebP; responsive display crop.",
+    "width": 960,
+    "height": 640,
+    "bytes": 57986
+  },
+  {
+    "asset": "docs/assets/day-22.webp",
+    "origin": "https://commons.wikimedia.org/wiki/File:Gardens_by_the_Bay,_Singapore_(54150067279).jpg",
+    "author": "Mustang Joe",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "changes": "Resized, encoded as WebP; responsive display crop.",
+    "width": 960,
+    "height": 641,
+    "bytes": 162246
+  },
+  {
+    "asset": "docs/assets/day-23.webp",
+    "origin": "https://commons.wikimedia.org/wiki/File:National_Gallery,_Singapore_in_2023_04.jpg",
+    "author": "Renek78",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "changes": "Resized, encoded as WebP; responsive display crop.",
+    "width": 960,
+    "height": 541,
+    "bytes": 88294
+  },
+  {
+    "asset": "docs/assets/day-24.webp",
+    "origin": "https://commons.wikimedia.org/wiki/File:Changi_Jewel.jpg",
+    "author": "Em.23759",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "changes": "Resized, encoded as WebP; responsive display crop.",
+    "width": 960,
+    "height": 720,
+    "bytes": 118594
+  }
+]

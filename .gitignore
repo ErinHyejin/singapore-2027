@@ -8,3 +8,9 @@ private/
 *snapshot-private*
 *credentials*
 *token*
+.impeccable/review/
+.impeccable/questions/
+.impeccable/mocks/
+.impeccable/config.local.json
+.impeccable/hook.cache.json
+.impeccable/hook.pending.json

@@ -3,42 +3,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#123e40">
+  <meta name="theme-color" content="#ffffff">
   <meta name="robots" content="noindex,nofollow,noarchive">
   <meta name="referrer" content="no-referrer">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
-  <meta name="description" content="싱가포르 여행, 하루씩 편하게 보는 모바일 일정표. 관광·식사·휴식과 대안 옵션을 한눈에.">
-  <title>싱가포르, 다음 장면 · 2027</title>
+  <meta name="description" content="2027년 2월 싱가포르와 디즈니 어드벤처 여행 일정">
+  <title>싱가포르 여행 · 2027. 2. 17~24</title>
   <link rel="icon" type="image/svg+xml" href="./icon.svg">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="preload" href="./assets/SUIT-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./itinerary.css?v=photo-2">
   <script defer src="./data.js"></script>
-  <script defer src="./app.js"></script>
+  <script defer src="./photos.js?v=photo-2"></script>
+  <script defer src="./app.js?v=photo-2"></script>
 </head>
 <body>
   <a class="skip" href="#main">일정으로 바로가기</a>
-  <header class="hero">
-    <div class="topline"><span class="wordmark">SINGAPORE <b>27</b></span><span class="edition">A LITTLE TRAVEL NOTE</span></div>
-    <div class="hero-content"><p class="eyebrow">2027. 02. 17 — 24</p><h1>싱가포르,<br>우리의 다음 장면<span class="period">.</span></h1><p class="hero-copy">가볍게 구경하고, 충분히 쉬어가는 여행.<br>그날의 일정만 꺼내 보세요.</p></div>
-    <div class="hero-bottom"><span class="location-mark"><i aria-hidden="true"></i> 모든 시간은 싱가포르 현지 시간</span><span class="timezone">SGT · UTC+8</span></div>
-    <svg class="hero-art" viewBox="0 0 280 180" aria-hidden="true"><path d="M12 145C67 51 110 199 152 98S217 18 269 61"/><circle cx="12" cy="145" r="5"/><circle cx="152" cy="98" r="5"/><circle cx="269" cy="61" r="5"/><path d="M215 98v54m-17 0h51m-17-54v54m-32-55h47l8-10h-59z"/></svg>
+  <header class="trip-header">
+    <div class="masthead"><h1>싱가포르</h1><div class="trip-meta"><p>2027. 2. 17~24</p><p>디즈니 어드벤처</p></div></div>
+    <div class="cover-photo"><img id="cruise-photo" src="./assets/hero-disney.webp" alt="붉은 굴뚝과 검은 선체의 디즈니 어드벤처" width="1440" height="560" fetchpriority="high"></div>
+    <div class="trip-caption"><span>도시에서 바다로, 다시 싱가포르로</span><span>현지 시간 기준 · 한국보다 1시간 느림</span></div>
   </header>
   <section class="date-dock" aria-label="날짜 및 보기 선택">
-    <div class="date-strip" role="tablist" aria-label="여행 날짜" id="date-tabs"></div>
-    <div class="view-toolbar"><div class="view-toggle" role="group" aria-label="일정 보기 방식"><button id="daily-view" type="button" aria-pressed="true">하루씩 보기</button><button id="grid-view" type="button" aria-pressed="false">전체 시간표</button></div><button class="refresh" id="refresh-button" type="button" aria-label="최신 배포 내용 새로고침">↻ 새로고침</button></div>
+    <div class="dock-inner">
+      <div class="date-strip" role="tablist" aria-label="여행 날짜" id="date-tabs"></div>
+      <div class="view-toolbar">
+        <div class="view-toggle" role="group" aria-label="일정 보기 방식"><button id="daily-view" type="button" aria-pressed="true">하루씩 보기</button><button id="grid-view" type="button" aria-pressed="false">전체 시간표</button></div>
+        <button class="refresh" id="refresh-button" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M5.3 8a7.5 7.5 0 0 1 12.4-3L20 8M4 16l2.3 3A7.5 7.5 0 0 0 18.7 16"/></svg><span>새로고침</span></button>
+      </div>
+    </div>
   </section>
   <main id="main" tabindex="-1">
-    <section class="intro-bar"><p><span class="status-dot"></span> 관광 일정은 제안 · 티켓은 미예약</p><span id="updated" class="updated"></span></section>
+    <div class="intro-bar"><p>관광 티켓 미예약 · 시간은 조정 가능</p><span id="updated" class="updated"></span></div>
     <section id="daily-panel" role="tabpanel" aria-label="선택한 날짜 일정">
-      <div class="day-heading"><div><p class="eyebrow" id="day-label"></p><h2 id="day-title"></h2><p class="day-subtitle" id="day-subtitle"></p></div><span class="day-index" id="day-index" aria-hidden="true"></span></div>
-      <div class="day-summary" id="day-summary"></div>
-      <div id="timeline" class="timeline"></div>
-      <div class="day-pager"><button id="previous-day" type="button">← 이전 날</button><button id="next-day" type="button">다음 날 →</button></div>
-      <section class="alternatives" aria-labelledby="alternatives-heading"><p class="eyebrow">PLAN B, NOT MORE PLANS</p><h2 id="alternatives-heading">대신 이렇게 해도 좋아요</h2><p class="section-copy">더하는 일정이 아니라, 원래 일정과 바꾸는 선택지예요.</p><div id="alternatives-list"></div></section>
+      <div class="day-layout">
+        <div class="day-overview">
+          <div class="day-heading"><span class="day-date" id="day-index" aria-hidden="true"></span><div><h2 id="day-title"></h2><p id="day-label" class="day-label"></p></div></div>
+          <p class="day-subtitle" id="day-subtitle"></p>
+          <figure class="day-scene"><img id="day-photo" src="./assets/day-17.webp" alt="싱가포르 마리나베이 야경" width="960" height="640"></figure>
+          <div class="day-summary" id="day-summary"></div>
+        </div>
+        <div class="day-schedule">
+          <div id="timeline" class="timeline"></div>
+          <nav class="day-pager" aria-label="이전 또는 다음 날짜"><button id="previous-day" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg>이전 날</button><button id="next-day" type="button">다음 날<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 6 6 6-6 6"/></svg></button></nav>
+          <section class="alternatives" aria-labelledby="alternatives-heading"><h2 id="alternatives-heading">다른 선택</h2><p class="section-copy">기존 일정과 바꿔서 선택하세요</p><div id="alternatives-list"></div></section>
+        </div>
+      </div>
     </section>
-    <section id="grid-panel" hidden aria-labelledby="grid-heading"><h2 id="grid-heading">전체 시간표</h2><p class="section-copy">가로로 밀어서 날짜별 일정을 비교하세요. 첫 열은 시간이에요.</p><div class="table-scroll" tabindex="0" aria-label="가로로 스크롤하는 전체 일정표"><table id="schedule-table"></table></div></section>
-    <aside class="travel-note"><strong>여유도 일정의 일부니까.</strong><p>초록색 카드는 쉬는 시간, 분홍색 카드는 확인이 필요한 시간이에요. 관광을 더 넣기보다 피곤한 날에는 대안을 골라주세요.</p><p class="operational-note">클라우드 포레스트는 2/23 정기 휴관 예정. 승·하선과 항공 수속 시각은 원본 예약서가 우선입니다.</p></aside>
+    <section id="grid-panel" hidden aria-labelledby="grid-heading"><h2 id="grid-heading">전체 시간표</h2><p class="section-copy">가로로 밀면 다른 날짜를 볼 수 있어요</p><div class="table-scroll" tabindex="0" aria-label="가로로 스크롤하는 전체 일정표"><table id="schedule-table"></table></div></section>
+    <aside class="travel-note"><h2>출발 전 확인</h2><p>클라우드 포레스트는 2/23 정기 휴관 예정입니다. 승·하선과 항공 수속 시간은 예약서로 다시 확인하세요.</p></aside>
   </main>
-  <footer><span class="wordmark">SINGAPORE <b>27</b></span><p>비공개 구글 시트에서 정리한 공개용 일정 스냅샷입니다.<br>예약번호·결제 내역·개인정보는 포함하지 않습니다.</p><p class="fine">시트 수정 사항은 웹에 다시 반영·배포해야 보입니다. 자동 실시간 동기화는 아닙니다.</p></footer>
-  <noscript>이 일정표를 보려면 브라우저의 JavaScript를 켜주세요.</noscript>
+  <footer><p>싱가포르 여행 · 2027년 2월</p><p class="fine">일정 변경 후 웹에도 따로 반영합니다. 구글 시트와 실시간으로 연동되지는 않습니다.</p></footer>
+  <noscript>일정표를 보려면 JavaScript를 켜주세요.</noscript>
 </body>
 </html>

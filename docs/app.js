@@ -20,22 +20,36 @@
   const available = id => data.days.some(d => d.date === id);
   const hashDate = () => location.hash.slice(1);
   let selected = available(hashDate()) ? hashDate() : (available(getSaved()) ? getSaved() : data.days[0].date);
-  let gridVisible = false;
   let buttons = [];
+
+  function icon(path, className = '') {
+    const node = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    node.setAttribute('viewBox', '0 0 24 24');
+    node.setAttribute('aria-hidden', 'true');
+    if (className) node.setAttribute('class', className);
+    const stroke = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    stroke.setAttribute('d', path); node.append(stroke); return node;
+  }
 
   function mapLink(url) {
     if (!url || !url.startsWith('https://www.google.com/maps/')) return null;
-    const a = el('a', 'map-link', '지도에서 보기 ↗');
+    const a = el('a', 'map-link', '지도');
+    a.append(icon('M14 4h6v6M20 4 10 14M20 14v6H4V4h6'));
     a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
     return a;
   }
   function renderCard(event) {
     const kind = safeKind(event.kind);
     const article = el('article', 'event'); article.dataset.kind = kind;
-    article.append(el('span', 'event-time', event.time));
+    const time = el('span', 'event-time');
+    const range = event.time.match(/^(\d{1,2}:\d{2})[–~](\d{1,2}:\d{2})$/);
+    if (range) time.append(el('span', 'time-start', range[1]), el('span', 'time-end', `~${range[2]}`));
+    else time.textContent = event.time;
+    article.append(time);
     const card = el('div', 'event-card');
     const top = el('div', 'card-top');
-    top.append(el('h3', '', event.title), el('span', `badge ${kind}`, labels[kind]));
+    top.append(el('h3', '', event.title));
+    if (['check', 'rest', 'cruise'].includes(kind)) top.append(el('span', `badge ${kind}`, labels[kind]));
     card.append(top);
     if (event.details.length) {
       const detail = el('div', 'event-details');
@@ -51,17 +65,19 @@
     article.append(card); return article;
   }
   function renderAlternatives(day) {
-    const [year, month, date] = day.date.split('-').map(Number);
+    const [, month, date] = day.date.split('-').map(Number);
     const when = `${month}/${date}`;
     const options = data.alternatives.filter(a => a.when.startsWith(when) && !a.excluded);
     const container = $('alternatives-list'); container.replaceChildren();
     if (!options.length) {
-      container.append(el('p', 'no-alts', day.events.some(e => e.kind === 'cruise') ? '선내 프로그램은 별도로 정해요. 쉬고 싶은 만큼 여유롭게 보내세요.' : '이날은 이동과 휴식을 우선해요. 별도 관광을 더하지 않아도 괜찮아요.'));
+      container.append(el('p', 'no-alts', day.events.some(e => e.kind === 'cruise') ? '선내 프로그램은 별도 일정으로 확인하세요' : '등록한 대안이 없습니다'));
       return;
     }
     options.forEach(a => {
       const details = el('details', 'alternative-card');
-      details.append(el('summary', '', `${a.replaces} 대신 ${a.title}`));
+      const heading = el('summary', '', `${a.replaces} 대신 ${a.title}`);
+      heading.append(icon('m6 9 6 6 6-6', 'disclosure-icon'));
+      details.append(heading);
       const body = el('div', 'alt-body');
       const condition = el('p'); condition.append(el('strong', '', '이럴 때  '), document.createTextNode(a.condition));
       body.append(condition, el('p', '', a.note));
@@ -81,21 +97,23 @@
     buttons.forEach((b, i) => { const active = i === index; b.setAttribute('aria-selected', String(active)); b.tabIndex = active ? 0 : -1; });
     revealSelectedTab();
     $('daily-panel').setAttribute('aria-labelledby', `tab-${day.date}`);
-    $('day-label').textContent = `${day.date.replaceAll('-', '. ')} · ${day.label.match(/\((.)\)/)?.[1] || ''}요일`;
+    $('day-label').textContent = `2월 ${Number(day.date.slice(-2))}일 ${day.label.match(/\((.)\)/)?.[1] || ''}요일`;
     $('day-title').textContent = day.title;
     $('day-subtitle').textContent = day.subtitle;
-    $('day-index').textContent = `0${index + 1}`.slice(-2);
+    $('day-index').textContent = String(Number(day.date.slice(-2)));
+    const photo = window.TRIP_PHOTOS?.days?.[day.date];
+    const image = $('day-photo');
+    if (photo) { image.src = photo.src; image.alt = photo.alt; }
     $('timeline').replaceChildren(...day.events.map(renderCard));
     const summary = $('day-summary'); summary.replaceChildren();
-    summary.append(el('span', 'summary-chip', `${day.events.length}개의 일정 블록`));
-    if (day.events.some(e => e.kind === 'rest')) summary.append(el('span', 'summary-chip rest', '호텔에서 쉬는 시간 확보'));
-    if (day.events.some(e => e.kind === 'check')) summary.append(el('span', 'summary-chip', '수속 시간 재확인'));
+    summary.append(el('span', 'summary-chip', `일정 ${day.events.length}개`));
+    if (day.events.some(e => e.kind === 'rest')) summary.append(el('span', 'summary-chip rest', '호텔 휴식 포함'));
+    if (day.events.some(e => e.kind === 'check')) summary.append(el('span', 'summary-chip', '수속 시간 확인 필요'));
     $('previous-day').disabled = index === 0;
     $('next-day').disabled = index === data.days.length - 1;
     renderAlternatives(day);
   }
   function toggleView(grid) {
-    gridVisible = grid;
     $('daily-panel').hidden = grid;
     $('grid-panel').hidden = !grid;
     $('daily-view').setAttribute('aria-pressed', String(!grid));

@@ -10,6 +10,12 @@ A lightweight, Korean, mobile-first itinerary for February 2027. Static HTML/CSS
 - Keyboard-operable date tabs, reduced-motion support, sticky navigation and 320px+ responsive layouts.
 - A locally exported, sanitized snapshot. The private Google Sheet is **not** published and no Google credentials are sent to the browser.
 
+## Design and photographs
+
+The interface was rebuilt with Humanizer for concise copy, Unslop for visual cleanup and Impeccable for layout, contrast, responsive review and design documentation. Unslop is by Damir Sokolovsky (@heydamir), CC BY 4.0. Design tokens live in `DESIGN.md`; the itinerary remains separate in `docs/data.js`.
+
+The header uses a real Disney Adventure photograph. `docs/photos.js` selects eight date-specific photographs, served locally as WebP. Image origins, authors, licenses and changes are recorded in `PHOTOS.md`, `PHOTO_SOURCES.json`, embedded image metadata and provenance sidecars. Those records are not shown as captions in the itinerary. Photographs illustrate the day's theme; they are not evidence of future attendance or bookings. SUIT is self-hosted under its SIL Open Font License, bundled in `docs/assets/SUIT-LICENSE.txt`.
+
 ## Source and updates
 
 The private Google Sheet remains the source of truth. This site is **not a live Sheet integration**. After changing the sheet, use an already-authorized local `gws` account:
