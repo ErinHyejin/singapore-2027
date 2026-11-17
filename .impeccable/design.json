@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-16T13:53:06.553881+00:00",
+  "generatedAt": "2026-11-17T03:54:30.189039+00:00",
   "title": "Design System: 싱가포르 여행 일정표",
   "extensions": {
     "colorMeta": {
@@ -202,9 +202,9 @@
       "method": "CSS/HTML/JS static extraction; not a rendered visual or accessibility approval",
       "files": {
         "docs/itinerary.css": "6429345c3b4fce93366d5759e9283564217e25eeacb6c03ffa53893c0a9b6064",
-        "docs/index.html": "66ef4f037ae08e6bb0ad2713bf0cecd0b6f06b3cc40bba163e49568a7ff69769",
+        "docs/index.html": "5a82f3fd56e598d9c7addf85abbde0dc5edbede03bc24b3d01bf6ba244c1eeec",
         "docs/app.js": "69001f19ef83d1187fb420b825895d3aa8156138c45018717199d3a631fca2f8",
-        "docs/data.js": "0bcbf46d58dde721b7343c40685d7f2c4a6af6be5b2013af671c9d440d05a92b",
+        "docs/data.js": "519019ad02233635ed032b0f5db3f25425b8fa95172d90cc66058f69f950d03a",
         "docs/photos.js": "19e611bca961b4f7c58fb16035837768aea9aef858d9d8865561c25e914f2f01",
         "docs/actions.js": "f35d373192f033455ac52ae9da2e32c507f3dd7567bc206b57fcaed708958df9"
       },
@@ -1477,7 +1477,7 @@
         "2027-02-20",
         "2027-02-21"
       ],
-      "portDay": "2027-02-20; booking reconfirmation required",
+      "portDay": "2027-02-20; confirmed by user-provided booking email",
       "dataSource": "docs/data.js",
       "evidence": "CRUISE_SOURCES.json",
       "rules": [
@@ -1487,7 +1487,8 @@
         "Daypart flow is a proposal",
         "Other dates and alternatives preserved"
       ],
-      "dataCacheVersion": "0bcbf46d58dd"
+      "dataCacheVersion": "519019ad0223",
+      "dinner": "17:45; subject to change by 15 minutes; confirmed by booking email"
     }
   },
   "components": [

@@ -13,7 +13,9 @@
  }
  $('tab-2027-02-20').click();
  check('Langkawi title',$('day-title').textContent.includes('랑카위'));
- check('Langkawi booking reconfirmation',$('day-subtitle').textContent.includes('예약서'));
+ check('Langkawi booking confirmation',$('day-subtitle').textContent.includes('예약 확인서'));
+ check('confirmed dinner with variability',['17:45','15분 변동 가능'].every(s=>portTextFor('2027-02-20').includes(s)));
+ function portTextFor(date){$('tab-'+date).click();return $('timeline').innerText;}
  check('Langkawi tab is a port day',$('tab-2027-02-20').querySelector('.date-mark').textContent==='기항일');
  const port=$('timeline').innerText;
  check('Ashore and Aboard distinguished',port.includes('하선 가능 11:00')&&port.includes('귀선 마감 21:00')&&port.includes('출항시각이 아니'));

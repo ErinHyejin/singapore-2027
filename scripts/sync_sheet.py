@@ -56,7 +56,7 @@ def make_public_snapshot(metadata,grid,alt_rows,generated_at=None,year=2027):
     sheet=next((s for s in metadata.get('sheets',[]) if s['properties']['title']=='일정표'),None)
     if not sheet:raise ValueError('Main timetable tab not found')
     merges={(m.get('startRowIndex',0),m.get('startColumnIndex',0)):m for m in sheet.get('merges',[])}
-    themes={17:('도착하는 저녁','클락키에서 가볍게 시작'),18:('바다로 떠나는 날','가까운 산책 후 승선 준비'),19:('물놀이와 디즈니 공연','해상일 · 가족 동선 제안'),20:('랑카위에 닿는 날','기항일 · 날짜 배정은 예약서 재확인'),21:('마블과 디즈니 친구들','해상일 · 실제 회차는 선내 앱에서'),22:('정원에서 야경까지','하선 후 휴식, 그리고 마리나베이'),23:('예술과 도시 산책','갤러리 · 덕투어 · 충분한 휴식'),24:('집으로 돌아가는 새벽','정확한 항공 수속 시각 재확인')}
+    themes={17:('도착하는 저녁','클락키에서 가볍게 시작'),18:('바다로 떠나는 날','가까운 산책 후 승선 준비'),19:('물놀이와 디즈니 공연','해상일 · 가족 동선 제안'),20:('랑카위에 닿는 날','기항일 · 예약 확인서로 날짜 확인'),21:('마블과 디즈니 친구들','해상일 · 실제 회차는 선내 앱에서'),22:('정원에서 야경까지','하선 후 휴식, 그리고 마리나베이'),23:('예술과 도시 산책','갤러리 · 덕투어 · 충분한 휴식'),24:('집으로 돌아가는 새벽','정확한 항공 수속 시각 재확인')}
     days=[]
     for col,heading in enumerate(grid[0][1:],1):
         match=re.fullmatch(r'(\d{1,2})/(\d{1,2})\s*\(([월화수목금토일])\)',heading.strip())

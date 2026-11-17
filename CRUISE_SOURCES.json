@@ -1,23 +1,59 @@
 {
   "scope": "Disney Adventure 2027-02-18 to 2027-02-22; ship programmes and provisional family flow",
-  "checkedDate": "2026-11-16",
+  "checkedDate": "2026-11-17",
   "itinerary": {
     "name": "4-Night Langkawi Cruise from Singapore",
     "voyageId": "DA0137",
-    "evidence": "Specific official DCL search-index title and dates; operator route-change announcement body verified. Direct DCL itinerary body was not available.",
-    "dayMapping": "February 19 and 21 at sea; February 20 Langkawi. Dated secondary itinerary cross-check; booking reconfirmation explicitly required.",
-    "portTimes": "Official itinerary index shows Ashore 11:00 / Aboard 21:00 for Langkawi; these are not docking/sailing times. Latest booking, Navigator and ship announcements take priority.",
+    "evidence": "User-provided Disney Cruise Line reservation confirmation issued November 13, 2026, supplied November 17; primary private booking evidence, not published in this repository.",
+    "dayMapping": "Booking confirmation verifies February 19 and 21 at sea, February 20 Langkawi, embarkation February 18 and debarkation February 22.",
+    "portTimes": "Booking confirms Singapore Onboard 16:00 on February 18, Langkawi Ashore 11:00 / Onboard 21:00 on February 20, Singapore Ashore 07:00 on February 22. These are not family PAT, sailing times or guaranteed individual disembarkation completion; latest ship guidance takes priority.",
     "familyPAT": "Unknown; do not infer from the timetable's provisional row placement.",
-    "familyDiningAndShows": "Exact family dining assignment and February 19-21 show slots were not verified in public material. Daypart activity flow is our proposal, not an official personal schedule."
+    "familyDiningAndShows": "Booking confirms dinner at 17:45, subject to change by 15 minutes. Restaurant/table rotation and exact show sessions remain unknown. Proposed daypart flow is not an official personal Navigator."
   },
   "sources": [
-    {"url":"https://disneycruise.disney.go.com/cruises-destinations/list/DA0137/4-Night-Cruise-from-Singapore/2027-02-18-Disney-Adventure","level":"official search-index only","supports":"Specific Langkawi voyage title, February 18-22 dates, indexed Ashore/Aboard fields"},
-    {"url":"https://disneyparksblog.com/dcl/disney-cruise-line-fall-2027-and-spring-2028-itineraries-announced/","level":"official operator body verified","supports":"Selected December 31, 2026-May 2027 sailings add Langkawi; not all Singapore cruises are sea-only"},
-    {"url":"https://www.cleancruising.com.au/cruise/DISADV004_20270218","level":"dated secondary itinerary body verified","supports":"Date mapping of February 20 Langkawi and February 19/21 at sea; not family-specific disembarkation time"},
-    {"url":"https://disneyparksblog.com/dcl/must-do-experiences-disney-adventure/","level":"official operator body verified","supports":"Adventure programmes including Remember, rotational-dining themes and Toy Story Place; not dated performance slots"},
-    {"url":"https://disneyparksblog.com/dcl/new-marvel-experience-duffy-and-friends-to-debut-on-the-disney-adventure/","level":"official operator body retrieved by research task","supports":"Duffy and The Friend Ship / Duffy Discovery Quest on Adventure; actual session availability not guaranteed"},
-    {"url":"https://disneycruise.disney.go.com/faq/booking-reservations/disney-adventure-book-activities-faq/","level":"official indexed FAQ content verified","supports":"Onboard Navigator activity booking, assigned/first-come shows, character/attraction reservation conditions; not this family's assignments"},
-    {"url":"https://disneycruise.disney.go.com/ships/adventure/kids-clubs","level":"official search-index content verified","supports":"Oceaneer Club ages 3-10; registration and participation requirements must be checked"}
+    {
+      "type": "private user-provided reservation confirmation",
+      "issuedDate": "2026-11-13",
+      "receivedDate": "2026-11-17",
+      "level": "primary reservation evidence supplied by user",
+      "supports": "Exact dated itinerary, port-access fields and dinner assignment",
+      "privacy": "No booking reference, stateroom number, passenger identities, address or original attachment is published."
+    },
+    {
+      "url": "https://disneycruise.disney.go.com/cruises-destinations/list/DA0137/4-Night-Cruise-from-Singapore/2027-02-18-Disney-Adventure",
+      "level": "official search-index only",
+      "supports": "Specific Langkawi voyage title, February 18-22 dates, indexed Ashore/Aboard fields"
+    },
+    {
+      "url": "https://disneyparksblog.com/dcl/disney-cruise-line-fall-2027-and-spring-2028-itineraries-announced/",
+      "level": "official operator body verified",
+      "supports": "Selected December 31, 2026-May 2027 sailings add Langkawi; not all Singapore cruises are sea-only"
+    },
+    {
+      "url": "https://www.cleancruising.com.au/cruise/DISADV004_20270218",
+      "level": "dated secondary itinerary body verified",
+      "supports": "Date mapping of February 20 Langkawi and February 19/21 at sea; not family-specific disembarkation time"
+    },
+    {
+      "url": "https://disneyparksblog.com/dcl/must-do-experiences-disney-adventure/",
+      "level": "official operator body verified",
+      "supports": "Adventure programmes including Remember, rotational-dining themes and Toy Story Place; not dated performance slots"
+    },
+    {
+      "url": "https://disneyparksblog.com/dcl/new-marvel-experience-duffy-and-friends-to-debut-on-the-disney-adventure/",
+      "level": "official operator body retrieved by research task",
+      "supports": "Duffy and The Friend Ship / Duffy Discovery Quest on Adventure; actual session availability not guaranteed"
+    },
+    {
+      "url": "https://disneycruise.disney.go.com/faq/booking-reservations/disney-adventure-book-activities-faq/",
+      "level": "official indexed FAQ content verified",
+      "supports": "Onboard Navigator activity booking, assigned/first-come shows, character/attraction reservation conditions; not this family's assignments"
+    },
+    {
+      "url": "https://disneycruise.disney.go.com/ships/adventure/kids-clubs",
+      "level": "official search-index content verified",
+      "supports": "Oceaneer Club ages 3-10; registration and participation requirements must be checked"
+    }
   ],
   "preservation": "The existing shared sheet and main tab ID were preserved. Only cruise cells and related cruise notes were patched; unrelated tabs and other trip days were read-back compared. No booking, purchase or permission change was made."
 }
